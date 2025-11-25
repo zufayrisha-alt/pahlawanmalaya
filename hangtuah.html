@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HANG TUAH: PENDEKAR SENI SILAT MELAKA</title>
+    <link rel="stylesheet" href="styles.css"> 
+
+    <style>
+        body {
+            background-image: url('Pahlawan/6HangTuah/6HangTuahBackground.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero-header-container">
+        
+        <div class="hero-name-row">
+            <div class="hero-number">006</div>
+            <h1 class="hero-title-pixel">HANG TUAH</h1>
+        </div>
+
+        <div class="hero-type-row">
+            <img src="Hiasan/logo_pendekar.jpg" alt="Logo Pendekar" class="hero-logo-img">
+            <h2 class="hero-type-title">PENDEKAR</h2>
+        </div>
+        
+        <p class="hero-rank-subtitle">PENDEKAR SENI SILAT MELAKA</p>
+    </header>
+
+    <blockquote class="hero-quote-box">
+        "Tanpa keberanian, keadilan tidak bermakna."
+    </blockquote>
+
+    <main>
+        <img src="Pahlawan/6HangTuah/6HangTuah1.jpg" alt="HANG TUAH" class="detail-hero-image">
+
+        <div class="detail-content">
+            
+            <h4>SKIN</h4>
+            
+            <div class="skin-gallery-container">
+                <h3 id="skin-name-display" class="skin-name-display">HANG TUAH</h3>
+                <div class="main-skin-images">
+                    <img id="main-skin-img-1" src="Pahlawan/6HangTuah/6HangTuah5.jpg" alt="Skin BADANG 1" class="main-skin-img">
+                    <img id="main-skin-img-2" src="Pahlawan/6HangTuah/6HangTuah2.jpg" alt="Skin BADANG 2" class="main-skin-img">
+                    <img id="main-skin-img-3" src="Pahlawan/6HangTuah/6HangTuah3.jpg" alt="Skin BADANG 3" class="main-skin-img">
+                </div>
+            </div>
+
+            <div class="skin-selection-container">
+                <button id="arrow-left" class="nav-arrow" disabled>&lt;</button>
+                <div class="skin-thumbnails-wrapper">
+                    <div class="thumbnail-item active" data-skin-index="0" data-skin-name="HANG TUAH"
+                            data-main-img-1="Pahlawan/6HangTuah/6HangTuah5.jpg"
+                            data-main-img-2="Pahlawan/6HangTuah/6HangTuah2.jpg"
+                            data-main-img-3="Pahlawan/6HangTuah/6HangTuah3.jpg"
+                            onclick="changeSkin(0)">
+                         <img src="Pahlawan/6HangTuah/6HangTuah1.jpg" alt="Thumbnail HANG TUAH" class="thumbnail-img">
+                         <span class="thumbnail-label">HANG TUAH</span>
+                    </div>
+
+                    <div class="thumbnail-item" data-skin-index="1" data-skin-name="LANUN HANG TUAH"
+                            data-main-img-1="Pahlawan/6HangTuah/6LanunHangTuah4.jpg"
+                            data-main-img-2="Pahlawan/6HangTuah/6LanunHangTuah1.jpg"
+                            data-main-img-3="Pahlawan/6HangTuah/6LanunHangTuah3.jpg"
+                            onclick="changeSkin(1)">
+                         <img src="Pahlawan/6HangTuah/6LanunHangTuah1.jpg" alt="Thumbnail LANUN HANG TUAH" class="thumbnail-img">
+                         <span class="thumbnail-label">LANUN HANG TUAH</span>
+                    </div>
+                </div>
+                <button id="arrow-right" class="nav-arrow" >&gt;</button>
+            </div>
+            
+            
+            <h4>STATISTIK & STATUS NYAWA DAN TENAGA</h4>
+            
+            <ul class="biodata-list">
+                <li class="stat-item">
+                    <span class="stat-label">Serangan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-red" style="width: 70%;"></div>
+                    </div>
+                    <span class="stat-score">7</span>
+                </li>
+                
+                <li class="stat-item">
+                    <span class="stat-label">Penguasaan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-orange" style="width: 70%;"></div>
+                    </div>
+                    <span class="stat-score">7</span>
+                </li>
+
+                <li class="stat-item">
+                    <span class="stat-label">Kesukaran</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-blue" style="width: 60%;"></div>
+                    </div>
+                    <span class="stat-score">6</span>
+                </li>
+                
+                <li class="stat-item">
+                    <span class="stat-label">Kekebalan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-green" style="width: 80%;"></div>
+                    </div>
+                    <span class="stat-score">8</span>
+                </li>
+                
+                <li style="margin-top: 15px;">
+                    HP = <span style="color: white; font-weight: bold;">2800</span> <span style="color: #90ee90; font-weight: bold;">+200</span>
+                </li>
+                <li>
+                    Mana = <span style="color: white; font-weight: bold;">---</span> <span style="color: #ADD8E6; font-weight: bold;">+--</span>
+                </li>
+            </ul>
+
+
+            <h4>BIODATA</h4>
+            <ul class="biodata-list">
+                <li>Nama Pahlawan : HANG TUAH</li>
+                <li>Nama Sebenar : Tuah</li>
+                <li>Gelaran : PENDEKAR SENI SILAT MELAKA</li>
+                <li>Umur : 20 Tahun</li>
+                <li>Number Pahlawan : 006</li>
+                <li>Jenis Pahlawan : <img src="Hiasan/logo_pendekar.jpg" alt="Logo Pendekar Kecil" class="list-logo"> PENDEKAR</li>
+                <li>Makhluk : Manusia</li>
+                <li>Bangsa : Melayu</li>
+                <li>Negeri Asal : Bandar Hilir, Melaka</li>
+                <li>Pekerjaan : Pendekar Silat</li>
+                <li>Tinggi : 185 cm</li>
+                <li>Berat : 76 Kg</li>
+            </ul>
+            
+            <h4>SKILL</h4>
+            <ul class="skill-list">
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/6HangTuah/6HangTuahskill0.jpg" alt="Pasif Skill Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">PASIF: WASPADA SILAT</span>
+                        <ul class="skill-description-list"><li>(True Damage)</li><li>Setiap kali Hang Tuah menyerang musuh, ada peluang 20% untuk mengenakan True Damage sebanyak 5% dari HP maksimum musuh.Efek tambahan:</li><li>Jika serangan pasif ini diaktifkan, damage akan mengabaikan shield musuh.</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/6HangTuah/6HangTuahskill1.jpg" alt="Skill 1 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 1: LANGKAH SILAT</span>
+                        <ul class="skill-description-list"><li>(CC / Stun / DPS - Fizikal)</li><li>Level: 1-4</li><li>Hang Tuah menyerang satu musuh secara langsung dan membuka seni silatnya, menyerang secara berturut-turut dalam tempoh 2.5 saat.</li><li>Sepanjang seni silat ini berlangsung, musuh akan dalam keadaan Stun dan menerima damage setiap 0.5s.</li><li>Damage: 120/160/200/240 + 100% Total Physical Attack setiap serangan.</li><li>Cooldown: 8s/7s/6s/5s</li><li>Radius: 3 unit (serangan ke satu sasaran).</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/6HangTuah/6HangTuahskill2.jpg" alt="Skill 2 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 2: LONTARAN TAMING SARI</span>
+                        <ul class="skill-description-list"><li>(Burst Damage / True Damage - Fizikal)</li><li>Level: 1-4</li><li>Hang Tuah melemparkan keris Taming Sari dalam garis lurus sejauh 7 unit, menyebabkan damage kepada semua musuh dalam laluannya.</li><li>Keris akan kekal di lokasi terakhir dan perlu diambil kembali untuk mengelakkan cooldown.</li><li>Jika Tuah tidak mengambil kembali keris dalam 3 saat, skill ini akan memasuki cooldown penuh.</li><li>Damage: 200/240/280/320 + 120% Total Physical Attack</li><li>Cooldown: 10s (jika tidak mengambil keris)</li><li>Radius: Garis lurus sejauh 7 unit</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/6HangTuah/6HangTuahskill3.jpg" alt="Skill 3 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 3: FOCUS SILAT</span>
+                        <ul class="skill-description-list"><li>(Buff / DPS - Fizikal)</li><li>Level: 1-4</li><li>Hang Tuah meningkatkan kekuatan dan stamina dirinya selama 5 saat.</li><li>HP Bertambah: +500/700/900/1100 HP sepanjang tempoh ini.</li><li>Attack Speed meningkat: +30% selama 5 saat.</li><li>Damage Meningkat: +15% Damage Fizikal.</li><li>Cooldown: 12s</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/6HangTuah/6HangTuahskill4.jpg" alt="ulti Icon" class="skill-icon">
+                    <div class="skill-details">
+                        <span class="skill-name">ULTI: TARI SILAT TAMING SARI</span>
+                        <ul class="skill-description-list"><li>(AOE / Burst Damage / DPS - Fizikal)</li><li>Level: 1-3</li><li>Hang Tuah membuka seni silat peringkat tinggi, menyerang dalam kawasan berbentuk lingkaran (6 unit radius) selama 3/4/5 saat.</li><li>Setiap musuh yang masih berada dalam kawasan ini akan menerima serangan tambahan.</li><li>Damage per hit: 100/140/180 + 70% Total Physical Attack.</li><li>Jika musuh terkena semua serangan dalam tempoh ini, damage bertambah sebanyak 20%.</li><li>Cooldown: 35s/30s/25s</li><li>Radius: 6 unit (AOE berbentuk lingkaran)</li></ul> 
+                    </div>
+                </li>
+            </ul>
+
+
+            <h4>PERSONALITI</h4>
+            <ul class="personaliti-list">
+                <li>Bijaksana & Taat, Sentiasa setia kepada prinsip dan berpegang teguh pada kebenaran.</li>
+<li>Tenang & Berstrategi, Tidak bertindak terburu-buru, tetapi cekap dalam membaca pergerakan musuh.</li>
+<li>Cepat & Tangkas, Menggunakan kepantasan dan teknik silat untuk menguasai pertempuran.</li>
+            </ul>
+
+            <h4>HIKAYAT</h4>
+            <div class="hikayat-text">
+                <p>Pada zaman moden ini, di sebuah pekan kecil yang dikelilingi oleh kehijauan alam, tinggallah seorang pemuda bernama Tuah. Dia seorang yang baik hati, taat kepada kedua orang tuanya, dan sentiasa mendengar kata. Tidak pernah dia membantah, tidak pernah dia melawan perintah. Walaupun berasal dari keluarga yang sederhana, Tuah sentiasa menjaga tingkah laku dan penuh dengan semangat yang tidak mengenal erti jemu.</p>
+
+<p>Suatu hari, Tuah terjumpa dengan sebuah buku tua di sudut perpustakaan kecil tempat dia belajar. Buku itu tertulis dengan huruf yang agak sukar dibaca, tetapi pada halaman pertama, Tuah tersentak melihat nama yang sangat familiar—Hang Tuah dan Hang Jebat. “Aduhai, apakah ini? Adakah kisah pahlawan Melayu yang terkenal?” fikir Tuah. Dengan penuh debar, dia pun membaca setiap bait dalam buku tersebut.</p>
+
+<p>Buku itu mengisahkan tentang Hang Tuah dan Hang Jebat, dua sahabat yang sangat setia dan berani. Hang Tuah, yang terkenal dengan keberaniannya, adalah seorang pendekar yang sangat taat kepada Sultan Melaka. Namun, satu ketika, Hang Jebat, sahabat karibnya, melakukan perkara yang benar tetapi merendahkan martabat Sultan. Akibatnya, Sultan menitahkan agar Hang Tuah membunuh Hang Jebat. Dalam kesulitan itu, Hang Tuah terpaksa menurut perintah. Namun, ada satu perkara yang tidak disebut dalam cerita ini—Hang Tuah tidak benar-benar membunuh Hang Jebat. Sebaliknya, mereka berdua hanya menyembunyikan kebenaran agar Sultan percaya bahawa Hang Jebat telah mati. Selepas itu, dalam peperangan melawan penjajah, Hang Tuah dan Hang Jebat berjuang secara rahsia, saling membantu tanpa pengetahuan orang lain.</p>
+
+<p>Kisah yang dibaca oleh Tuah itu membuka matanya. Betapa pentingnya kesetiaan, keberanian, dan pengorbanan yang telah dilakukan oleh Hang Tuah. Tuah mula menyedari bahawa untuk menjadi seperti Hang Tuah, dia perlu lebih berani, lebih cekal dan lebih tekun dalam latihan. Dia bertekad untuk belajar silat dengan lebih giat, bukan hanya untuk mempertahankan dirinya, tetapi untuk mengikut jejak langkah pahlawan yang penuh disiplin.</p>
+
+<p>Setiap hari, Tuah berlatih dengan penuh semangat, tidak mengenal penat lelah. Dia berusaha untuk menjadi lebih kuat, lebih bijak, dan lebih berani. Dalam hatinya, dia berjanji bahawa dia akan sentiasa siap mempertahankan diri, seperti pahlawan-pahlawan Melayu yang terdahulu.</p>
+
+<p>Walaupun Tuah dan Jebat datang dari latar belakang yang berbeza—Tuah yang baik dan mendengar kata, serta Jebat yang keras kepala tetapi teguh pendiriannya—mereka berdua akhirnya berkongsi satu tujuan yang sama. Mereka berdua ingin menjadi pahlawan yang hebat, mempertahankan diri mereka dan masyarakat sekitar mereka. Setelah membaca kisah Hang Tuah dan Hang Jebat, mereka mula menyedari bahawa keberanian, kesetiaan, dan pengorbanan adalah nilai-nilai yang perlu dipegang teguh.</p>
+
+<p>Mereka berdua bertekad untuk berlatih silat dengan lebih giat lagi, menyedari bahawa mereka bukan hanya berlatih untuk diri mereka sendiri, tetapi juga untuk mempertahankan tanah air dan kehormatan. Dalam hati mereka berdua, tercetus cita-cita yang tinggi: menjadi pahlawan yang bukan hanya hebat di medan perang, tetapi juga menjadi pelindung kepada mereka yang lemah dan tidak berdaya.</p>
+
+<p>Cerita Tuah dan Jebat ini mengajar mereka—dan kita semua—bahawa dalam setiap perjuangan, kesetiaan dan keberanian adalah kekuatan yang paling penting, dan persahabatan sejati akan selalu menjadi pemangkin kepada kejayaan.</p>
+            </div>
+        </div>
+    </main>
+    
+    <div class="nav-container">
+        <a href="#" class="nav-button back-glow left-button">
+            <img src="Hiasan/back_button.jpg" alt="Kembali" title="Kembali ke Galeri">
+            <span class="button-label">KEMBALI</span>
+        </a>
+        
+        <a href="index.html" class="nav-button home-glow right-button">
+            <img src="Hiasan/home_button.jpg" alt="Halaman Utama" title="Halaman Utama">
+            <span class="button-label">HALAMAN UTAMA</span>
+        </a>
+    </div>
+    
+    <script src="script.js"></script> 
+
+    <script>
+        // Set skin pertama sebagai skin aktif semasa muat halaman
+        let currentSkinIndex = 0;
+        const skinItems = document.querySelectorAll('.thumbnail-item');
+        const mainImg1 = document.getElementById('main-skin-img-1');
+        const mainImg2 = document.getElementById('main-skin-img-2');
+        const mainImg3 = document.getElementById('main-skin-img-3');
+        const skinNameDisplay = document.getElementById('skin-name-display');
+        const arrowLeft = document.getElementById('arrow-left');
+        const arrowRight = document.getElementById('arrow-right');
+        const totalSkins = skinItems.length;
+
+        // Fungsi utama untuk menukar skin
+        function changeSkin(index) {
+            if (index < 0 || index >= totalSkins) return; 
+
+            currentSkinIndex = index;
+            
+            // 1. Update Imej Utama
+            const selectedSkin = skinItems[currentSkinIndex];
+            if (mainImg1) mainImg1.src = selectedSkin.getAttribute('data-main-img-1');
+            if (mainImg2) mainImg2.src = selectedSkin.getAttribute('data-main-img-2');
+            if (mainImg3) mainImg3.src = selectedSkin.getAttribute('data-main-img-3');
+            
+            // 2. Update Nama Skin
+            if (skinNameDisplay) skinNameDisplay.textContent = selectedSkin.getAttribute('data-skin-name');
+
+            // 3. Update Status Aktif (Opacity/Ketelusan) pada Thumbnail
+            skinItems.forEach((item, i) => {
+                if (i === currentSkinIndex) {
+                    item.classList.add('active'); 
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+
+            // 4. Update Status Anak Panah Navigasi
+            updateArrows();
+        }
+
+        // Fungsi untuk mengemas kini keadaan anak panah
+        function updateArrows() {
+            // Anak Panah Kiri: Nyahaktifkan jika di skin pertama
+            if (currentSkinIndex === 0) {
+                if(arrowLeft) {
+                    arrowLeft.classList.add('disabled-arrow'); 
+                    arrowLeft.disabled = true;
+                }
+            } else {
+                if(arrowLeft) {
+                    arrowLeft.classList.remove('disabled-arrow');
+                    arrowLeft.disabled = false;
+                }
+            }
+
+            // Anak Panah Kanan: Nyahaktifkan jika di skin terakhir
+            if (currentSkinIndex === totalSkins - 1) {
+                if(arrowRight) {
+                    arrowRight.classList.add('disabled-arrow'); 
+                    arrowRight.disabled = true;
+                }
+            } else {
+                if(arrowRight) {
+                    arrowRight.classList.remove('disabled-arrow');
+                    arrowRight.disabled = false;
+                }
+            }
+        }
+
+        // Event Listener untuk Anak Panah
+        if (arrowLeft) {
+            arrowLeft.addEventListener('click', () => {
+                changeSkin(currentSkinIndex - 1);
+            });
+        }
+        
+        if (arrowRight) {
+            arrowRight.addEventListener('click', () => {
+                changeSkin(currentSkinIndex + 1);
+            });
+        }
+
+        // Pastikan paparan skin di set semasa muat halaman
+        window.addEventListener('load', () => {
+            changeSkin(0);
+
+                // 🟢 Panggilan Audio dalam Badang.html mesti nampak seperti ini:
+        managePageAudio('Background_songs.m4a');
+        });
+
+    </script>
+
+    <audio id="global-bg-audio" preload="auto" muted></audio>
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BETONG: ANAK BULUH BETUNG</title>
+    <link rel="stylesheet" href="styles.css"> 
+
+    <style>
+        body {
+            background-image: url('Pahlawan/4Betong/4BetongBackground.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero-header-container">
+        
+        <div class="hero-name-row">
+            <div class="hero-number">004</div>
+            <h1 class="hero-title-pixel">BETONG</h1>
+        </div>
+
+        <div class="hero-type-row">
+            <img src="Hiasan/logo_pendeta.jpg" alt="Logo Pendeta" class="hero-logo-img">
+            <h2 class="hero-type-title">PENDETA</h2>
+        </div>
+        
+        <p class="hero-rank-subtitle">ANAK BULUH BETUNG</p>
+    </header>
+
+    <blockquote class="hero-quote-box">
+        "Seperti buluh, aku tidak mudah patah. Semakin ditekan, semakin aku bangkit!"
+    </blockquote>
+
+    <main>
+        <img src="Pahlawan/4Betong/4Betong1.jpg" alt="BETONG" class="detail-hero-image">
+
+        <div class="detail-content">
+            
+            <h4>SKIN</h4>
+            
+            <div class="skin-gallery-container">
+                <h3 id="skin-name-display" class="skin-name-display">BETONG</h3>
+                <div class="main-skin-images">
+                    <img id="main-skin-img-1" src="Pahlawan/4Betong/4Betong3.jpg" alt="Skin BETONG 1" class="main-skin-img">
+                    <img id="main-skin-img-2" src="Pahlawan/4Betong/4Betong4.jpg" alt="Skin BETONG 2" class="main-skin-img">
+                    <img id="main-skin-img-3" src="Pahlawan/4Betong/4Betong5.jpg" alt="Skin BETONG 3" class="main-skin-img">
+                </div>
+            </div>
+
+            <div class="skin-selection-container">
+                <button id="arrow-left" class="nav-arrow" disabled>&lt;</button>
+                <div class="skin-thumbnails-wrapper">
+                    <div class="thumbnail-item active" data-skin-index="0" data-skin-name="BETONG"
+                            data-main-img-1="Pahlawan/4Betong/4Betong3.jpg"
+                            data-main-img-2="Pahlawan/4Betong/4Betong4.jpg"
+                            data-main-img-3="Pahlawan/4Betong/4Betong5.jpg"
+                            onclick="changeSkin(0)">
+                         <img src="Pahlawan/4Betong/4Betong1.jpg" alt="Thumbnail BETONG" class="thumbnail-img">
+                         <span class="thumbnail-label">BETONG</span>
+                    </div>
+
+                    <div class="thumbnail-item" data-skin-index="1" data-skin-name="ERA LAMA BADANG"
+                            data-main-img-1="Pahlawan/4Betong/4DawaiBesiBetong4.jpg"
+                            data-main-img-2="Pahlawan/4Betong/4DawaiBesiBetong1.jpg"
+                            data-main-img-3="Pahlawan/4Betong/4DawaiBesiBetong5.jpg"
+                            onclick="changeSkin(1)">
+                         <img src="Pahlawan/4Betong/4DawaiBesiBetong1.jpg" alt="Thumbnail DAWAI BESI BETONG" class="thumbnail-img">
+                         <span class="thumbnail-label">DAWAI BESI BETONG</span>
+                    </div>
+                </div>
+                <button id="arrow-right" class="nav-arrow" >&gt;</button>
+            </div>
+            
+            
+            <h4>STATISTIK & STATUS NYAWA DAN TENAGA</h4>
+            
+            <ul class="biodata-list">
+                <li class="stat-item">
+                    <span class="stat-label">Serangan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-red" style="width: 80%;"></div>
+                    </div>
+                    <span class="stat-score">8</span>
+                </li>
+                
+                <li class="stat-item">
+                    <span class="stat-label">Penguasaan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-orange" style="width: 80%;"></div>
+                    </div>
+                    <span class="stat-score">8</span>
+                </li>
+
+                <li class="stat-item">
+                    <span class="stat-label">Kesukaran</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-blue" style="width: 70%;"></div>
+                    </div>
+                    <span class="stat-score">7</span>
+                </li>
+                
+                <li class="stat-item">
+                    <span class="stat-label">Kekebalan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-green" style="width: 60%;"></div>
+                    </div>
+                    <span class="stat-score">6</span>
+                </li>
+                
+                <li style="margin-top: 15px;">
+                    HP = <span style="color: white; font-weight: bold;">2600</span> <span style="color: #90ee90; font-weight: bold;">+180</span>
+                </li>
+                <li>
+                    Mana = <span style="color: white; font-weight: bold;">600</span> <span style="color: #ADD8E6; font-weight: bold;">+50</span>
+                </li>
+            </ul>
+
+
+            <h4>BIODATA</h4>
+            <ul class="biodata-list">
+                <li>Nama Pahlawan : BETONG</li>
+                <li>Nama Sebenar : Aziz</li>
+                <li>Gelaran : ANAK BULUH BETUNG</li>
+                <li>Umur : 17 Tahun</li>
+                <li>Number Pahlawan : 004</li>
+                <li>Jenis Pahlawan : <img src="Hiasan/logo_pendeta.jpg" alt="Logo Pendeta Kecil" class="list-logo"> PENDETA</li>
+                <li>Makhluk : Manusia</li>
+                <li>Bangsa : Melayu</li>
+                <li>Negeri Asal : Bukit Buluh, Felda Padang Piol, Jerantut, Pahang</li>
+                <li>Pekerjaan : Pelajar Sekolah Menengah</li>
+                <li>Tinggi : 167 cm</li>
+                <li>Berat : 48 Kg</li>
+            </ul>
+            
+            <h4>SKILL</h4>
+            <ul class="skill-list">
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/4Betong/4Betongskill0.jpg" alt="Pasif Skill Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">PASIF: ANAK BULUH BETUNG</span>
+                        <ul class="skill-description-list"><li>(Magic, Heal)</li><li>Bila Bujang atau sekutu memasuki semak biasa atau semak buluh (Skill 2), mereka menerima heal sebanyak 1% HP maksimum setiap saat.</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/4Betong/4Betongskill1.jpg" alt="Skill 1 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 1: DAUN TAJAM BETUNG</span>
+                        <ul class="skill-description-list"><li>(Magic, AOE, Burst Damage)</li><li>Level: 1-5</li><li>Bujang mengeluarkan daun buluh tajam dalam bentuk kipas sejauh 6 unit, menyerang semua musuh dalam kawasan.</li><li>Musuh yang terkena serangan ini akan mengalami magic damage dan jika terkena di tepi kipas, mereka akan menerima +30% extra damage.</li><li>250/300/350/400/500 magic damage</li><li>Mana Cost: 60/70/80/90/100</li><li>Cooldown: 8/7/6/5/4 s</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/4Betong/4Betongskill2.jpg" alt="Skill 2 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 2: SEMAK BULUH ILUSI</span>
+                        <ul class="skill-description-list"><li>(Magic, Stealth, Heal)</li><li>Level: 1-3</li><li>Bujang menanam semak buluh sepanjang 5 unit yang boleh menyembunyikan sekutu</li><li>Mana Cost: 80/90/100</li><li>Semak ada selama 30/45/60 saat</li><li>Cooldown: 20/18/16 s</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/4Betong/4Betongskill3.jpg" alt="Skill 3 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 3: PERISAI BULUH BETUNG</span>
+                        <ul class="skill-description-list"><li>(Magic, Buff, Damage Reflection)</li><li>Level: 1-4</li><li>Bujang dan sekutu terdekat mendapat perisai buluh 400/500/600/700 HP selama 4 saat yang menyerap damage.</li><li>Jika perisai pecah sebelum habis tempoh, 20/25/30/35% daripada damage yang diserap akan dipantulkan kepada musuh terdekat.</li><li>Perisai ini boleh melindungi hingga 3 sekutu berdekatan.</li><li>Mana Cost: 100/120/140/160</li><li>Cooldown: 15/13/11/9 s</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/4Betong/4Betongskill4.jpg" alt="Ultimate Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">ULTI: HUTAN BULUH SAKTI</span>
+                        <ul class="skill-description-list"><li>(Magic, AOE, DPS, CC)</li><li>Level: 1-3</li><li>Bujang mencipta hutan buluh dalam radius 8 unit yang berlangsung selama 6/7/8 saat.</li><li>Buluh akan naik dan turun setiap 1 saat, memberi magic damage 150/200/250 kepada semua musuh dalam kawasan.</li><li>Musuh yang terkena 3 kali berturut-turut akan slow sebanyak 40% selama 2 saat.</li><li>Jika Bujang bergerak atau digerakkan musuh, ulti akan tamat serta-merta.</li><li>Mana Cost: 150/200/250</li><li>Cooldown: 40/35/30 s</li></ul> 
+                    </div>
+                </li>
+            </ul>
+
+
+            <h4>PERSONALITI</h4>
+            <ul class="personaliti-list">
+                <li>Bijak dan tenang dalam membuat keputusan</li>
+<li>Sanggup berkorban untuk orang lain</li>
+<li>Tidak mudah gentar menghadapi bahaya</li>
+<li>Setia pada amanah dan tanggungjawab</li>
+<li>Suka berfikir sebelum bertindak</li>
+            </ul>
+
+            <h4>HIKAYAT</h4>
+            <div class="hikayat-text">
+                <p>Pada zaman moden kini, di sebuah kampung yang tenang, tinggal seorang budak bernama Aziz. Pada usianya yang baru sembilan tahun, Aziz sudah mempunyai hati yang penuh dengan rasa ingin tahu. Pada suatu hari yang cerah, sewaktu sedang bermain di halaman rumah datuknya, matanya tertarik kepada sesuatu yang aneh di sudut gudang lama. Sebuah gelang buluh yang kelihatan tua, tersembunyi di dalam sebuah kotak kayu. Aziz, yang tidak tahu apa-apa tentang gelang itu, terus memakainya tanpa berfikir panjang. Dia tidak menyedari bahawa gelang buluh itu bukan sembarang gelang, tetapi warisan yang telah lama hilang, suatu kuasa yang akan kembali bangkit dalam dirinya.</p>
+
+<p>Kisah gelang buluh itu, dari zaman ke zaman, bermula di zaman dahulu, ketika kerajaan Melayu masih gagah di tanah air. Di sebuah hutan yang lebat, dalam sebuah batang buluh betung yang agung, terlahirlah seorang anak lelaki yang luar biasa. Anak itu diberi nama Bujang, yang lahir di dalam buluh betung, sesuatu yang jarang berlaku dalam sejarah. Keajaiban semula jadi itu memberi Bujang kuasa yang luar biasa, kuasa yang berkaitan dengan buluh. Dia mampu menumbuhkan buluh dalam sekelip mata, menjadikannya sangat berkuasa dalam menghadapi musuh. Kekuatan buluh itu membantunya untuk mengalahkan musuh-musuh yang datang menyerang tanah Melaka pada zaman tersebut.</p>
+
+<p>Namun, walaupun Bujang memiliki kuasa yang tiada bandingan, dia menyedari bahawa kuasa yang besar harus dijaga dengan bijaksana. Setelah berperang dengan penuh darah dan pengorbanan, Bujang memutuskan untuk menyembunyikan kekuatan buluhnya dengan cara yang amat bijak. Dia menjadikan kuasa buluh itu sebagai gelang yang hanya boleh dipakai oleh keturunan yang sah, yang benar-benar layak. Gelang itu bukanlah sekadar perhiasan, tetapi satu simbol amanah yang berat. Bujang mengarahkan agar gelang itu dijaga dengan rapi dan hanya diwarisi kepada pewaris yang berhak.</p>
+
+<p>Sejak zaman Bujang, kuasa buluh itu berlanjutan dari generasi ke generasi, tetapi tidak seorang pun yang mengetahui akan peranan sebenar gelang buluh itu. Hinggalah satu masa, dalam zaman yang serba moden ini, gelang buluh itu ditemui oleh seorang budak lelaki bernama Aziz.</p>
+
+<p>Aziz, setelah menemui gelang buluh tersebut dan mengenakan pada tangannya, perlahan-lahan merasakan sesuatu yang luar biasa berlaku. Dalam dirinya mengalir kuasa yang tidak difahaminya, tetapi dia merasa kuat, bertenaga, dan penuh dengan keinginan untuk belajar. Datuknya, yang ternyata seorang penjaga lama gelang buluh itu, mengetahui bahawa masa yang dinantikan telah tiba. Datuk Aziz menceritakan kepada cucunya tentang sejarah gelang buluh itu, bagaimana ia merupakan warisan keturunan yang sangat penting, dan bagaimana Aziz sebenarnya adalah pewaris sah kuasa buluh yang telah lama terkubur.</p>
+
+<p>Dengan berkat ajaran datuknya, Aziz mula memahami cara untuk mengawal kuasa buluh yang ada padanya. Walaupun ia sesuatu yang luar biasa, datuknya berpesan, "Aziz, janganlah sesekali menunjuk-nunjukkan kuasa ini. Gunakan ia hanya ketika perlu, kerana kekuatan ini bukan milikmu seorang, tetapi amanah yang perlu dijaga."</p>
+
+<p>Aziz yang kini berusia 19 tahun telah menguasai kemampuan untuk mengawal kuasa buluh itu. Dia menamakan dirinya "Bujang" seperti nama keturunannya yang dahulu, sebagai simbol kehadiran kuasa yang telah lama terkubur. Walaupun dia kini mengetahui betapa besar kekuatan yang ada padanya, Bujang tahu bahawa ia harus digunakan dengan penuh kebijaksanaan dan hati-hati.</p>
+
+<p>Kuasa buluh yang dimiliki Aziz bukanlah semata-mata untuk menunjukkan kekuatan, tetapi sebagai alat untuk menjaga kehormatan dan keselamatan orang-orang di sekelilingnya. Aziz tahu bahawa suatu hari nanti, dia mungkin akan berhadapan dengan ancaman yang memerlukan kuasa itu. Dengan segala ilmu dan bimbingan dari datuknya, Bujang bersedia menghadapi apa jua cabaran yang datang. Namun, pesan datuknya tetap tersemat dalam ingatan, bahawa kuasa yang ada di tangan tidak boleh disalahgunakan, dan ia hanya digunakan ketika benar-benar diperlukan untuk melindungi dan mempertahankan tanah dan keluarga.</p>
+            </div>
+        </div>
+    </main>
+    
+    <div class="nav-container">
+        <a href="#" class="nav-button back-glow left-button">
+            <img src="Hiasan/back_button.jpg" alt="Kembali" title="Kembali ke Galeri">
+            <span class="button-label">KEMBALI</span>
+        </a>
+        
+        <a href="index.html" class="nav-button home-glow right-button">
+            <img src="Hiasan/home_button.jpg" alt="Halaman Utama" title="Halaman Utama">
+            <span class="button-label">HALAMAN UTAMA</span>
+        </a>
+    </div>
+    
+    <script src="script.js"></script> 
+
+    <script>
+        // Set skin pertama sebagai skin aktif semasa muat halaman
+        let currentSkinIndex = 0;
+        const skinItems = document.querySelectorAll('.thumbnail-item');
+        const mainImg1 = document.getElementById('main-skin-img-1');
+        const mainImg2 = document.getElementById('main-skin-img-2');
+        const mainImg3 = document.getElementById('main-skin-img-3');
+        const skinNameDisplay = document.getElementById('skin-name-display');
+        const arrowLeft = document.getElementById('arrow-left');
+        const arrowRight = document.getElementById('arrow-right');
+        const totalSkins = skinItems.length;
+
+        // Fungsi utama untuk menukar skin
+        function changeSkin(index) {
+            if (index < 0 || index >= totalSkins) return; 
+
+            currentSkinIndex = index;
+            
+            // 1. Update Imej Utama
+            const selectedSkin = skinItems[currentSkinIndex];
+            if (mainImg1) mainImg1.src = selectedSkin.getAttribute('data-main-img-1');
+            if (mainImg2) mainImg2.src = selectedSkin.getAttribute('data-main-img-2');
+            if (mainImg3) mainImg3.src = selectedSkin.getAttribute('data-main-img-3');
+            
+            // 2. Update Nama Skin
+            if (skinNameDisplay) skinNameDisplay.textContent = selectedSkin.getAttribute('data-skin-name');
+
+            // 3. Update Status Aktif (Opacity/Ketelusan) pada Thumbnail
+            skinItems.forEach((item, i) => {
+                if (i === currentSkinIndex) {
+                    item.classList.add('active'); 
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+
+            // 4. Update Status Anak Panah Navigasi
+            updateArrows();
+        }
+
+        // Fungsi untuk mengemas kini keadaan anak panah
+        function updateArrows() {
+            // Anak Panah Kiri: Nyahaktifkan jika di skin pertama
+            if (currentSkinIndex === 0) {
+                if(arrowLeft) {
+                    arrowLeft.classList.add('disabled-arrow'); 
+                    arrowLeft.disabled = true;
+                }
+            } else {
+                if(arrowLeft) {
+                    arrowLeft.classList.remove('disabled-arrow');
+                    arrowLeft.disabled = false;
+                }
+            }
+
+            // Anak Panah Kanan: Nyahaktifkan jika di skin terakhir
+            if (currentSkinIndex === totalSkins - 1) {
+                if(arrowRight) {
+                    arrowRight.classList.add('disabled-arrow'); 
+                    arrowRight.disabled = true;
+                }
+            } else {
+                if(arrowRight) {
+                    arrowRight.classList.remove('disabled-arrow');
+                    arrowRight.disabled = false;
+                }
+            }
+        }
+
+        // Event Listener untuk Anak Panah
+        if (arrowLeft) {
+            arrowLeft.addEventListener('click', () => {
+                changeSkin(currentSkinIndex - 1);
+            });
+        }
+        
+        if (arrowRight) {
+            arrowRight.addEventListener('click', () => {
+                changeSkin(currentSkinIndex + 1);
+            });
+        }
+
+        // Pastikan paparan skin di set semasa muat halaman
+        window.addEventListener('load', () => {
+            changeSkin(0);
+
+        });
+
+    </script>
+
+</body>
+</html>

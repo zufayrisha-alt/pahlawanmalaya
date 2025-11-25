@@ -1,0 +1,13 @@
+// Kod JavaScript ini akan menguruskan fungsi "Kembali"
+
+// 1. Dapatkan elemen butang kembali melalui kelas yang kita tetapkan
+const backButton = document.querySelector('.left-button');
+
+// 2. Tambah peristiwa klik pada butang
+backButton.addEventListener('click', function(e) {
+    // Halang pautan lalai (href) pada butang
+    e.preventDefault(); 
+    
+    // Gunakan fungsi sejarah pelayar untuk kembali ke halaman sebelumnya
+    window.history.back();
+});

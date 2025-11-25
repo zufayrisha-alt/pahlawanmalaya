@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Pahlawan</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- LATAR BELAKANG INDIVIDU: Galeri Pahlawan -->
+    <style>
+        body {
+            background-image: url('Hiasan/wallpaperbarang.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- TAJUK UTAMA HALAMAN -->
+    <h2 class="page2-title">GALERI PAHLAWAN</h2> 
+    
+    <p>Sila pilih hero yang anda ingin lihat dan tekan pada gambarnya.</p>
+
+    <!-- KANDUNGAN UTAMA: PAPARAN PAHLAWAN -->
+    <main>
+        <!-- KAD PAHLAWAN: BADANG -->
+        <a href="badang.html" title="Klik untuk lihat kisah Badang secara terperinci">
+            <figure class="pahlawan-gallery-item">
+                <!-- Bingkai -->
+                <img src="Hiasan/Bingkai Pahlawan.jpg" alt="Bingkai Emas Klasik" class="frame-image">
+                
+                <!-- Imej Pahlawan -->
+                <img src="Pahlawan/1_Badang/1Badang2.jpg" alt="Pahlawan Badang" class="hero-image">
+                
+                <!-- Kapsyen Pahlawan -->
+                <figcaption class="gallery-caption">
+                    <div class="hero-name">BADANG</div>
+                    <div class="hero-title">SANG PENTERNAK IKAN PERKASA</div>
+                </figcaption>
+            </figure>
+        </a>
+        <!-- Tambah kad pahlawan lain di sini jika ada -->
+    </main>
+
+    <!-- NAVIGASI KAKI (KONSISTEN) -->
+    <div class="nav-container">
+
+        <!-- 'KEMBALI' - KIRI: Menggunakan JS untuk back(), GLOW PADA IMEJ SAHAJA -->
+        <!-- href="#" akan diatasi oleh script.js -->
+        <a href="#" class="nav-button back-glow left-button">
+            <img src="Hiasan/back_button.jpg" alt="Kembali">
+            <span class="button-label">KEMBALI</span>
+        </a>
+
+        <!-- 'HALAMAN UTAMA' - KANAN: Pergi terus ke index.html -->
+        <a href="index.html" class="nav-button home-glow right-button">
+            <img src="Hiasan/home_button.jpg" alt="Halaman Utama">
+            <span class="button-label">HALAMAN UTAMA</span>
+        </a>
+
+    </div>
+
+    <!-- PENTING: Pautkan script untuk fungsi 'Kembali' -->
+    <script src="script.js"></script> 
+
+</body>
+</html>

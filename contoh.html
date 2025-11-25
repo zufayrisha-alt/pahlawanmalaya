@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badang: Sang Pemilik Kekuatan</title>
+    <!-- Pastikan anda telah memautkan fail CSS yang betul -->
+    <link rel="stylesheet" href="styles.css"> 
+
+    <!-- LATAR BELAKANG INDIVIDU: Detail Badang -->
+    <style>
+        body {
+            background-image: url('Pahlawan/0_Unknown/0_Unknown_5.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CONTAINER UTAMA UNTUK HEADER PAHLAWAN -->
+    <div class="editor-container">
+        <h2>EDITOR PAHLAWAN</h2>
+        
+        <!-- BARIS 1: NOMBOR + NAMA BADANG -->
+        <div class="editor-controls">
+            <button id="btnGenerate">SELESAI & JANA KOD</button>
+            <textarea id="outputCodeArea" rows="10" placeholder="Kod HTML yang telah dijana akan muncul di sini. Sila salin dan simpan dalam fail .html baharu (cth: hero_baru.html)"></textarea>
+        </div>
+
+        <h4>HEADER & QUOTE</h4>
+
+        <label for="heroBgURL">URL Latar Belakang (URL/Laluan Fail):</label>
+        <input type="text" id="heroBgURL" value="Pahlawan/0_Unknown/0_Unknown_1.png" placeholder="Contoh: Pahlawan/Badang/gambar.jpg">
+        <br>
+
+            <!-- Nombor Badang -->
+            <input type="number" id="heroNumber" value="1" placeholder="Nombor Hero (e.g. 1)">
+            <!-- Nama Badang -->
+            <input type="text" id="heroName" value="BADANG" placeholder="Nama Hero (Kapital)">
+        </div>
+
+        <!-- BARIS 2: LOGO + JENIS PAHLAWAN -->
+        <div class="hero-type-row">
+            <!-- Logo Pendekar -->
+            <img src="Hiasan/logo_pendekar.jpg" alt="Logo Pendekar" class="hero-logo-img">
+            <!-- Jenis Pahlawan -->
+            <input type="text" id="heroType" value="PENDEKAR" placeholder="Jenis Pahlawan">
+        </div>
+        
+        <!-- GELARAN PAHLAWAN (Subtitle) - DIKEMASKINI -->
+        <input type="text" id="heroRank" value="SANG PENTERNAK IKAN PERKASA" placeholder="Gelaran/Rank">
+    </header>
+
+    <!-- KOTAK QUOTE PAHLAWAN (Menggunakan tag semantik blockquote) -->
+    <textarea id="heroQuote" rows="2" placeholder="Masukkan Quote Hero">Kekuatan sebenar bukan pada otot, tetapi pada keazaman hati.</textarea>
+
+
+    <!-- KANDUNGAN UTAMA (Detail Imej dan Senarai) -->
+    <main>
+        <!-- IMEJ DETAIL PAHLAWAN -->
+        <label for="mainHeroImageURL">URL Imej Utama:</label>
+        <input type="text" id="mainHeroImageURL" value="Pahlawan/1_Badang/1Badang2.jpg" placeholder="Laluan Imej Utama">
+        <br>
+        <img src="Pahlawan/0_Unknown/0_Unknown_1.png" alt="Badang" class="detail-hero-image"> 
+
+        <div class="detail-content">
+            
+            <!-- BAHAGIAN SKINS BARU -->
+            <h4>SKIN</h4>
+            
+            <!-- GALERI SKIN BESAR -->
+            <div class="skin-gallery-container">
+                <!-- ID ini akan menggunakan gaya font baru dari CSS -->
+                <h3 id="skin-name-display" class="skin-name-display">BADANG</h3>
+                <div class="main-skin-images">
+                    <!-- Imej Skin 1 -->
+                    <img id="main-skin-img-1" src="Pahlawan/0_Unknown/0_Unknown_2.png" alt="Skin Badang 1" class="main-skin-img">
+                    <!-- Imej Skin 2 -->
+                    <img id="main-skin-img-2" src="Pahlawan/0_Unknown/0_Unknown_3.png" alt="Skin Badang 2" class="main-skin-img">
+                    <!-- Imej Skin 3 -->
+                    <img id="main-skin-img-3" src="Pahlawan/0_Unknown/0_Unknown_4.png" alt="Skin Badang 3" class="main-skin-img">
+                </div>
+            </div>
+
+            <!-- GALERI THUMBNAIL DAN NAVIGASI -->
+            <div class="skin-selection-container">
+                
+                <!-- Anak Panah Kiri -->
+                <button id="arrow-left" class="nav-arrow" disabled>&lt;</button>
+                
+                <!-- Senarai Thumbnail -->
+                <div class="skin-thumbnails-wrapper">
+                    <!-- Thumbnail 1: Basic Skin (Aktif) -->
+                    <div class="thumbnail-item active" data-skin-index="0" data-skin-name="BADANG"
+                         data-main-img-1="Pahlawan/0_Unknown/0_Unknown_2.png"
+                         data-main-img-2="Pahlawan/0_Unknown/0_Unknown_3.png"
+                         data-main-img-3="Pahlawan/0_Unknown/0_Unknown_4.png"
+                         onclick="changeSkin(0)">
+                        <img src="Pahlawan/0_Unknown/0_Unknown_1.png" alt="Thumbnail Basic Badang" class="thumbnail-img">
+                        <span class="thumbnail-label">Badang</span>
+                    </div>
+
+                    <!-- Thumbnail 2: Era Lama Badang -->
+                    <div class="thumbnail-item" data-skin-index="1" data-skin-name="ERA LAMA BADANG"
+                         data-main-img-1="Pahlawan/0_Unknown/0_Unknown_2.png"
+                         data-main-img-2="Pahlawan/0_Unknown/0_Unknown_3.png"
+                         data-main-img-3="Pahlawan/0_Unknown/0_Unknown_4.png"
+                         onclick="changeSkin(1)">
+                        <img src="Pahlawan/0_Unknown/0_Unknown_1.png" alt="Thumbnail Era Lama Badang" class="thumbnail-img">
+                        <span class="thumbnail-label">Era Lama Badang</span>
+                    </div>
+
+                    <!-- Nota: Tambah lebih banyak thumbnail di sini di masa hadapan -->
+                    
+                </div>
+                
+                <!-- Anak Panah Kanan -->
+                <button id="arrow-right" class="nav-arrow" >&gt;</button>
+            </div>
+            
+            
+            <!-- BAHAGIAN STATISTIK -->
+            <h4>STATISTIK & STATUS NYAWA DAN TENAGA</h4>
+            
+            <!-- STATISTIK BAR -->
+            <ul class="biodata-list">
+                <!-- Serangan (7/10) - Merah -->
+                <li class="stat-item">
+                    <span class="stat-label">Serangan</span>
+                    <input type="number" id="statSeranganScore" value="7" min="1" max="10">
+                    <span class="stat-score">/10</span>
+                </li>
+                
+                <!-- Penguasaan (6/10) - Jingga/Orange -->
+                <li class="stat-item">
+                    <span class="stat-label">Penguasaan</span>
+                    <input type="number" id="statPenguasaanScore" value="6" min="1" max="10">
+                    <span class="stat-score">/10</span>
+                </li>
+
+                <!-- Kesukaran (5/10) - Biru -->
+                <li class="stat-item">
+                    <span class="stat-label">Kesukaran</span>
+                    <input type="number" id="statKesukaranScore" value="5" min="1" max="10">
+                    <span class="stat-score">/10</span>
+                </li>
+                
+                <!-- Kekebalan (9/10) - Hijau -->
+                <li class="stat-item">
+                    <span class="stat-label">Kekebalan</span>
+                    <input type="number" id="statKekebalanScore" value="9" min="1" max="10">
+                    <span class="stat-score">/10</span>
+                </li>
+                
+                <!-- Status Nyawa dan Tenaga -->
+                <li style="margin-top: 15px;">
+                    HP = 
+                    <input type="number" id="hpBase" value="2700" placeholder="Base HP">
+                    +<input type="number" id="hpBonus" value="250" placeholder="Bonus HP">
+                </li>
+                <li>
+                    Mana = 
+                    <input type="text" id="manaBase" value="---" placeholder="Base Mana">
+                    +<input type="text" id="manaBonus" value="--" placeholder="Bonus Mana">
+                </li>
+            </ul>
+
+
+            <!-- BAHAGIAN BIODATA -->
+            <h4>BIODATA</h4>
+            <ul class="biodata-list">
+                <li>Nama Pahlawan : <input type="text" value="Badang" id="heroNameBio" placeholder="Nama Pahlawan (Ulang)"></li>
+                <li>Nama Sebenar : <input type="text" value="Badang" id="realName" placeholder="Nama Sebenar"></li>
+                <li>Gelaran : <input type="text" value="Sang Penterkan Ikan Perkasa" id="heroRankBio" placeholder="Gelaran (Ulang)"></li>
+                <li>Umur : <input type="text" value="375" id="heroAge" placeholder="Umur"> Tahun</li>
+                <li>Number Pahlawan : <input type="text" value="001" id="heroNumberBio" placeholder="Nombor (Ulang)"></li>
+                <li>Jenis Pahlawan : <img src="Hiasan/logo_pendekar.jpg" alt="Logo Pendekar Kecil" class="list-logo"> <input type="text" value="Pendekar" id="heroTypeBio" placeholder="Jenis Pahlawan (Ulang)"></li>
+                <li>Makhluk : <input type="text" value="Manusia Hidup Abadi" id="makhluk" placeholder="Makhluk"></li>
+                <li>Bangsa : <input type="text" value="Melayu" id="bangsa" placeholder="Bangsa"></li>
+                <li>Negeri Asal : <input type="text" value="Pahang, Kawasan sekitar Sungai Pahang" id="negeriAsal" placeholder="Negeri Asal"></li>
+                <li>Pekerjaan : <input type="text" value="Penternak Ikan" id="pekerjaan" placeholder="Pekerjaan"></li>
+                <li>Tinggi : <input type="text" value="185" id="tinggi" placeholder="Tinggi"> cm</li>
+                <li>Berat : <input type="text" value="???" id="berat" placeholder="Berat"> Kg</li>
+            </ul>
+            
+            <!-- BAHAGIAN SKILL -->
+            <h4>SKILL</h4>
+            <ul class="skill-list">
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/0_Unknown/0_Unknown_1.png" alt="Pasif Skill Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">PASIF: <input type="text" id="pasifName" value="KEKUATAN ROH RAKSASA" placeholder="Nama Skill Pasif"></span>
+                        <textarea id="pasifDesc" rows="2" placeholder="Penerangan Skill Pasif">Setiap 5 serangan asas, Badang mendapat perisai yang menyerap kerosakan dan meningkatkan halaju pergerakan buat sementara waktu.</textarea>
+                    </div>
+                </li>
+                
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/0_Unknown/0_Unknown_2.png" alt="Skill 1 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 1: <input type="text" id="skill1Name" value="PUKULAN TANAH BERGELORA" placeholder="Nama Skill 1"></span>
+                        <textarea id="skill1Desc" rows="2" placeholder="Penerangan Skill 1">Badang menghentak tanah, menyebabkan gelombang tenaga bergerak ke hadapan, melambatkan musuh dan memberi kerosakan fizikal.</textarea>
+                    </div>
+                </li>
+
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/0_Unknown/0_Unknown_3.png" alt="Skill 2 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 2: <input type="text" id="skill2Name" value="TERJAHAN BESI WAJA" placeholder="Nama Skill 2"></span>
+                        <textarea id="skill2Desc" rows="2" placeholder="Penerangan Skill 2">Badang melompat ke hadapan, mendarat dengan kuat dan mengenakan kerosakan, sekaligus mengurangkan ketahanan fizikal sasaran.</textarea>
+                    </div>
+                </li>
+
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/0_Unknown/0_Unknown_4.png" alt="Skill 3 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 3: <input type="text" id="skill3Name" value="RANTING GHAIB" placeholder="Nama Skill 3"></span>
+                        <textarea id="skill3Desc" rows="2" placeholder="Penerangan Skill 3">Membentuk 4 ranting ghaib di sekelilingnya, Badang boleh menghantar ranting tersebut untuk menyerang musuh di sekelilingnya, menyebabkan kesan 'Immobilize'.</textarea>
+                    </div>
+                </li>
+                
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/0_Unknown/0_Unknown_5.png" alt="Ultimate Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">ULTI: <input type="text" id="ultiName" value="AMUKAN ROH ABADI" placeholder="Nama Ultimate"></span>
+                        <textarea id="ultiDesc" rows="2" placeholder="Penerangan Ultimate">Badang melepaskan amukan berterusan, mengenakan serangan bertubi-tubi dalam kawasan berbentuk kon di hadapannya. Kebal daripada kesan kawalan semasa beraksi.</textarea>
+                    </div>
+                </li>
+            </ul>
+
+
+            <!-- BAHAGIAN PERSONALITI -->
+            <h4>PERSONALITI</h4>
+            <textarea id="personalityText" rows="4" placeholder="Masukkan senarai personaliti, satu baris untuk setiap item">Bijaksana dan berfikiran jauh.
+Tenang, jarang berbicara, tetapi tegas dalam tindakan.
+Tidak mudah terpengaruh dengan godaan kuasa.</textarea>
+
+            <!-- BAHAGIAN HIKAYAT (Sebelum ini Kekuatan Utama) -->
+            <h4>HIKAYAT</h4>
+            <div class="hikayat-text">
+                <textarea id="hikayatText" rows="8" placeholder="Tuliskan hikayat/cerita hero di sini. Guna 2x Enter untuk perenggan baru">Maka tersebutlah kisah di sebuah perkampungan di Sungai Pahang, hiduplah seorang lelaki gagah lagi bijaksana bernama Badang. Adapun Badang itu seorang penternak ikan yang masyhur, hasil ternakannya senantiasa melimpah ruah. Maka dengan limpahan ikan itu, penduduk sekalian kampung bergantung harap kepada Badang, seorang yang cekap dalam urusan jual beli dan bijak berunding dengan akal budi.
+
+Pada suatu ketika, malapetaka melanda kolam ternakan di kampung itu. Ikan-ikan yang berenang lincah kini banyak mati, dan sebahagian lagi hilang entah ke mana. Kolam-kolam ternakan juga menjadi rosak, seolah-olah diganggu oleh sesuatu yang luar biasa. Penternak yang lain turut mengeluh akan nasib, namun Badang, dengan akalnya yang cerdik, berikhtiar untuk mencari punca.
+
+Maka dibuatlah oleh Badang satu kolam baharu yang dijaga rapi sepanjang masa. Pada suatu malam yang sunyi lagi pekat, terlihatlah oleh Badang seekor raksasa yang menggerunkan datang mengganggu kolamnya. Raksasa itu besar tubuhnya, dengan gigi tajam bagai tombak, dan taringnya memancar kilauan menyeramkan. Maka tahulah Badang, inilah punca segala malapetaka!
+
+Dengan keberanian hati dan fikiran yang tajam, Badang merancang suatu helah. Dikerahnya segala tenaga dan akal untuk memasang jerat yang kukuh lagi tersusun. Maka tatkala malam tiba, raksasa itu terperangkaplah dalam jerat Badang. Raksasa mengaum dahsyat, meronta hendak bebas, tetapi tidaklah ia terlepas.
+
+“Wahai manusia, lepaskan aku!” rayu raksasa itu dengan suara yang serak dan menakutkan.
+
+Badang, dengan berani, menjawab, “Tidak aku lepaskan dikau, melainkan kau janjikan sesuatu yang setimpal sebagai gantinya!”
+
+Maka raksasa itu berkata, “Akan kuberikan engkau kuasa yang tiada tandingannya, tetapi dengan syarat engkau makan muntahku ini.”
+
+Terasa jijik hati Badang mendengar itu, tetapi kerana semangat untuk mempertahankan kampungnya, disanggupi jua syarat tersebut. Dimakanlah muntah raksasa itu dengan tekad yang bulat. Maka selepas itu, tubuh Badang berubah. Otot-ototnya mengeras, badannya menjadi tegap seperti besi, dan kekuatannya melangkaui batas manusia biasa.
+
+Dengan kuasa baharu itu, Badang menjadi wira kampungnya. Tiada lagi makhluk yang berani mengganggu kolam atau penduduk. Namun begitu, kuasa hebat itu mendatangkan ujian besar. Tamak manusia, hasad dengki, dan ancaman makhluk ghaib sering menghantui kehidupannya.
+
+Pada suatu ketika, datanglah seekor raksasa yang lebih besar lagi dahsyat, menyerang kampung itu tanpa ampun. Badang bertarung habis-habisan, tetapi raksasa itu sukar ditewaskan. Dengan bantuan penduduk kampung, akhirnya makhluk itu berjaya dikalahkan. Namun, harga yang dibayar sangat mahal—ramai yang terkorban, dan kampung itu hampir musnah seluruhnya.
+
+Dalam sekaratnya, raksasa itu berkata kepada Badang, “Aku makhluk yang sama asalnya seperti pemberi kuasamu dahulu. Kini, minumlah darahku jika kau mahukan ganjaran terakhir.”
+
+Tanpa ragu, Badang meminum darah raksasa itu hingga titisan terakhir. Dengan itu, Badang menjadi makhluk abadi. Namun, segala kehilangan yang dialaminya meninggalkan luka mendalam di hatinya.
+
+Kini, Badang hidup merentas zaman, dari zaman kerajaan lama hingga ke era moden. Dalam diam, dia menyembunyikan kuasanya, tidak mahu mengundang bahaya baharu. Baginya, setiap kuasa besar datang dengan dugaan yang besar. Maka Badang kini hidup sederhana, menjadi saksi perubahan dunia, sentiasa bersedia andai bahaya muncul sekali lagi.
+
+Bagaimanakah kehidupan Badang di zaman moden ini? Hanya masa yang akan menjawab.</textarea>
+            </div>
+        </div>
+    </main>
+    
+    <!-- NAVIGASI KAKI (KONSISTEN) -->
+    <div class="nav-container">
+        <!-- 'KEMBALI' - KIRI: Menggunakan JS untuk back(), GLOW PADA IMEJ SAHAJA -->
+        <!-- href="#" akan diatasi oleh script.js -->
+        <a href="#" class="nav-button back-glow left-button">
+            <img src="Hiasan/back_button.jpg" alt="Kembali" title="Kembali ke Galeri">
+            <span class="button-label">KEMBALI</span>
+        </a>
+        
+        <!-- 'HALAMAN UTAMA' - KANAN: Pergi terus ke index.html, GLOW PADA IMEJ SAHAJA -->
+        <a href="index.html" class="nav-button home-glow right-button">
+            <img src="Hiasan/home_button.jpg" alt="Halaman Utama" title="Halaman Utama">
+            <span class="button-label">HALAMAN UTAMA</span>
+        </a>
+    </div>
+    
+    <!-- PENTING: Pautkan script untuk fungsi 'Kembali' -->
+    <script src="script.js"></script> 
+
+    <script>
+        // Gunakan fungsi changeSkin dari skrip yang telah dipadamkan, tetapi ia mesti di luar 
+        // blok window.onload supaya onclick="changeSkin(x)" di HTML berfungsi.
+        
+        // Set skin pertama sebagai skin aktif semasa muat halaman
+        let currentSkinIndex = 0;
+        const skinItems = document.querySelectorAll('.thumbnail-item');
+        const mainImg1 = document.getElementById('main-skin-img-1');
+        const mainImg2 = document.getElementById('main-skin-img-2');
+        const mainImg3 = document.getElementById('main-skin-img-3');
+        const skinNameDisplay = document.getElementById('skin-name-display');
+        const arrowLeft = document.getElementById('arrow-left');
+        const arrowRight = document.getElementById('arrow-right');
+        const totalSkins = skinItems.length;
+
+        // Fungsi utama untuk menukar skin - WAJIB GLOBAL/WINDOW.changeSkin agar onclick berfungsi
+        window.changeSkin = function(index) { 
+            if (index < 0 || index >= totalSkins) return; 
+
+            currentSkinIndex = index;
+            
+            // 1. Update Imej Utama
+            const selectedSkin = skinItems[currentSkinIndex];
+            if (mainImg1) mainImg1.src = selectedSkin.getAttribute('data-main-img-1');
+            if (mainImg2) mainImg2.src = selectedSkin.getAttribute('data-main-img-2');
+            if (mainImg3) mainImg3.src = selectedSkin.getAttribute('data-main-img-3');
+            
+            // 2. Update Nama Skin
+            if (skinNameDisplay) skinNameDisplay.textContent = selectedSkin.getAttribute('data-skin-name');
+
+            // 3. Update Status Aktif (Opacity/Ketelusan) pada Thumbnail
+            skinItems.forEach((item, i) => {
+                if (i === currentSkinIndex) {
+                    item.classList.add('active'); 
+                } else {
+                    item.classList.remove('active'); 
+                }
+            });
+
+            // 4. Update Status Anak Panah Navigasi
+            updateArrows();
+        }
+
+        // Fungsi untuk mengemas kini keadaan anak panah
+        function updateArrows() {
+            if (!arrowLeft || !arrowRight) return;
+
+            // Anak Panah Kiri: Nyahaktifkan jika di skin pertama
+            if (currentSkinIndex === 0) {
+                arrowLeft.classList.add('disabled-arrow'); 
+                arrowLeft.disabled = true;
+            } else {
+                arrowLeft.classList.remove('disabled-arrow');
+                arrowLeft.disabled = false;
+            }
+
+            // Anak Panah Kanan: Nyahaktifkan jika di skin terakhir
+            if (currentSkinIndex === totalSkins - 1) {
+                arrowRight.classList.add('disabled-arrow'); 
+                arrowRight.disabled = true;
+            } else {
+                arrowRight.classList.remove('disabled-arrow');
+                arrowRight.disabled = false;
+            }
+        }
+
+        // Event Listener untuk Anak Panah
+        // Diletakkan dalam window.onload supaya elemen dipastikan wujud
+        window.addEventListener('load', () => {
+            if (arrowLeft && arrowRight) {
+                arrowLeft.addEventListener('click', () => {
+                    window.changeSkin(currentSkinIndex - 1); // Panggil fungsi global
+                });
+
+                arrowRight.addEventListener('click', () => {
+                    window.changeSkin(currentSkinIndex + 1); // Panggil fungsi global
+                });
+            }
+            
+            // Pastikan paparan skin di set semasa muat halaman
+            if (totalSkins > 0) {
+                window.changeSkin(0);
+            }
+        });
+    </script>
+
+</body>
+</html>

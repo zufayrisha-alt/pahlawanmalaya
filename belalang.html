@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BELALANG: AHLI NUJUM BIJAKSANA</title>
+    <link rel="stylesheet" href="styles.css"> 
+
+    <style>
+        body {
+            background-image: url('Pahlawan/3_Belalang/3BelalangBackground.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero-header-container">
+        
+        <div class="hero-name-row">
+            <div class="hero-number">003</div>
+            <h1 class="hero-title-pixel">BELALANG</h1>
+        </div>
+
+        <div class="hero-type-row">
+            <img src="Hiasan/logo_pendeta.jpg" alt="Logo Pendeta" class="hero-logo-img">
+            <h2 class="hero-type-title">PENDETA</h2>
+        </div>
+        
+        <p class="hero-rank-subtitle">AHLI NUJUM BIJAKSANA</p>
+    </header>
+
+    <blockquote class="hero-quote-box">
+        "Masa depan bukan sesuatu yang mutlak, tetapi pilihan kitalah yang menentukan arahnya"
+    </blockquote>
+
+    <main>
+        <img src="Pahlawan/3_Belalang/3Belalang1.jpg" alt="BELALANG" class="detail-hero-image">
+
+        <div class="detail-content">
+            
+            <h4>SKIN</h4>
+            
+            <div class="skin-gallery-container">
+                <h3 id="skin-name-display" class="skin-name-display">BELALANG</h3>
+                <div class="main-skin-images">
+                    <img id="main-skin-img-1" src="Pahlawan/3_Belalang/3Belalang3.jpg" alt="Skin BELALANG 1" class="main-skin-img">
+                    <img id="main-skin-img-2" src="Pahlawan/3_Belalang/3Belalang4.jpg" alt="Skin BELALANG 2" class="main-skin-img">
+                    <img id="main-skin-img-3" src="Pahlawan/3_Belalang/3Belalang5.jpg" alt="Skin BELALANG 3" class="main-skin-img">
+                </div>
+            </div>
+
+            <div class="skin-selection-container">
+                <button id="arrow-left" class="nav-arrow" disabled>&lt;</button>
+                <div class="skin-thumbnails-wrapper">
+                    <div class="thumbnail-item active" data-skin-index="0" data-skin-name="BELALANG"
+                            data-main-img-1="Pahlawan/3_Belalang/3Belalang3.jpg"
+                            data-main-img-2="Pahlawan/3_Belalang/3Belalang4.jpg"
+                            data-main-img-3="Pahlawan/3_Belalang/3Belalang5.jpg"
+                            onclick="changeSkin(0)">
+                         <img src="Pahlawan/3_Belalang/3Belalang1.jpg" alt="Thumbnail BELALANG" class="thumbnail-img">
+                         <span class="thumbnail-label">BELALANG</span>
+                    </div>
+
+                    <div class="thumbnail-item" data-skin-index="1" data-skin-name="KILANG MAINAN BELALANG"
+                            data-main-img-1="Pahlawan/3_Belalang/3KilangMainanBelalang3.jpg"
+                            data-main-img-2="Pahlawan/3_Belalang/3KilangMainanBelalang1.jpg"
+                            data-main-img-3="Pahlawan/3_Belalang/3KilangMainanBelalang4.jpg"
+                            onclick="changeSkin(1)">
+                         <img src="Pahlawan/3_Belalang/3KilangMainanBelalang1.jpg" alt="Thumbnail KILANG MAINAN BELALANG" class="thumbnail-img">
+                         <span class="thumbnail-label">KILANG MAINAN BELALANG</span>
+                    </div>
+                </div>
+                <button id="arrow-right" class="nav-arrow" >&gt;</button>
+            </div>
+            
+            
+            <h4>STATISTIK & STATUS NYAWA DAN TENAGA</h4>
+            
+            <ul class="biodata-list">
+                <li class="stat-item">
+                    <span class="stat-label">Serangan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-red" style="width: 80%;"></div>
+                    </div>
+                    <span class="stat-score">8</span>
+                </li>
+                
+                <li class="stat-item">
+                    <span class="stat-label">Penguasaan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-orange" style="width: 70%;"></div>
+                    </div>
+                    <span class="stat-score">7</span>
+                </li>
+
+                <li class="stat-item">
+                    <span class="stat-label">Kesukaran</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-blue" style="width: 50%;"></div>
+                    </div>
+                    <span class="stat-score">5</span>
+                </li>
+                
+                <li class="stat-item">
+                    <span class="stat-label">Kekebalan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-green" style="width: 60%;"></div>
+                    </div>
+                    <span class="stat-score">6</span>
+                </li>
+                
+                <li style="margin-top: 15px;">
+                    HP = <span style="color: white; font-weight: bold;">2500</span> <span style="color: #90ee90; font-weight: bold;">+150</span>
+                </li>
+                <li>
+                    Mana = <span style="color: white; font-weight: bold;">600</span> <span style="color: #ADD8E6; font-weight: bold;">+50</span>
+                </li>
+            </ul>
+
+
+            <h4>BIODATA</h4>
+            <ul class="biodata-list">
+                <li>Nama Pahlawan : BELALANG</li>
+                <li>Nama Sebenar : Ahmad</li>
+                <li>Gelaran : AHLI NUJUM BIJAKSANA</li>
+                <li>Umur : 23 Tahun</li>
+                <li>Number Pahlawan : 003</li>
+                <li>Jenis Pahlawan : <img src="Hiasan/logo_pendeta.jpg" alt="Logo Pendekar Kecil" class="list-logo"> PENDETA</li>
+                <li>Makhluk : Manusia</li>
+                <li>Bangsa : Melayu</li>
+                <li>Negeri Asal : Felda Padang Piol, Jerantut, Pahang</li>
+                <li>Pekerjaan : Lepasan Graduan & Ahli Pentafsir</li>
+                <li>Tinggi : 170 cm</li>
+                <li>Berat : 56 Kg</li>
+            </ul>
+            
+            <h4>SKILL</h4>
+            <ul class="skill-list">
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/3_Belalang/3Belalangskill0.jpg" alt="Pasif Skill Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">PASIF: KUTUKAN NUJUM</span>
+                        <ul class="skill-description-list"><li>(Magic, Buff, Stack, DPS)</li><li>Apabila ulti digunakan dan target mati sebelum semua buku selesai menyerang, buku yang masih tinggal akan mencari target musuh lain dalam radius 100 (+10/kill) unit.</li><li>Radius pencarian bertambah setiap kali Belalang mendapatkan kill dalam satu pertempuran.</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/3_Belalang/3Belalangskill1.jpg" alt="Skill 1 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 1: KITAB RAMALAN</span>
+                        <ul class="skill-description-list"><li>(Magic, AOE, DPS)</li><li>Level: 1-6 (6 Level dalam total)</li><li>Belalang melemparkan 6 buku-buku mistik dalam garisan lurus ke hadapan sejauh 800 unit</li><li>.Setiap buku memberikan Magic Damage kepada musuh yang terkena.</li><li>Cooldown: 6s</li><li>Mana Cost: 50/60/70/80/90/100</li><li>Damage per buku: 150/180/210/240/270/300</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/3_Belalang/3Belalangskill2.jpg" alt="Skill 2 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 2: PERANGKAP NUJUM</span>
+                        <ul class="skill-description-list"><li>(Magic, CC, Stun)</li><li>Level: 1-2 (2 Level dalam total)</li><li>Belalang meletakkan buku sihir di tanah sebagai perangkap.</li><li>Had 3 perangkap satu waktu</li><li>Jika musuh atau minion menyentuhnya, mereka akan stun selama 1.5s dalam radius 300 unit.</li><li>Selepas stun tamat, mereka menerima Magic Damage.</li><li>Cooldown: 10s</li><li>Mana Cost: 80/100</li><li>Damage selepas stun: 250/350</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/3_Belalang/3Belalangskill3.jpg" alt="Skill 3 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 3: NUJUM PAK BELALANG</span>
+                        <ul class="skill-description-list"><li>(Fizikal, Buff, Damage Reduction, Counter-Attack)</li><li>Level: 1-4 (4 Level dalam total)</li><li>Belalang mendedahkan semua musuh di peta kepada sekutunya selama beberapa saat.</li><li>Cooldown: 25s</li><li>Mana Cost: 150</li><li>Durasi penglihatan: 3s/4s/5s/6s</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/3_Belalang/3Belalangskill4.jpg" alt="Ultimate Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">ULTI: HUKUMAN PAK BELALANG</span>
+                        <ul class="skill-description-list"><li>(Magic, Burst Damage)</li><li>Level: 1-3 (3 Level dalam total)</li><li>Hanya boleh digunakan selepas Skill 3 digunakan (mesti ada musuh yang nampak dalam peta).</li><li>Belalang memilih satu musuh yang terlihat dalam peta sebagai target.</li><li>5 buku terapung di atas musuh tersebut dan menyerang satu per satu setiap 1s.</li><li>Setiap buku memberikan Magic Damage yang besar.</li><li>Cooldown: 40s</li><li>Mana Cost: 200/250/300</li><li>Damage per buku: 300/400/500</li></ul> 
+                    </div>
+                </li>
+            </ul>
+
+
+            <h4>PERSONALITI</h4>
+            <ul class="personaliti-list">
+                <li>Bijak dan analitikal, sering memerhati sebelum bertindak</li>
+<li>Penuh rasa tanggungjawab terhadap kuasa dan warisannya</li>
+<li>Mempunyai konflik dalaman antara kepercayaan kepada takdir dan kebebasan memilih</li>
+<li>Tenang dan rasional dalam menghadapi situasi sukar</li>
+<li>Berpegang teguh kepada nilai kebenaran dan keadilan</li>
+            </ul>
+
+            <h4>HIKAYAT</h4>
+            <div class="hikayat-text">
+                <p>Pada suatu masa dahulu, di sebuah perkampungan indah di Kelantan, hidup seorang lelaki bernama Pak Belalang. Beliau terkenal sebagai seorang ahli nujum istana yang amat dikagumi oleh Sultan Kelantan. Pak Belalang menjadi nujum istana selepas peristiwa menyelamatkan puteri sulung Sultan daripada dicolek oleh sekumpulan lanun. Namun, yang tidak diketahui oleh sesiapa, kehebatan Pak Belalang itu hanyalah tipu muslihat dan kelicikan akalnya semata-mata.</p>
+
+<p>Pak Belalang bukanlah seorang yang benar-benar memiliki kuasa ramalan, tetapi bijaknya dia menyusun helah telah menjerat kepercayaan Sultan dan rakyat. Ketika puteri Sultan diculik, beliau memutuskan untuk bertindak seperti seorang nujum sejati. Bermodalkan gerak hati, pemerhatian tajam, dan sedikit tipu daya, dia memulakan pencariannya.</p>
+
+<p>Pak Belalang memanfaatkan bisikan orang kampung, membaca pergerakan para penculik, dan mengatur siasatan secara halus. Dengan berpura-pura membuat ramalan dari bintang di langit dan menggunakan istilah penuh teka-teki, dia berjaya menjejak jejak para penculik ke sebuah gua terpencil di kaki gunung. Ajaibnya, dalam perjalanan itu, seolah-olah ada kekuatan yang membimbingnya. Setiap tekaan Pak Belalang menjadi kenyataan.</p>
+
+<p>Ketika tiba di gua itu, beliau menggunakan helah lain untuk memperdaya penculik, mencuri masuk, dan menyelamatkan sang puteri tanpa sebarang kecederaan. Sultan amat kagum dan mengangkatnya sebagai wira. Namun, peristiwa ini telah membuka mata Pak Belalang. Dia menyedari, mungkin helahnya selama ini hanyalah permulaan kepada sesuatu yang lebih besar—satu kurniaan luar biasa yang tidak disedarinya.</p>
+
+<p>Selepas berkahwin dengan puteri Sultan, Pak Belalang bertekad untuk meninggalkan penipuan dan menggunakan kurniaannya untuk kebaikan. Beliau menjalani hidup sebagai penasihat yang adil, dan kuasa "nujum" yang misteri itu diwariskan kepada keturunannya. Dari zaman ke zaman, darah Pak Belalang terus membawa kelebihan itu, sehinggalah kepada Ahmad setelah beberapa keturunan.</p>
+
+<p>Ahmad merupakan seorang pemuda moden yang mewarisi kuasa nujum ini. Datuknya dahulu seorang tok bomoh yang membantu masyarakat, menggunakan nujuman untuk mengenal pasti masalah kesihatan, mencari penyelesaian, dan memberikan harapan kepada orang ramai. Namun, datuknya sering mengingatkan, "Kuasa kita hanyalah melihat, tetapi kuasa Allah lebih besar untuk mengubah segalanya."</p>
+
+<p>Kini Ahmad sering mendapat penglihatan masa hadapan yang kabur tetapi cukup untuk memberi amaran. Dalam salah satu penglihatannya, dia melihat negara diancam bahaya besar. Sesuatu yang gelap, seperti cerminan kuasa nujum keluarganya, akan muncul. Ahmad tahu bahawa tugasnya adalah melindungi negara ini dan menjadi seorang wira dengan nama yang diberi, Belalang.</p>
+
+<p>Ahmad mula melatih dirinya untuk memahami dan mengawal kuasa tersebut. Namun, dalam penelitiannya, dia menemui sesuatu yang menakutkan—kuasa nujum ini bukan sekadar anugerah tetapi juga lahir daripada unsur gelap yang tidak diketahui asal-usulnya. Dia merasakan kehadiran satu kuasa lain yang serupa, seakan-akan sedang menuju ke arahnya. Adakah ia untuk mengambil kembali kuasa nujum ini, atau ia satu ancaman yang lebih besar? Ahmad masih mencari jawapan, tetapi dia tahu masa depannya sudah jelas—menjadi perisai kepada bangsanya dan membawa nama Belalang sebagai lambang kebaikan.</p>
+
+<p>Dan begitulah kisah warisan Pak Belalang yang berterusan, dari seorang ahli tipu daya menjadi seorang pembela kebenaran. Di bawah cahaya bintang, masa depan tetap menjadi misteri yang perlu ditelusuri, dan setiap langkah Ahmad membawa kita lebih dekat kepada jawapan.</p>
+            </div>
+        </div>
+    </main>
+    
+    <div class="nav-container">
+        <a href="#" class="nav-button back-glow left-button">
+            <img src="Hiasan/back_button.jpg" alt="Kembali" title="Kembali ke Galeri">
+            <span class="button-label">KEMBALI</span>
+        </a>
+        
+        <a href="index.html" class="nav-button home-glow right-button">
+            <img src="Hiasan/home_button.jpg" alt="Halaman Utama" title="Halaman Utama">
+            <span class="button-label">HALAMAN UTAMA</span>
+        </a>
+    </div>
+    
+    <script src="script.js"></script> 
+
+    <script>
+        // Set skin pertama sebagai skin aktif semasa muat halaman
+        let currentSkinIndex = 0;
+        const skinItems = document.querySelectorAll('.thumbnail-item');
+        const mainImg1 = document.getElementById('main-skin-img-1');
+        const mainImg2 = document.getElementById('main-skin-img-2');
+        const mainImg3 = document.getElementById('main-skin-img-3');
+        const skinNameDisplay = document.getElementById('skin-name-display');
+        const arrowLeft = document.getElementById('arrow-left');
+        const arrowRight = document.getElementById('arrow-right');
+        const totalSkins = skinItems.length;
+
+        // Fungsi utama untuk menukar skin
+        function changeSkin(index) {
+            if (index < 0 || index >= totalSkins) return; 
+
+            currentSkinIndex = index;
+            
+            // 1. Update Imej Utama
+            const selectedSkin = skinItems[currentSkinIndex];
+            if (mainImg1) mainImg1.src = selectedSkin.getAttribute('data-main-img-1');
+            if (mainImg2) mainImg2.src = selectedSkin.getAttribute('data-main-img-2');
+            if (mainImg3) mainImg3.src = selectedSkin.getAttribute('data-main-img-3');
+            
+            // 2. Update Nama Skin
+            if (skinNameDisplay) skinNameDisplay.textContent = selectedSkin.getAttribute('data-skin-name');
+
+            // 3. Update Status Aktif (Opacity/Ketelusan) pada Thumbnail
+            skinItems.forEach((item, i) => {
+                if (i === currentSkinIndex) {
+                    item.classList.add('active'); 
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+
+            // 4. Update Status Anak Panah Navigasi
+            updateArrows();
+        }
+
+        // Fungsi untuk mengemas kini keadaan anak panah
+        function updateArrows() {
+            // Anak Panah Kiri: Nyahaktifkan jika di skin pertama
+            if (currentSkinIndex === 0) {
+                if(arrowLeft) {
+                    arrowLeft.classList.add('disabled-arrow'); 
+                    arrowLeft.disabled = true;
+                }
+            } else {
+                if(arrowLeft) {
+                    arrowLeft.classList.remove('disabled-arrow');
+                    arrowLeft.disabled = false;
+                }
+            }
+
+            // Anak Panah Kanan: Nyahaktifkan jika di skin terakhir
+            if (currentSkinIndex === totalSkins - 1) {
+                if(arrowRight) {
+                    arrowRight.classList.add('disabled-arrow'); 
+                    arrowRight.disabled = true;
+                }
+            } else {
+                if(arrowRight) {
+                    arrowRight.classList.remove('disabled-arrow');
+                    arrowRight.disabled = false;
+                }
+            }
+        }
+
+        // Event Listener untuk Anak Panah
+        if (arrowLeft) {
+            arrowLeft.addEventListener('click', () => {
+                changeSkin(currentSkinIndex - 1);
+            });
+        }
+        
+        if (arrowRight) {
+            arrowRight.addEventListener('click', () => {
+                changeSkin(currentSkinIndex + 1);
+            });
+        }
+
+        // Pastikan paparan skin di set semasa muat halaman
+        window.addEventListener('load', () => {
+            changeSkin(0);
+
+
+        });
+
+    </script>
+
+</body>
+</html>

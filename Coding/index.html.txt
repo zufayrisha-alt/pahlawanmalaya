@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pahlawan Malaya</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FONT LUARAN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Playfair+Display:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- LATAR BELAKANG INDIVIDU: Halaman Utama -->
+    <style>
+        body {
+            background-image: url('Wallpaper1Utama.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <!-- SEKSYEN HEADER UTAMA -->
+    <header>
+        <h1>
+            <span class="classic-font">PAHLAWAN</span>
+            <span class="modern-font">MALAYA</span>
+        </h1>
+        <p>
+            Pahlawan yang sentiasa menjaga keamanan Tanah Air kita.
+            <br>
+            (Semua dalam ni adalah gambaran yang diperbuat dari AI semata-mata)
+        </p>
+    </header>
+
+    <!-- SEKSYEN GALERI/PILIHAN -->
+    <main>
+        <!-- ITEM 1: PAUTAN KE GALERI PAHLAWAN -->
+        <a href="galeripahlawan.html" title="Klik untuk lihat Galeri Pahlawan">
+            <figure class="pahlawanFigure">
+                <!-- Pastikan laluan imej betul -->
+                <img src="PilihanPahlawan.jpg" alt="Pilihan Pahlawan"> 
+                <figcaption class="caption-classic">
+                    Galeri Pahlawan
+                </figcaption>
+            </figure>
+        </a>
+
+        <!-- ITEM 2: COMING SOON -->
+        <figure class="pahlawanFigure">
+            <!-- Pastikan laluan imej betul -->
+            <img src="comingsoon.png" alt="Coming Soon">
+            <figcaption class="caption-classic">
+                Kumpulan Sepersalinan
+            </figcaption>
+        </figure>
+    </main>
+
+</body>
+</html>

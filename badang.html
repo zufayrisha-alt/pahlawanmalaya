@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BADANG: SANG PENTERNAK IKAN PERKASA</title>
+    <link rel="stylesheet" href="styles.css"> 
+
+    <style>
+        body {
+            background-image: url('Pahlawan/1_Badang/wallpaperbadang.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero-header-container">
+        
+        <div class="hero-name-row">
+            <div class="hero-number">001</div>
+            <h1 class="hero-title-pixel">BADANG</h1>
+        </div>
+
+        <div class="hero-type-row">
+            <img src="Hiasan/logo_pendekar.jpg" alt="Logo Pendekar" class="hero-logo-img">
+            <h2 class="hero-type-title">PENDEKAR</h2>
+        </div>
+        
+        <p class="hero-rank-subtitle">SANG PENTERNAK IKAN PERKASA</p>
+    </header>
+
+    <blockquote class="hero-quote-box">
+        "Kekuatan bukan untuk menindas, tetapi untuk melindungi. Namun, setiap kuasa ada harganya."
+    </blockquote>
+
+    <main>
+        <img src="Pahlawan/1_Badang/1Badang2.jpg" alt="BADANG" class="detail-hero-image">
+
+        <div class="detail-content">
+            
+            <h4>SKIN</h4>
+            
+            <div class="skin-gallery-container">
+                <h3 id="skin-name-display" class="skin-name-display">BADANG</h3>
+                <div class="main-skin-images">
+                    <img id="main-skin-img-1" src="Pahlawan/1_Badang/1Badang1.jpg" alt="Skin BADANG 1" class="main-skin-img">
+                    <img id="main-skin-img-2" src="Pahlawan/1_Badang/1Badang3.jpg" alt="Skin BADANG 2" class="main-skin-img">
+                    <img id="main-skin-img-3" src="Pahlawan/1_Badang/1Badang5.jpg" alt="Skin BADANG 3" class="main-skin-img">
+                </div>
+            </div>
+
+            <div class="skin-selection-container">
+                <button id="arrow-left" class="nav-arrow" disabled>&lt;</button>
+                <div class="skin-thumbnails-wrapper">
+                    <div class="thumbnail-item active" data-skin-index="0" data-skin-name="BADANG"
+                            data-main-img-1="Pahlawan/1_Badang/1Badang1.jpg"
+                            data-main-img-2="Pahlawan/1_Badang/1Badang3.jpg"
+                            data-main-img-3="Pahlawan/1_Badang/1Badang5.jpg"
+                            onclick="changeSkin(0)">
+                         <img src="Pahlawan/1_Badang/1Badang2.jpg" alt="Thumbnail BADANG" class="thumbnail-img">
+                         <span class="thumbnail-label">BADANG</span>
+                    </div>
+
+                    <div class="thumbnail-item" data-skin-index="1" data-skin-name="ERA LAMA BADANG"
+                            data-main-img-1="Pahlawan/1_Badang/Era_Lama_Badang_1.jpg"
+                            data-main-img-2="Pahlawan/1_Badang/Era_Lama_Badang_2.jpg"
+                            data-main-img-3="Pahlawan/1_Badang/Era_Lama_Badang_5.jpg"
+                            onclick="changeSkin(1)">
+                         <img src="Pahlawan/1_Badang/Era_Lama_Badang_2.jpg" alt="Thumbnail ERA LAMA BADANG" class="thumbnail-img">
+                         <span class="thumbnail-label">ERA LAMA BADANG</span>
+                    </div>
+                </div>
+                <button id="arrow-right" class="nav-arrow" >&gt;</button>
+            </div>
+            
+            
+            <h4>STATISTIK & STATUS NYAWA DAN TENAGA</h4>
+            
+            <ul class="biodata-list">
+                <li class="stat-item">
+                    <span class="stat-label">Serangan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-red" style="width: 70%;"></div>
+                    </div>
+                    <span class="stat-score">7</span>
+                </li>
+                
+                <li class="stat-item">
+                    <span class="stat-label">Penguasaan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-orange" style="width: 60%;"></div>
+                    </div>
+                    <span class="stat-score">6</span>
+                </li>
+
+                <li class="stat-item">
+                    <span class="stat-label">Kesukaran</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-blue" style="width: 50%;"></div>
+                    </div>
+                    <span class="stat-score">5</span>
+                </li>
+                
+                <li class="stat-item">
+                    <span class="stat-label">Kekebalan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-green" style="width: 90%;"></div>
+                    </div>
+                    <span class="stat-score">9</span>
+                </li>
+                
+                <li style="margin-top: 15px;">
+                    HP = <span style="color: white; font-weight: bold;">2700</span> <span style="color: #90ee90; font-weight: bold;">+250</span>
+                </li>
+                <li>
+                    Mana = <span style="color: white; font-weight: bold;">---</span> <span style="color: #ADD8E6; font-weight: bold;">+--</span>
+                </li>
+            </ul>
+
+
+            <h4>BIODATA</h4>
+            <ul class="biodata-list">
+                <li>Nama Pahlawan : BADANG</li>
+                <li>Nama Sebenar : Badang</li>
+                <li>Gelaran : SANG PENTERNAK IKAN PERKASA</li>
+                <li>Umur : 375 Tahun</li>
+                <li>Number Pahlawan : 001</li>
+                <li>Jenis Pahlawan : <img src="Hiasan/logo_pendekar.jpg" alt="Logo Pendekar Kecil" class="list-logo"> PENDEKAR</li>
+                <li>Makhluk : Manusia Hidup Abadi</li>
+                <li>Bangsa : Melayu</li>
+                <li>Negeri Asal : Pahang, Kawasan sekitar Sungai Pahang</li>
+                <li>Pekerjaan : Penternak Ikan</li>
+                <li>Tinggi : 185 cm</li>
+                <li>Berat : ??? Kg</li>
+            </ul>
+            
+            <h4>SKILL</h4>
+            <ul class="skill-list">
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/1_Badang/badang_skill_0.jpg" alt="Pasif Skill Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">PASIF: WARISAN TENAGA BADANG</span>
+                        <ul class="skill-description-list"><li>(Fizikal, Buff, Stack, DPS)</li><li>Setiap kali Badang menerima serangan semasa Skill 3 atau Ulti, dia akan memperoleh 1 Stack Daya Badang (maksimum 30 stack).</li><li>Setiap stack meningkatkan +2% Serangan Fizikal (Maks: 60% tambahan serangan fizikal).</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/1_Badang/badang_skill_1.jpg" alt="Skill 1 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 1: TUMBUKAN GEMA TANAH</span>
+                        <ul class="skill-description-list"><li>(Fizikal, AOE, CC, Slow, Burst Damage)</li><li>Level: 1-4 (4 Level dalam total)</li><li>Badang menumbuk tanah dengan kuat, menyebabkan gegaran dalam radius 3.5 unit.</li><li>Musuh dalam kawasan akan menerima 250/280/310/350 (+80% Serangan Fizikal) sebagai Fizikal</li><li>Damage.Musuh terkena 40% Slow selama 2 saat.</li><li>Cooldown: 7/6.5/6/5.5 saat</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/1_Badang/badang_skill_2.jpg" alt="Skill 2 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 2: HENTAMAN TUMBUKAN</span>
+                        <ul class="skill-description-list"><li>(Fizikal, Dash, Knockback, Burst Damage)</li><li>Level: 1-4 (4 Level dalam total)</li><li>Badang menyerang ke hadapan dengan tumbukan berat, menolak musuh sejauh 2.5 unit dan memberi 280/310/340/370 (+90% Serangan Fizikal) sebagai Fizikal Damage.</li><li>Jika musuh terkena halangan/dinding (medan atau hero lain), mereka akan terkena 20% tambahan damage dan stun selama 0.8 saat.</li><li>Cooldown: 8/7.5/7/6.5 saat</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/1_Badang/badang_skill_3.jpg" alt="Skill 3 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 3: LENGAN BESI BADANG</span>
+                        <ul class="skill-description-list"><li>(Fizikal, Buff, Damage Reduction, Counter-Attack)</li><li>Level: 1-4 (4 Level dalam total)</li><li>Badang mengeraskan lengannya, menangkis 50% serangan normal dan 30% serangan skill selama 3.5 saat.</li><li>Setiap kali Badang berjaya menangkis serangan, dia akan mendapat 1 Stack Daya Badang.</li><li>Cooldown: 10/9.5/9/8.5 saat</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/1_Badang/badang_skill_4.jpg" alt="Ultimate Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">ULTI: JIWA BADANG</span>
+                        <ul class="skill-description-list"><li>(Fizikal, Buff, Immortal, Lifesteal, Stack Generator)</li><li>Level: 1-3 (3 Level dalam total)</li><li>Badang memasuki mod abadi selama 6/7.5/9 saat, di mana</li><li>:HP dipulihkan sepenuhnya.</li><li>Tidak boleh mati dalam tempoh ini.</li><li>Setiap serangan yang diterima meningkatkan stack pasifnya dengan 2 kali ganda.</li><li>Serangan normalnya mendapat 30% Lifesteal tambahan.</li><li>Cooldown: 50/45/40 saat</li></ul> 
+                    </div>
+                </li>
+            </ul>
+
+
+            <h4>PERSONALITI</h4>
+            <ul class="personaliti-list">
+                <li>Bijaksana dan berfikiran jauh.</li>
+<li>Tenang, jarang berbicara, tetapi tegas dalam tindakan.</li>
+<li>Tidak mudah terpengaruh dengan godaan kuasa.</li>
+            </ul>
+
+            <h4>HIKAYAT</h4>
+            <div class="hikayat-text">
+                <p>Maka tersebutlah kisah di sebuah perkampungan di Sungai Pahang, hiduplah seorang lelaki gagah lagi bijaksana bernama Badang. Adapun Badang itu seorang penternak ikan yang masyhur, hasil ternakannya senantiasa melimpah ruah. Maka dengan limpahan ikan itu, penduduk sekalian kampung bergantung harap kepada Badang, seorang yang cekap dalam urusan jual beli dan bijak berunding dengan akal budi.</p>
+
+<p>Pada suatu ketika, malapetaka melanda kolam ternakan di kampung itu. Ikan-ikan yang berenang lincah kini banyak mati, dan sebahagian lagi hilang entah ke mana. Kolam-kolam ternakan juga menjadi rosak, seolah-olah diganggu oleh sesuatu yang luar biasa. Penternak yang lain turut mengeluh akan nasib, namun Badang, dengan akalnya yang cerdik, berikhtiar untuk mencari punca.</p>
+
+<p>Maka dibuatlah oleh Badang satu kolam baharu yang dijaga rapi sepanjang masa. Pada suatu malam yang sunyi lagi pekat, terlihatlah oleh Badang seekor raksasa yang menggerunkan datang mengganggu kolamnya. Raksasa itu besar tubuhnya, dengan gigi tajam bagai tombak, dan taringnya memancar kilauan menyeramkan. Maka tahulah Badang, inilah punca segala malapetaka!</p>
+
+<p>Dengan keberanian hati dan fikiran yang tajam, Badang merancang suatu helah. Dikerahnya segala tenaga dan akal untuk memasang jerat yang kukuh lagi tersusun. Maka tatkala malam tiba, raksasa itu terperangkaplah dalam jerat Badang. Raksasa mengaum dahsyat, meronta hendak bebas, tetapi tidaklah ia terlepas.</p>
+
+<p>“Wahai manusia, lepaskan aku!” rayu raksasa itu dengan suara yang serak dan menakutkan.</p>
+
+<p>Badang, dengan berani, menjawab, “Tidak aku lepaskan dikau, melainkan kau janjikan sesuatu yang setimpal sebagai gantinya!”</p>
+
+<p>Maka raksasa itu berkata, “Akan kuberikan engkau kuasa yang tiada tandingannya, tetapi dengan syarat engkau makan muntahku ini.”</p>
+
+<p>Terasa jijik hati Badang mendengar itu, tetapi kerana semangat untuk mempertahankan kampungnya, disanggupi jua syarat tersebut. Dimakanlah muntah raksasa itu dengan tekad yang bulat. Maka selepas itu, tubuh Badang berubah. Otot-ototnya mengeras, badannya menjadi tegap seperti besi, dan kekuatannya melangkaui batas manusia biasa.</p>
+
+<p>Dengan kuasa baharu itu, Badang menjadi wira kampungnya. Tiada lagi makhluk yang berani mengganggu kolam atau penduduk. Namun begitu, kuasa hebat itu mendatangkan ujian besar. Tamak manusia, hasad dengki, dan ancaman makhluk ghaib sering menghantui kehidupannya.</p>
+
+<p>Pada suatu ketika, datanglah seekor raksasa yang lebih besar lagi dahsyat, menyerang kampung itu tanpa ampun. Badang bertarung habis-habisan, tetapi raksasa itu sukar ditewaskan. Dengan bantuan penduduk kampung, akhirnya makhluk itu berjaya dikalahkan. Namun, harga yang dibayar sangat mahal—ramai yang terkorban, dan kampung itu hampir musnah seluruhnya.</p>
+
+<p>Dalam sekaratnya, raksasa itu berkata kepada Badang, “Aku makhluk yang sama asalnya seperti pemberi kuasamu dahulu. Kini, minumlah darahku jika kau mahukan ganjaran terakhir.”</p>
+
+<p>Tanpa ragu, Badang meminum darah raksasa itu hingga titisan terakhir. Dengan itu, Badang menjadi makhluk abadi. Namun, segala kehilangan yang dialaminya meninggalkan luka mendalam di hatinya.</p>
+
+<p>Kini, Badang hidup merentas zaman, dari zaman kerajaan lama hingga ke era moden. Dalam diam, dia menyembunyikan kuasanya, tidak mahu mengundang bahaya baharu. Baginya, setiap kuasa besar datang dengan dugaan yang besar. Maka Badang kini hidup sederhana, menjadi saksi perubahan dunia, sentiasa bersedia andai bahaya muncul sekali lagi.</p>
+
+<p>Bagaimanakah kehidupan Badang di zaman moden ini? Hanya masa yang akan menjawab.</p>
+            </div>
+        </div>
+    </main>
+    
+    <div class="nav-container">
+        <a href="#" class="nav-button back-glow left-button">
+            <img src="Hiasan/back_button.jpg" alt="Kembali" title="Kembali ke Galeri">
+            <span class="button-label">KEMBALI</span>
+        </a>
+        
+        <a href="index.html" class="nav-button home-glow right-button">
+            <img src="Hiasan/home_button.jpg" alt="Halaman Utama" title="Halaman Utama">
+            <span class="button-label">HALAMAN UTAMA</span>
+        </a>
+    </div>
+    
+    <script src="script.js"></script> 
+
+    <script>
+        // Set skin pertama sebagai skin aktif semasa muat halaman
+        let currentSkinIndex = 0;
+        const skinItems = document.querySelectorAll('.thumbnail-item');
+        const mainImg1 = document.getElementById('main-skin-img-1');
+        const mainImg2 = document.getElementById('main-skin-img-2');
+        const mainImg3 = document.getElementById('main-skin-img-3');
+        const skinNameDisplay = document.getElementById('skin-name-display');
+        const arrowLeft = document.getElementById('arrow-left');
+        const arrowRight = document.getElementById('arrow-right');
+        const totalSkins = skinItems.length;
+
+        // Fungsi utama untuk menukar skin
+        function changeSkin(index) {
+            if (index < 0 || index >= totalSkins) return; 
+
+            currentSkinIndex = index;
+            
+            // 1. Update Imej Utama
+            const selectedSkin = skinItems[currentSkinIndex];
+            if (mainImg1) mainImg1.src = selectedSkin.getAttribute('data-main-img-1');
+            if (mainImg2) mainImg2.src = selectedSkin.getAttribute('data-main-img-2');
+            if (mainImg3) mainImg3.src = selectedSkin.getAttribute('data-main-img-3');
+            
+            // 2. Update Nama Skin
+            if (skinNameDisplay) skinNameDisplay.textContent = selectedSkin.getAttribute('data-skin-name');
+
+            // 3. Update Status Aktif (Opacity/Ketelusan) pada Thumbnail
+            skinItems.forEach((item, i) => {
+                if (i === currentSkinIndex) {
+                    item.classList.add('active'); 
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+
+            // 4. Update Status Anak Panah Navigasi
+            updateArrows();
+        }
+
+        // Fungsi untuk mengemas kini keadaan anak panah
+        function updateArrows() {
+            // Anak Panah Kiri: Nyahaktifkan jika di skin pertama
+            if (currentSkinIndex === 0) {
+                if(arrowLeft) {
+                    arrowLeft.classList.add('disabled-arrow'); 
+                    arrowLeft.disabled = true;
+                }
+            } else {
+                if(arrowLeft) {
+                    arrowLeft.classList.remove('disabled-arrow');
+                    arrowLeft.disabled = false;
+                }
+            }
+
+            // Anak Panah Kanan: Nyahaktifkan jika di skin terakhir
+            if (currentSkinIndex === totalSkins - 1) {
+                if(arrowRight) {
+                    arrowRight.classList.add('disabled-arrow'); 
+                    arrowRight.disabled = true;
+                }
+            } else {
+                if(arrowRight) {
+                    arrowRight.classList.remove('disabled-arrow');
+                    arrowRight.disabled = false;
+                }
+            }
+        }
+
+        // Event Listener untuk Anak Panah
+        if (arrowLeft) {
+            arrowLeft.addEventListener('click', () => {
+                changeSkin(currentSkinIndex - 1);
+            });
+        }
+        
+        if (arrowRight) {
+            arrowRight.addEventListener('click', () => {
+                changeSkin(currentSkinIndex + 1);
+            });
+        }
+
+        // Pastikan paparan skin di set semasa muat halaman
+        window.addEventListener('load', () => {
+            changeSkin(0);
+
+ 
+
+        });
+
+    </script>
+
+
+</body>
+</html>
