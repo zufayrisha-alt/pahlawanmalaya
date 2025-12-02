@@ -1,14 +1,10 @@
-/* ---------------------------------------------------------------------- */
-/* GAYA UMUM (BODY, FONT, BACKGROUND) */
-/* ---------------------------------------------------------------------- */
-
 body {
     font-family: Arial, sans-serif;
     color: #d66868;
     margin: 40px; 
     text-align: center;
     
-    background-color: #cccccc; 
+    /* background-color: #cccccc; <-- BARIS INI DIBUANG/DIKOMEN */ 
     min-height: 100vh;
     overflow-y: auto;
     
@@ -16,7 +12,10 @@ body {
     text-shadow: 1px 1px 1px #000000; 
 }
 
+/* ---------------------------------------------------------------------- */
 /* GAYA HEADER PAGE UTAMA (index.html) */
+/* ---------------------------------------------------------------------- */
+
 .classic-font { 
     font-family: 'Playfair Display', serif; 
     font-size: 3.5em; 
@@ -30,6 +29,7 @@ body {
     -webkit-text-stroke: 2px #654321;
     text-shadow: 4px 4px 0px #3C2A1A; 
 }
+
 .modern-font { 
     font-family: 'Montserrat', sans-serif; 
     font-size: 1.5em; 
@@ -40,7 +40,61 @@ body {
     text-shadow: 0 0 7px #00FFFF, 0 0 15px #00FFFF;
 }
 
+
+/* GAYA GALERI BERTINDIH (Figure & Figcaption) <-- BARU */
+
+/* Kontena Gambar: Set Kedudukan Relatif */
+.pahlawanFigure {
+    /* BARIS BARU */
+    position: relative; /* Kunci untuk membenarkan kapsyen diletakkan secara mutlak */
+    /* BARIS BARU */
+    display: inline-block; /* Untuk menyesuaikan saiz figure pada kandungan */
+    /* BARIS BARU */
+    margin: 20px; /* Jarak antara kad gambar */
+}
+
+/* Gaya untuk elemen gambar itu sendiri */
+.pahlawanFigure img {
+    /* BARIS BARU */
+    display: block; /* Buang ruang kosong di bawah imej */ 
+    /* BARIS BARU */
+    max-width: 100%; 
+    /* BARIS BARU */
+    height: auto;
+}
+
+/* Kapsyen: Bertindan di atas Imej dan Guna Gaya PAHLAWAN */
+.caption-classic {
+    /* GAYA BARU (POSITIONING) */
+    position: absolute; 
+    bottom: 0; 
+    left: 50%; 
+    transform: translate(-50%, 0%); /* Memusatkan kapsyen */
+    width: 90%; 
+    text-align: center;
+    
+    /* GAYA BARU (VISUAL ENHANCEMENT) */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6); /* Latar belakang separa lutsinar */
+    border-radius: 5px;
+
+    /* GAYA FONT PAHLAWAN (Diambil dari .classic-font) */
+    font-family: 'Playfair Display', serif; 
+    font-size: 2.5em; /* Saiz lebih BESAR */
+    font-weight: 900; 
+    line-height: 1.1; 
+    
+    /* Efek GRADIENT & 3D-STROKE PAHLAWAN */
+    background-image: linear-gradient(to right, #00BFFF, #38B000, #FF0000); 
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+    -webkit-text-stroke: 1.5px #654321; /* Strokenya dikecilkan sedikit */
+    text-shadow: 3px 3px 0px #3C2A1A; /* Bayangan dikecilkan sedikit */
+}
+
 /* GAYA TAJUK GALERI (galeripahlawan.html) */
+
 .page2-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 3em; 
@@ -55,10 +109,7 @@ body {
     margin-top: 50px;
     margin-bottom: 20px;
 }
-
-/* ---------------------------------------------------------------------- */
 /* GAYA GALERI PAHLAWAN (galeripahlawan.html) */
-/* ---------------------------------------------------------------------- */
 
 .pahlawan-gallery-item {
     position: relative; 
@@ -312,6 +363,7 @@ body {
     line-height: 1.6;
     margin-bottom: 1em;
     color: #D3D3D3;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* GAYA SKILL */
@@ -398,30 +450,41 @@ body {
         0 0 10px #00FFFF; 
 }
 
-.main-skin-images {
+/* BEKAS UTAMA UNTUK KEDUA-DUA BARIS (Menggantikan .main-skin-images lama) */
+.skin-images-container {
+    display: flex; /* Memastikan barisan disusun ke bawah (flex-direction: column) secara default */
+    flex-direction: column;
+    align-items: center; /* Pusatkan kedua-dua barisan */
+    margin-bottom: 20px;
+}
+
+/* GAYA UNTUK SETIAP BARIS (3 imej atau 2 imej) */
+.image-row {
     display: flex;
-    justify-content: center;
-    gap: 5px; /* Jarak rapat antara imej */
-    margin-bottom: 15px;
+    justify-content: center; /* Pusatkan imej dalam barisan */
+    width: 100%; /* Ambil lebar penuh kontena kulit */
+    gap: 10px; /* Jarak antara imej */
+    margin-bottom: 10px; /* Jarak antara Baris 1 dan Baris 2 */
 }
 
 .main-skin-img {
-    width: 33.3%; /* Setiap imej ambil 1/3 ruang */
+    width: 32.5%; /* Setiap imej ambil 1/3 ruang */
     height: auto;
     border-radius: 5px;
     object-fit: cover;
     border: 1px solid #FFD700;
     box-shadow: 0 0 5px rgba(255, 215, 0, 0.7);
+    margin-bottom: 0px;
 }
 
 /* CONTAINER THUMBNAIL & ARROW */
 .skin-selection-container {
     display: flex;
-    align-items: center;
     justify-content: center;
     max-width: 700px;
     margin: 0 auto 30px auto;
     gap: 10px;
+    align-items: center;
 }
 
 .skin-thumbnails-wrapper {
@@ -471,7 +534,11 @@ body {
     font-size: 1.5em;
     cursor: pointer;
     transition: opacity 0.3s, background 0.2s;
-    box-shadow: 0 0 5px #FFD700;
+    box-shadow: 0 0 5px #00ff0d;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-arrow:hover:not(:disabled) {
@@ -558,4 +625,19 @@ body {
 .nav-button.back-glow img {
     box-shadow: 0 0 10px #FFFF00, 0 0 20px #FFFF00, 0 0 30px #FFA500;
     border: 2px solid #FFFF00;
+}
+
+/* Gaya untuk Senarai Berpoin dalam Deskripsi Skill */
+.skill-description-list {
+    list-style-type: disc; /* Poin (dot) */
+    margin: 5px 0 0 15px; /* Rapatkan margin atas/bawah, beri sedikit inden di kiri */
+    padding: 0;
+    font-size: 0.85em; /* Saiz font yang lebih kecil sedikit */
+    line-height: 1.3; /* Rapatkan jarak antara baris */
+}
+
+/* Rapatkan jarak antara setiap item dalam senarai */
+.skill-description-list li {
+    margin-bottom: 3px;
+    padding-left: 0; /* Pastikan tiada padding tambahan */
 }

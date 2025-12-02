@@ -47,9 +47,11 @@
             <div class="skin-gallery-container">
                 <h3 id="skin-name-display" class="skin-name-display">HANG TUAH</h3>
                 <div class="main-skin-images">
-                    <img id="main-skin-img-1" src="Pahlawan/6HangTuah/6HangTuah5.jpg" alt="Skin BADANG 1" class="main-skin-img">
-                    <img id="main-skin-img-2" src="Pahlawan/6HangTuah/6HangTuah2.jpg" alt="Skin BADANG 2" class="main-skin-img">
+                    <img id="main-skin-img-1" src="Pahlawan/6HangTuah/6HangTuah2.jpg" alt="Skin BADANG 1" class="main-skin-img">
+                    <img id="main-skin-img-2" src="Pahlawan/6HangTuah/6HangTuah1.jpg" alt="Skin BADANG 2" class="main-skin-img">
                     <img id="main-skin-img-3" src="Pahlawan/6HangTuah/6HangTuah3.jpg" alt="Skin BADANG 3" class="main-skin-img">
+                    <img id="main-skin-img-4" src="Pahlawan/6HangTuah/6HangTuah4.jpg" alt="Skin BADANG 4" class="main-skin-img">
+                    <img id="main-skin-img-5" src="Pahlawan/6HangTuah/6HangTuah5.jpg" alt="Skin BADANG 5" class="main-skin-img">
                 </div>
             </div>
 
@@ -57,18 +59,22 @@
                 <button id="arrow-left" class="nav-arrow" disabled>&lt;</button>
                 <div class="skin-thumbnails-wrapper">
                     <div class="thumbnail-item active" data-skin-index="0" data-skin-name="HANG TUAH"
-                            data-main-img-1="Pahlawan/6HangTuah/6HangTuah5.jpg"
-                            data-main-img-2="Pahlawan/6HangTuah/6HangTuah2.jpg"
+                            data-main-img-1="Pahlawan/6HangTuah/6HangTuah2.jpg"
+                            data-main-img-2="Pahlawan/6HangTuah/6HangTuah1.jpg"
                             data-main-img-3="Pahlawan/6HangTuah/6HangTuah3.jpg"
+                            data-main-img-4="Pahlawan/6HangTuah/6HangTuah4.jpg"
+                            data-main-img-5="Pahlawan/6HangTuah/6HangTuah5.jpg"
                             onclick="changeSkin(0)">
                          <img src="Pahlawan/6HangTuah/6HangTuah1.jpg" alt="Thumbnail HANG TUAH" class="thumbnail-img">
                          <span class="thumbnail-label">HANG TUAH</span>
                     </div>
 
                     <div class="thumbnail-item" data-skin-index="1" data-skin-name="LANUN HANG TUAH"
-                            data-main-img-1="Pahlawan/6HangTuah/6LanunHangTuah4.jpg"
+                            data-main-img-1="Pahlawan/6HangTuah/6LanunHangTuah2.jpg"
                             data-main-img-2="Pahlawan/6HangTuah/6LanunHangTuah1.jpg"
                             data-main-img-3="Pahlawan/6HangTuah/6LanunHangTuah3.jpg"
+                            data-main-img-4="Pahlawan/6HangTuah/6LanunHangTuah4.jpg"
+                            data-main-img-5="Pahlawan/6HangTuah/6LanunHangTuah5.jpg"
                             onclick="changeSkin(1)">
                          <img src="Pahlawan/6HangTuah/6LanunHangTuah1.jpg" alt="Thumbnail LANUN HANG TUAH" class="thumbnail-img">
                          <span class="thumbnail-label">LANUN HANG TUAH</span>
@@ -236,6 +242,8 @@
         const mainImg1 = document.getElementById('main-skin-img-1');
         const mainImg2 = document.getElementById('main-skin-img-2');
         const mainImg3 = document.getElementById('main-skin-img-3');
+        const mainImg4 = document.getElementById('main-skin-img-4');
+        const mainImg5 = document.getElementById('main-skin-img-5');
         const skinNameDisplay = document.getElementById('skin-name-display');
         const arrowLeft = document.getElementById('arrow-left');
         const arrowRight = document.getElementById('arrow-right');
@@ -252,6 +260,8 @@
             if (mainImg1) mainImg1.src = selectedSkin.getAttribute('data-main-img-1');
             if (mainImg2) mainImg2.src = selectedSkin.getAttribute('data-main-img-2');
             if (mainImg3) mainImg3.src = selectedSkin.getAttribute('data-main-img-3');
+            if (mainImg4) mainImg4.src = selectedSkin.getAttribute('data-main-img-4');
+            if (mainImg5) mainImg5.src = selectedSkin.getAttribute('data-main-img-5');
             
             // 2. Update Nama Skin
             if (skinNameDisplay) skinNameDisplay.textContent = selectedSkin.getAttribute('data-skin-name');
@@ -314,13 +324,9 @@
         // Pastikan paparan skin di set semasa muat halaman
         window.addEventListener('load', () => {
             changeSkin(0);
-
-                // 🟢 Panggilan Audio dalam Badang.html mesti nampak seperti ini:
-        managePageAudio('Background_songs.m4a');
         });
 
     </script>
 
-    <audio id="global-bg-audio" preload="auto" muted></audio>
 </body>
 </html>

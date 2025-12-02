@@ -48,8 +48,12 @@
                 <h3 id="skin-name-display" class="skin-name-display">BAWANG MERAH & PUTIH</h3>
                 <div class="main-skin-images">
                     <img id="main-skin-img-1" src="Pahlawan/2_Bawang_Merah_Dan_Putih/2BawangMerahPutih2.jpg" alt="Skin BAWANG MERAH & PUTIH 1" class="main-skin-img">
-                    <img id="main-skin-img-2" src="Pahlawan/2_Bawang_Merah_Dan_Putih/2BawangMerahPutih4.jpg" alt="Skin BAWANG MERAH & PUTIH 2" class="main-skin-img">
-                    <img id="main-skin-img-3" src="Pahlawan/2_Bawang_Merah_Dan_Putih/2BawangMerahPutih5.jpg" alt="Skin BAWANG MERAH & PUTIH 3" class="main-skin-img">
+                    <img id="main-skin-img-2" src="Pahlawan/2_Bawang_Merah_Dan_Putih/2BawangMerahPutih1.jpg" alt="Skin BAWANG MERAH & PUTIH 2" class="main-skin-img">
+                    <img id="main-skin-img-3" src="Pahlawan/2_Bawang_Merah_Dan_Putih/2BawangMerahPutih3.jpg" alt="Skin BAWANG MERAH & PUTIH 3" class="main-skin-img">
+                    <img id="main-skin-img-4" src="Pahlawan/2_Bawang_Merah_Dan_Putih/2BawangMerahPutih4.jpg" alt="Skin BAWANG MERAH & PUTIH 4" class="main-skin-img">
+                    <img id="main-skin-img-5" src="Pahlawan/2_Bawang_Merah_Dan_Putih/2BawangMerahPutih5.jpg" alt="Skin BAWANG MERAH & PUTIH 5" class="main-skin-img">
+                </div>
+                </div>
                 </div>
             </div>
 
@@ -58,8 +62,10 @@
                 <div class="skin-thumbnails-wrapper">
                     <div class="thumbnail-item active" data-skin-index="0" data-skin-name="BAWANG MERAH & PUTIH"
                             data-main-img-1="Pahlawan/2_Bawang_Merah_Dan_Putih/2BawangMerahPutih2.jpg"
-                            data-main-img-2="Pahlawan/2_Bawang_Merah_Dan_Putih/2BawangMerahPutih4.jpg"
-                            data-main-img-3="Pahlawan/2_Bawang_Merah_Dan_Putih/2BawangMerahPutih5.jpg"
+                            data-main-img-2="Pahlawan/2_Bawang_Merah_Dan_Putih/2BawangMerahPutih1.jpg"
+                            data-main-img-3="Pahlawan/2_Bawang_Merah_Dan_Putih/2BawangMerahPutih3.jpg"
+                            data-main-img-4="Pahlawan/2_Bawang_Merah_Dan_Putih/2BawangMerahPutih4.jpg"
+                            data-main-img-5="Pahlawan/2_Bawang_Merah_Dan_Putih/2BawangMerahPutih5.jpg"
                             onclick="changeSkin(0)">
                          <img src="Pahlawan/2_Bawang_Merah_Dan_Putih/2BawangMerahPutih1.jpg" alt="Thumbnail BAWANG MERAH & PUTIH" class="thumbnail-img">
                          <span class="thumbnail-label">BAWANG MERAH & PUTIH</span>
@@ -68,7 +74,9 @@
                     <div class="thumbnail-item" data-skin-index="1" data-skin-name="PESILAT BAWANG MERAH & PUTIH"
                             data-main-img-1="Pahlawan/2_Bawang_Merah_Dan_Putih/2PesilatBawangMerahPutih2.jpg"
                             data-main-img-2="Pahlawan/2_Bawang_Merah_Dan_Putih/2PesilatBawangMerahPutih1.jpg"
-                            data-main-img-3="Pahlawan/2_Bawang_Merah_Dan_Putih/2PesilatBawangMerahPutih4.jpg"
+                            data-main-img-3="Pahlawan/2_Bawang_Merah_Dan_Putih/2PesilatBawangMerahPutih3.jpg"
+                            data-main-img-4="Pahlawan/2_Bawang_Merah_Dan_Putih/2PesilatBawangMerahPutih4.jpg"
+                            data-main-img-5="Pahlawan/2_Bawang_Merah_Dan_Putih/2PesilatBawangMerahPutih5.jpg"
                             onclick="changeSkin(1)">
                          <img src="Pahlawan/2_Bawang_Merah_Dan_Putih/2PesilatBawangMerahPutih1.jpg" alt="Thumbnail PESILAT BAWANG MERAH & PUTIH" class="thumbnail-img">
                          <span class="thumbnail-label">PESILAT BAWANG MERAH & PUTIH</span>
@@ -281,6 +289,8 @@
         const mainImg1 = document.getElementById('main-skin-img-1');
         const mainImg2 = document.getElementById('main-skin-img-2');
         const mainImg3 = document.getElementById('main-skin-img-3');
+        const mainImg4 = document.getElementById('main-skin-img-4');
+        const mainImg5 = document.getElementById('main-skin-img-5');
         const skinNameDisplay = document.getElementById('skin-name-display');
         const arrowLeft = document.getElementById('arrow-left');
         const arrowRight = document.getElementById('arrow-right');
@@ -297,6 +307,8 @@
             if (mainImg1) mainImg1.src = selectedSkin.getAttribute('data-main-img-1');
             if (mainImg2) mainImg2.src = selectedSkin.getAttribute('data-main-img-2');
             if (mainImg3) mainImg3.src = selectedSkin.getAttribute('data-main-img-3');
+            if (mainImg4) mainImg4.src = selectedSkin.getAttribute('data-main-img-4');
+            if (mainImg5) mainImg5.src = selectedSkin.getAttribute('data-main-img-5');
             
             // 2. Update Nama Skin
             if (skinNameDisplay) skinNameDisplay.textContent = selectedSkin.getAttribute('data-skin-name');

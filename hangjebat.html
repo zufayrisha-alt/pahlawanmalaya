@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HANG JEBAT: PENDEKAR LICIK SILAT MELAKA</title>
+    <link rel="stylesheet" href="styles.css"> 
+
+    <style>
+        body {
+            background-image: url('Pahlawan/7HangJebat/7HangJebatBackground.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero-header-container">
+        
+        <div class="hero-name-row">
+            <div class="hero-number">007</div>
+            <h1 class="hero-title-pixel">HANG JEBAT</h1>
+        </div>
+
+        <div class="hero-type-row">
+            <img src="Hiasan/logo_pendekar.jpg" alt="Logo Pendekar" class="hero-logo-img">
+            <h2 class="hero-type-title">PENDEKAM/ PENDEKAR</h2>
+        </div>
+        
+        <p class="hero-rank-subtitle">PENDEKAR LICIK SILAT MELAKA</p>
+    </header>
+
+    <blockquote class="hero-quote-box">
+        "Setia kepada kebenaran, bukan kepada orang!"
+    </blockquote>
+
+    <main>
+        <img src="Pahlawan/7HangJebat/7HangJebat1.jpg" alt="HANG JEBAT" class="detail-hero-image">
+
+        <div class="detail-content">
+            
+            <h4>SKIN</h4>
+            
+            <div class="skin-gallery-container">
+                <h3 id="skin-name-display" class="skin-name-display">BADANG</h3>
+                <div class="main-skin-images">
+                    <img id="main-skin-img-1" src="Pahlawan/7HangJebat/7HangJebat2.jpg" alt="Skin HANG JEBAT 1" class="main-skin-img">
+                    <img id="main-skin-img-2" src="Pahlawan/7HangJebat/7HangJebat1.jpg" alt="Skin HANG JEBAT 2" class="main-skin-img">
+                    <img id="main-skin-img-3" src="Pahlawan/7HangJebat/7HangJebat3.jpg" alt="Skin HANG JEBAT 3" class="main-skin-img">
+                </div>
+                    
+                <div class="image-row row-two">
+                    <img id="main-skin-img-4" src="Pahlawan/7HangJebat/7HangJebat4.jpg" alt="Skin HANG JEBAT 4" class="main-skin-img">
+                    <img id="main-skin-img-5" src="Pahlawan/7HangJebat/7HangJebat5.jpg" alt="Skin HANG JEBAT 5" class="main-skin-img">
+                </div>
+        
+            </div>
+
+            <div class="skin-selection-container">
+                <button id="arrow-left" class="nav-arrow" disabled>&lt;</button>
+                <div class="skin-thumbnails-wrapper">
+                    <div class="thumbnail-item active" data-skin-index="0" data-skin-name="HANG JEBAT"
+                            data-main-img-1="Pahlawan/7HangJebat/7HangJebat2.jpg"
+                            data-main-img-2="Pahlawan/7HangJebat/7HangJebat1.jpg"
+                            data-main-img-3="Pahlawan/7HangJebat/7HangJebat3.jpg"
+                            data-main-img-4="Pahlawan/7HangJebat/7HangJebat4.jpg"
+                            data-main-img-5="Pahlawan/7HangJebat/7HangJebat5.jpg"
+                            onclick="changeSkin(0)">
+                         <img src="Pahlawan/7HangJebat/7HangJebat1.jpg" alt="Thumbnail HANG JEBAT" class="thumbnail-img">
+                         <span class="thumbnail-label">HANG JEBAT</span>
+                    </div>
+
+                    <div class="thumbnail-item" data-skin-index="1" data-skin-name="EMPEROR HANG JEBAT"
+                            data-main-img-1="Pahlawan/7HangJebat/7EmperorHangJebat2.jpg"
+                            data-main-img-2="Pahlawan/7HangJebat/7EmperorHangJebat1.jpg"
+                            data-main-img-3="Pahlawan/7HangJebat/7EmperorHangJebat3.jpg"
+                            data-main-img-4="Pahlawan/7HangJebat/7EmperorHangJebat4.jpg"
+                            data-main-img-5="Pahlawan/7HangJebat/7EmperorHangJebat5.jpg"
+                            onclick="changeSkin(1)">
+                         <img src="Pahlawan/7HangJebat/7EmperorHangJebat1.jpg" alt="Thumbnail EMPEROR HANG JEBAT" class="thumbnail-img">
+                         <span class="thumbnail-label">EMPEROR HANG JEBAT</span>
+                    </div>
+                </div>
+                <button id="arrow-right" class="nav-arrow" >&gt;</button>
+            </div>
+            
+            
+            <h4>STATISTIK & STATUS NYAWA DAN TENAGA</h4>
+            
+            <ul class="biodata-list">
+                <li class="stat-item">
+                    <span class="stat-label">Serangan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-red" style="width: 90%;"></div>
+                    </div>
+                    <span class="stat-score">9</span>
+                </li>
+                
+                <li class="stat-item">
+                    <span class="stat-label">Penguasaan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-orange" style="width: 70%;"></div>
+                    </div>
+                    <span class="stat-score">7</span>
+                </li>
+
+                <li class="stat-item">
+                    <span class="stat-label">Kesukaran</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-blue" style="width: 80%;"></div>
+                    </div>
+                    <span class="stat-score">8</span>
+                </li>
+                
+                <li class="stat-item">
+                    <span class="stat-label">Kekebalan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-green" style="width: 60%;"></div>
+                    </div>
+                    <span class="stat-score">6</span>
+                </li>
+                
+                <li style="margin-top: 15px;">
+                    HP = <span style="color: white; font-weight: bold;">2500</span> <span style="color: #90ee90; font-weight: bold;">+180</span>
+                </li>
+                <li>
+                    Mana = <span style="color: white; font-weight: bold;">---</span> <span style="color: #ADD8E6; font-weight: bold;">+--</span>
+                </li>
+            </ul>
+
+
+            <h4>BIODATA</h4>
+            <ul class="biodata-list">
+                <li>Nama Pahlawan : HANG JEBAT</li>
+                <li>Nama Sebenar : Jebat</li>
+                <li>Gelaran : PENDEKAR LICIK SILAT MELAKA</li>
+                <li>Umur : 19 Tahun</li>
+                <li>Number Pahlawan : 007</li>
+                <li>Jenis Pahlawan : <img src="Hiasan/logo_pendekam.jpg" alt="Logo Pendekam Kecil" class="list-logo"> PENDEKAM/ PENDEKAR</li>
+                <li>Makhluk : Manusia</li>
+                <li>Bangsa : Melayu</li>
+                <li>Negeri Asal : Kota Hilir, Melaka</li>
+                <li>Pekerjaan : Pesilat Negara</li>
+                <li>Tinggi : 186 cm</li>
+                <li>Berat : 66 Kg</li>
+            </ul>
+            
+            <h4>SKILL</h4>
+            <ul class="skill-list">
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/7HangJebat/7HangJebatskill0.jpg" alt="Pasif Skill Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">PASIF: KEBANGKITAN PENDEKAR</span>
+                        <ul class="skill-description-list"><li>(Reset Cooldown / Buff - Fizikal)</li><li>Setiap kali Jebat membunuh musuh, semua cooldown skillnya akan segera tamat.</li><li>Efek tambahan: Serangan seterusnya selepas reset cooldown akan meningkatkan damage sebanyak 20% selama 3 saat.</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/7HangJebat/7HangJebatskill1.jpg" alt="Skill 1 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 1: KERIS MENGHUNUS</span>
+                        <ul class="skill-description-list"><li>(Burst Damage / DOT - Fizikal)</li><li>Level: 1-4</li><li>Jebat melontarkan kerisnya ke satu musuh dan menikamnya secara langsung, memberikan damage segera.</li><li>Selepas itu, musuh akan mengalami kerosakan berterusan (DOT) selama 3 saat.</li><li>Jika musuh terkena efek DOT penuh, mereka akan mengalami slow sebanyak 30%.</li><li>Damage Segera: 100/140/180/220 + 80% Total Physical Attack</li><li>Damage DOT: 40/60/80/100 setiap saat selama 3 saat</li><li>Cooldown: 8s/7s/6s/5s</li><li>Radius: 6 unit (sasaran tunggal)</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/7HangJebat/7HangJebatskill2.jpg" alt="Skill 2 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 2: JEBAT MENYELINAP</span>
+                        <ul class="skill-description-list"><li>(Stealth / Dash / Burst Damage - Fizikal)</li><li>Level: 1-4</li><li>Jebat masuk ke dalam mode ghaib (stealth) selama 5 saat, tidak dapat dilihat oleh musuh kecuali apabila dia menyerang.</li><li>Jika dia menyerang dalam mode ini, serangan pertamanya akan memberikan bonus damage dan slow 40% selama 1.5 saat.</li><li>Damage tambahan serangan pertama: 150/180/210/240 + 100% Total Physical Attack</li><li>Cooldown: 12s/10s/8s/6s</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/7HangJebat/7HangJebatskill3.jpg" alt="Skill 3 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 3: RENGKAH SILAT</span>
+                        <ul class="skill-description-list"><li>(CC / Stun / Dash - Fizikal)</li><li>Level: 1-4</li><li>Jebat menyerang musuh dengan langkah silat khasnya, menolak mereka ke hadapan sejauh 3 unit.</li><li>Musuh yang terkena akan mengalami stun selama 1.5 saat.</li><li>Selepas serangan selesai, Jebat akan melompat ke belakang sejauh 4 unit, mengelakkan serangan balas.</li><li>Damage: 140/180/220/260 + 90% Total Physical Attack</li><li>Cooldown: 10s/9s/8s/7s</li><li>Radius: 3 unit ke hadapan (dash)</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/7HangJebat/7HangJebatskill4.jpg" alt="Ultimate Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">ULTI: JANGAN KAU BELOT</span>
+                        <ul class="skill-description-list"><li>(Execute / Burst Damage - Fizikal)</li><li>Level: 1-3</li><li>Jebat memilih satu musuh sebagai target utama dan menyerang mereka dengan rangkaian serangan silat bertubi-tubi.</li><li>Jika musuh berada di bawah 30% HP, damage serangan ini akan meningkat sebanyak 50%.</li><li>Damage: 300/400/500 + 150% Total Physical Attack</li><li>Cooldown: 35s/30s/25s</li><li>Radius: 1 unit (sasaran tunggal)</li></ul> 
+                    </div>
+                </li>
+            </ul>
+
+
+            <h4>PERSONALITI</h4>
+            <ul class="personaliti-list">
+                <li>Licik & Cekap, Menggunakan kelajuan dan strategi untuk mengalahkan musuh.</li>
+<li>Tidak mudah tunduk, Berpegang teguh kepada prinsipnya sendiri.</li>
+<li>Tegas & Berani, Tidak gentar walaupun berhadapan dengan bahaya.</li>
+            </ul>
+
+            <h4>HIKAYAT</h4>
+            <div class="hikayat-text">
+                <p>Di sebuah bandar kecil, seorang pemuda yang bernama Jebat hidup dalam keadaan yang agak berbeza berbanding teman-temannya. Jebat dikenali sebagai seorang yang keras kepala dan sukar untuk mengikut kata orang. Dalam setiap tindakannya, dia lebih suka mendengar suara hatinya sendiri, berbanding menerima arahan daripada orang lain. Meskipun sikapnya agak nakal, Jebat memiliki hati yang baik dan keberanian yang luar biasa.</p>
+
+<p>Keluarga Jebat tidak pernah menyokong minatnya dalam seni bela diri. Mereka sering berkata bahawa silat adalah suatu pembaziran masa dan tenaga. Namun, Jebat tetap bertekad untuk mengikuti jalan yang dipilihnya. Suatu hari, ketika berjalan melalui pasar, dia bertemu dengan seorang tok guru silat yang terkenal dengan kepandaian dan kebijaksanaannya. Tok guru itu melihat potensi dalam diri Jebat dan mengajaknya untuk belajar silat. Walaupun keluarganya menentang, Jebat tetap berkeras untuk menuntut ilmu silat.</p>
+
+<p>Di bawah bimbingan tok guru tersebut, Jebat mula belajar tentang seni pertahanan diri, terutamanya seni bernyelinap dan menggunakan kekuatan dengan penuh kebijaksanaan. Walaupun dia tidak mudah untuk menerima arahan atau aturan, sedikit demi sedikit, Jebat mula memahami kepentingan disiplin dan ketekunan dalam berlatih. Di saat-saat yang penuh cabaran itu, Jebat menyedari bahawa keberanian dan keteguhan pendirian adalah dua perkara yang perlu dimiliki oleh setiap pahlawan.</p>
+
+<p>Suatu hari, ketika Jebat sedang menyelami lebih dalam cerita-cerita tentang pahlawan Melayu, dia menemukan sebuah buku tua yang disimpan oleh tok guru silatnya. Buku itu menceritakan kisah Hang Tuah dan Hang Jebat, yang sangat mirip dengan dirinya. Hang Jebat dalam cerita itu bukanlah seorang yang jahat, tetapi seorang yang setia dan berani, yang membuat keputusan berdasarkan prinsipnya sendiri. Kisah itu sangat menyentuh hatinya, terutamanya apabila dia membaca bagaimana Hang Tuah, sahabat sejatinya, terpaksa menurut perintah Sultan untuk membunuhnya. Tetapi ternyata, Hang Tuah dan Hang Jebat tidak benar-benar berpisah—mereka berdua berjuang secara rahsia demi tanah air.</p>
+
+<p>Buku itu memberi Jebat inspirasi yang mendalam. Dia menyedari bahawa dia tidak perlu mengikut jejak langkah orang lain, tetapi perlu berpegang teguh pada prinsipnya. Dengan semangat yang baru, Jebat terus berlatih silat dengan penuh dedikasi. Dia ingin menjadi pahlawan yang hebat, bukan hanya untuk dirinya, tetapi juga untuk melindungi orang yang dia sayangi.</p>
+
+<p>Walaupun Tuah dan Jebat datang dari latar belakang yang berbeza—Tuah yang baik dan mendengar kata, serta Jebat yang keras kepala tetapi teguh pendiriannya—mereka berdua akhirnya berkongsi satu tujuan yang sama. Mereka berdua ingin menjadi pahlawan yang hebat, mempertahankan diri mereka dan masyarakat sekitar mereka. Setelah membaca kisah Hang Tuah dan Hang Jebat, mereka mula menyedari bahawa keberanian, kesetiaan, dan pengorbanan adalah nilai-nilai yang perlu dipegang teguh.</p>
+
+<p>Mereka berdua bertekad untuk berlatih silat dengan lebih giat lagi, menyedari bahawa mereka bukan hanya berlatih untuk diri mereka sendiri, tetapi juga untuk mempertahankan tanah air dan kehormatan. Dalam hati mereka berdua, tercetus cita-cita yang tinggi: menjadi pahlawan yang bukan hanya hebat di medan perang, tetapi juga menjadi pelindung kepada mereka yang lemah dan tidak berdaya.</p>
+
+<p>Cerita Tuah dan Jebat ini mengajar mereka—dan kita semua—bahawa dalam setiap perjuangan, kesetiaan dan keberanian adalah kekuatan yang paling penting, dan persahabatan sejati akan selalu menjadi pemangkin kepada kejayaan.</p>
+            </div>
+        </div>
+    </main>
+    
+    <div class="nav-container">
+        <a href="#" class="nav-button back-glow left-button">
+            <img src="Hiasan/back_button.jpg" alt="Kembali" title="Kembali ke Galeri">
+            <span class="button-label">KEMBALI</span>
+        </a>
+        
+        <a href="index.html" class="nav-button home-glow right-button">
+            <img src="Hiasan/home_button.jpg" alt="Halaman Utama" title="Halaman Utama">
+            <span class="button-label">HALAMAN UTAMA</span>
+        </a>
+    </div>
+    
+    <script src="script.js"></script> 
+
+    <script>
+        // Set skin pertama sebagai skin aktif semasa muat halaman
+        let currentSkinIndex = 0;
+        const skinItems = document.querySelectorAll('.thumbnail-item');
+        const mainImg1 = document.getElementById('main-skin-img-1');
+        const mainImg2 = document.getElementById('main-skin-img-2');
+        const mainImg3 = document.getElementById('main-skin-img-3');
+        const mainImg4 = document.getElementById('main-skin-img-4');
+        const mainImg5 = document.getElementById('main-skin-img-5');
+        const skinNameDisplay = document.getElementById('skin-name-display');
+        const arrowLeft = document.getElementById('arrow-left');
+        const arrowRight = document.getElementById('arrow-right');
+        const totalSkins = skinItems.length;
+
+        // Fungsi utama untuk menukar skin
+        function changeSkin(index) {
+            if (index < 0 || index >= totalSkins) return; 
+
+            currentSkinIndex = index;
+            
+            // 1. Update Imej Utama
+            const selectedSkin = skinItems[currentSkinIndex];
+            if (mainImg1) mainImg1.src = selectedSkin.getAttribute('data-main-img-1');
+            if (mainImg2) mainImg2.src = selectedSkin.getAttribute('data-main-img-2');
+            if (mainImg3) mainImg3.src = selectedSkin.getAttribute('data-main-img-3');
+            if (mainImg4) mainImg4.src = selectedSkin.getAttribute('data-main-img-4');
+            if (mainImg5) mainImg5.src = selectedSkin.getAttribute('data-main-img-5');
+            
+            // 2. Update Nama Skin
+            if (skinNameDisplay) skinNameDisplay.textContent = selectedSkin.getAttribute('data-skin-name');
+
+            // 3. Update Status Aktif (Opacity/Ketelusan) pada Thumbnail
+            skinItems.forEach((item, i) => {
+                if (i === currentSkinIndex) {
+                    item.classList.add('active'); 
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+
+            // 4. Update Status Anak Panah Navigasi
+            updateArrows();
+        }
+
+        // Fungsi untuk mengemas kini keadaan anak panah
+        function updateArrows() {
+            // Anak Panah Kiri: Nyahaktifkan jika di skin pertama
+            if (currentSkinIndex === 0) {
+                if(arrowLeft) {
+                    arrowLeft.classList.add('disabled-arrow'); 
+                    arrowLeft.disabled = true;
+                }
+            } else {
+                if(arrowLeft) {
+                    arrowLeft.classList.remove('disabled-arrow');
+                    arrowLeft.disabled = false;
+                }
+            }
+
+            // Anak Panah Kanan: Nyahaktifkan jika di skin terakhir
+            if (currentSkinIndex === totalSkins - 1) {
+                if(arrowRight) {
+                    arrowRight.classList.add('disabled-arrow'); 
+                    arrowRight.disabled = true;
+                }
+            } else {
+                if(arrowRight) {
+                    arrowRight.classList.remove('disabled-arrow');
+                    arrowRight.disabled = false;
+                }
+            }
+        }
+
+        // Event Listener untuk Anak Panah
+        if (arrowLeft) {
+            arrowLeft.addEventListener('click', () => {
+                changeSkin(currentSkinIndex - 1);
+            });
+        }
+        
+        if (arrowRight) {
+            arrowRight.addEventListener('click', () => {
+                changeSkin(currentSkinIndex + 1);
+            });
+        }
+
+        // Pastikan paparan skin di set semasa muat halaman
+        window.addEventListener('load', () => {
+            changeSkin(0);
+        });
+
+    </script>
+</body>
+</html>

@@ -42,6 +42,118 @@
                 </figcaption>
             </figure>
         </a>
+        <!-- KAD PAHLAWAN: Bawang Merah & Putih -->
+        <a href="bawangmerahputih.html" title="Klik untuk lihat kisah Bawang Merah & Putih secara terperinci">
+            <figure class="pahlawan-gallery-item">
+                <!-- Bingkai -->
+                <img src="Hiasan/Bingkai Pahlawan.jpg" alt="Bingkai Emas Klasik" class="frame-image">
+                
+                <!-- Imej Pahlawan -->
+                <img src="Pahlawan/2_Bawang_Merah_Dan_Putih/2BawangMerahPutih1.jpg" alt="Pahlawan Bawang Merah & Putih" class="hero-image">
+                
+                <!-- Kapsyen Pahlawan -->
+                <figcaption class="gallery-caption">
+                    <div class="hero-name">BAWANG MERAH & PUTIH</div>
+                    <div class="hero-title">PAHLAWAN KEMBAR</div>
+                </figcaption>
+            </figure>
+        </a>
+        <!-- KAD PAHLAWAN: Belalang -->
+        <a href="belalang.html" title="Klik untuk lihat kisah Belalang secara terperinci">
+            <figure class="pahlawan-gallery-item">
+                <!-- Bingkai -->
+                <img src="Hiasan/Bingkai Pahlawan.jpg" alt="Bingkai Emas Klasik" class="frame-image">
+                
+                <!-- Imej Pahlawan -->
+                <img src="Pahlawan/3_Belalang/3Belalang1.jpg" alt="Pahlawan Belalang" class="hero-image">
+                
+                <!-- Kapsyen Pahlawan -->
+                <figcaption class="gallery-caption">
+                    <div class="hero-name">BELALANG</div>
+                    <div class="hero-title">AHLI NUJUM BIJAKSANA</div>
+                </figcaption>
+            </figure>
+        </a>
+        <!-- KAD PAHLAWAN: Betong -->
+        <a href="betong.html" title="Klik untuk lihat kisah Betong secara terperinci">
+            <figure class="pahlawan-gallery-item">
+                <!-- Bingkai -->
+                <img src="Hiasan/Bingkai Pahlawan.jpg" alt="Bingkai Emas Klasik" class="frame-image">
+                
+                <!-- Imej Pahlawan -->
+                <img src="Pahlawan/4Betong/4Betong1.jpg" alt="Pahlawan Betong" class="hero-image">
+                
+                <!-- Kapsyen Pahlawan -->
+                <figcaption class="gallery-caption">
+                    <div class="hero-name">BETONG</div>
+                    <div class="hero-title">ANAK BULUH BETUNG</div>
+                </figcaption>
+            </figure>
+        </a>
+        <!-- KAD PAHLAWAN: Cek Kebayan -->
+        <a href="cekkebayan.html" title="Klik untuk lihat kisah Cek Kebayan secara terperinci">
+            <figure class="pahlawan-gallery-item">
+                <!-- Bingkai -->
+                <img src="Hiasan/Bingkai Pahlawan.jpg" alt="Bingkai Emas Klasik" class="frame-image">
+                
+                <!-- Imej Pahlawan -->
+                <img src="Pahlawan/5CekKebayan/5CekKebayan1.jpg" alt="Pahlawan Cek Kebayan" class="hero-image">
+                
+                <!-- Kapsyen Pahlawan -->
+                <figcaption class="gallery-caption">
+                    <div class="hero-name">CEK KEBAYAN</div>
+                    <div class="hero-title">AHLI SIHIR HITAM TERUNGGUL</div>
+                </figcaption>
+            </figure>
+        </a>
+        <!-- KAD PAHLAWAN: Hang Tuah -->
+        <a href="hangtuah.html" title="Klik untuk lihat kisah Hang Tuah secara terperinci">
+            <figure class="pahlawan-gallery-item">
+                <!-- Bingkai -->
+                <img src="Hiasan/Bingkai Pahlawan.jpg" alt="Bingkai Emas Klasik" class="frame-image">
+                
+                <!-- Imej Pahlawan -->
+                <img src="Pahlawan/6HangTuah/6HangTuah1.jpg" alt="Pahlawan Hang Tuah" class="hero-image">
+                
+                <!-- Kapsyen Pahlawan -->
+                <figcaption class="gallery-caption">
+                    <div class="hero-name">HANG TUAH</div>
+                    <div class="hero-title">PENDEKAR SENI SILAT MELAKA</div>
+                </figcaption>
+            </figure>
+        </a>
+        <!-- KAD PAHLAWAN: Hang Jebat -->
+        <a href="hangjebat.html" title="Klik untuk lihat kisah Hang Jebat secara terperinci">
+            <figure class="pahlawan-gallery-item">
+                <!-- Bingkai -->
+                <img src="Hiasan/Bingkai Pahlawan.jpg" alt="Bingkai Emas Klasik" class="frame-image">
+                
+                <!-- Imej Pahlawan -->
+                <img src="Pahlawan/7HangJebat/7HangJebat1.jpg" alt="Pahlawan Hang Jebat" class="hero-image">
+                
+                <!-- Kapsyen Pahlawan -->
+                <figcaption class="gallery-caption">
+                    <div class="hero-name">HANG JEBAT</div>
+                    <div class="hero-title">PENDEKAR LICIK SILAT MELAKA</div>
+                </figcaption>
+            </figure>
+        </a>
+        <!-- KAD PAHLAWAN: Hang Nadim -->
+        <a href="hangnadim.html" title="Klik untuk lihat kisah Hang Nadim secara terperinci">
+            <figure class="pahlawan-gallery-item">
+                <!-- Bingkai -->
+                <img src="Hiasan/Bingkai Pahlawan.jpg" alt="Bingkai Emas Klasik" class="frame-image">
+                
+                <!-- Imej Pahlawan -->
+                <img src="Pahlawan/8HangNadim/8HangNadim1.jpg" alt="Pahlawan Hang Nadim" class="hero-image">
+                
+                <!-- Kapsyen Pahlawan -->
+                <figcaption class="gallery-caption">
+                    <div class="hero-name">HANG NADIM</div>
+                    <div class="hero-title">YANG TERSINGKAP SEGALA RAHSIA ALAM</div>
+                </figcaption>
+            </figure>
+        </a>
         <!-- Tambah kad pahlawan lain di sini jika ada -->
     </main>
 
@@ -64,7 +176,8 @@
     </div>
 
     <!-- PENTING: Pautkan script untuk fungsi 'Kembali' -->
-    <script src="script.js"></script> 
+    <script src="script.js">
 
+    </script>     
 </body>
 </html>

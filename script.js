@@ -48,12 +48,6 @@ function generateHeroCode() {
         
         heroBgURL: document.getElementById('heroBgURL').value,
         mainHeroImageURL: document.getElementById('mainHeroImageURL').value,
-
-        heroBgURL: document.getElementById('heroBgURL').value,
-        mainHeroImageURL: document.getElementById('mainHeroImageURL').value,
-        
-        // 💡 BARIS TAMBAHAN: Kumpul URL Audio dari borang editor
-        heroAudioURL: document.getElementById('heroAudioURL').value, // Pastikan ID ini ada dalam borang editor anda!
         
         // Data Skin Statik
         skin1Name: document.querySelector('.thumbnail-item[data-skin-index="0"]').getAttribute('data-skin-name'),
@@ -61,9 +55,13 @@ function generateHeroCode() {
         skin1Img1: document.querySelector('.thumbnail-item[data-skin-index="0"]').getAttribute('data-main-img-1'),
         skin1Img2: document.querySelector('.thumbnail-item[data-skin-index="0"]').getAttribute('data-main-img-2'),
         skin1Img3: document.querySelector('.thumbnail-item[data-skin-index="0"]').getAttribute('data-main-img-3'),
+        skin1Img4: document.querySelector('.thumbnail-item[data-skin-index="0"]').getAttribute('data-main-img-4'),
+        skin1Img5: document.querySelector('.thumbnail-item[data-skin-index="0"]').getAttribute('data-main-img-5'),
         skin2Img1: document.querySelector('.thumbnail-item[data-skin-index="1"]').getAttribute('data-main-img-1'),
         skin2Img2: document.querySelector('.thumbnail-item[data-skin-index="1"]').getAttribute('data-main-img-2'),
         skin2Img3: document.querySelector('.thumbnail-item[data-skin-index="1"]').getAttribute('data-main-img-3'),
+        skin2Img4: document.querySelector('.thumbnail-item[data-skin-index="1"]').getAttribute('data-main-img-4'),
+        skin2Img5: document.querySelector('.thumbnail-item[data-skin-index="1"]').getAttribute('data-main-img-5'),
 
         // Statistik
         stats: {
@@ -142,9 +140,6 @@ function generateHeroCode() {
 </head>
 <body>
 
-<audio id="global-bg-audio" preload="auto" muted></audio>
-
-
     <header class="hero-header-container">
         
         <div class="hero-name-row">
@@ -178,6 +173,12 @@ function generateHeroCode() {
                     <img id="main-skin-img-2" src="${data.skin1Img2}" alt="Skin ${data.skin1Name} 2" class="main-skin-img">
                     <img id="main-skin-img-3" src="${data.skin1Img3}" alt="Skin ${data.skin1Name} 3" class="main-skin-img">
                 </div>
+                    
+                <div class="image-row row-two">
+                    <img id="main-skin-img-4" src="${data.skin1Img4}" alt="Skin ${data.skin1Name} 4" class="main-skin-img">
+                    <img id="main-skin-img-5" src="${data.skin1Img5}" alt="Skin ${data.skin1Name} 5" class="main-skin-img">
+                </div>
+        
             </div>
 
             <div class="skin-selection-container">
@@ -187,6 +188,8 @@ function generateHeroCode() {
                             data-main-img-1="${data.skin1Img1}"
                             data-main-img-2="${data.skin1Img2}"
                             data-main-img-3="${data.skin1Img3}"
+                            data-main-img-4="${data.skin1Img4}"
+                            data-main-img-5="${data.skin1Img5}"
                             onclick="changeSkin(0)">
                          <img src="${data.mainHeroImageURL}" alt="Thumbnail ${data.skin1Name}" class="thumbnail-img">
                          <span class="thumbnail-label">${data.skin1Name}</span>
@@ -196,6 +199,8 @@ function generateHeroCode() {
                             data-main-img-1="${data.skin2Img1}"
                             data-main-img-2="${data.skin2Img2}"
                             data-main-img-3="${data.skin2Img3}"
+                            data-main-img-4="${data.skin2Img4}"
+                            data-main-img-5="${data.skin2Img5}"
                             onclick="changeSkin(1)">
                          <img src="${data.mainHeroImageURL}" alt="Thumbnail ${data.skin2Name}" class="thumbnail-img">
                          <span class="thumbnail-label">${data.skin2Name}</span>
@@ -348,6 +353,8 @@ function generateHeroCode() {
         const mainImg1 = document.getElementById('main-skin-img-1');
         const mainImg2 = document.getElementById('main-skin-img-2');
         const mainImg3 = document.getElementById('main-skin-img-3');
+        const mainImg4 = document.getElementById('main-skin-img-4');
+        const mainImg5 = document.getElementById('main-skin-img-5');
         const skinNameDisplay = document.getElementById('skin-name-display');
         const arrowLeft = document.getElementById('arrow-left');
         const arrowRight = document.getElementById('arrow-right');
@@ -364,6 +371,8 @@ function generateHeroCode() {
             if (mainImg1) mainImg1.src = selectedSkin.getAttribute('data-main-img-1');
             if (mainImg2) mainImg2.src = selectedSkin.getAttribute('data-main-img-2');
             if (mainImg3) mainImg3.src = selectedSkin.getAttribute('data-main-img-3');
+            if (mainImg4) mainImg4.src = selectedSkin.getAttribute('data-main-img-4');
+            if (mainImg5) mainImg5.src = selectedSkin.getAttribute('data-main-img-5');
             
             // 2. Update Nama Skin
             if (skinNameDisplay) skinNameDisplay.textContent = selectedSkin.getAttribute('data-skin-name');
@@ -426,15 +435,9 @@ function generateHeroCode() {
         // Pastikan paparan skin di set semasa muat halaman
         window.addEventListener('load', () => {
             changeSkin(0);
-
-            // 💡 TAMBAHKAN KOD INI UNTUK MEMULAKAN AUDIO
-    // 🟢 KOD YANG BETUL: Menggunakan URL dari borang editor
-          managePageAudio('${data.heroAudioURL}');
-
         });
 
     </script>
-
 </body>
 </html>`;
 

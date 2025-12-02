@@ -47,9 +47,11 @@
             <div class="skin-gallery-container">
                 <h3 id="skin-name-display" class="skin-name-display">BETONG</h3>
                 <div class="main-skin-images">
-                    <img id="main-skin-img-1" src="Pahlawan/4Betong/4Betong3.jpg" alt="Skin BETONG 1" class="main-skin-img">
-                    <img id="main-skin-img-2" src="Pahlawan/4Betong/4Betong4.jpg" alt="Skin BETONG 2" class="main-skin-img">
-                    <img id="main-skin-img-3" src="Pahlawan/4Betong/4Betong5.jpg" alt="Skin BETONG 3" class="main-skin-img">
+                    <img id="main-skin-img-1" src="Pahlawan/4Betong/4Betong2.jpg" alt="Skin BETONG 1" class="main-skin-img">
+                    <img id="main-skin-img-2" src="Pahlawan/4Betong/4Betong1.jpg" alt="Skin BETONG 2" class="main-skin-img">
+                    <img id="main-skin-img-3" src="Pahlawan/4Betong/4Betong3.jpg" alt="Skin BETONG 3" class="main-skin-img">
+                    <img id="main-skin-img-4" src="Pahlawan/4Betong/4Betong4.jpg" alt="Skin BETONG 4" class="main-skin-img">
+                    <img id="main-skin-img-5" src="Pahlawan/4Betong/4Betong5.jpg" alt="Skin BETONG 5" class="main-skin-img">
                 </div>
             </div>
 
@@ -57,18 +59,22 @@
                 <button id="arrow-left" class="nav-arrow" disabled>&lt;</button>
                 <div class="skin-thumbnails-wrapper">
                     <div class="thumbnail-item active" data-skin-index="0" data-skin-name="BETONG"
-                            data-main-img-1="Pahlawan/4Betong/4Betong3.jpg"
-                            data-main-img-2="Pahlawan/4Betong/4Betong4.jpg"
-                            data-main-img-3="Pahlawan/4Betong/4Betong5.jpg"
+                            data-main-img-1="Pahlawan/4Betong/4Betong2.jpg"
+                            data-main-img-2="Pahlawan/4Betong/4Betong1.jpg"
+                            data-main-img-3="Pahlawan/4Betong/4Betong3.jpg"
+                            data-main-img-4="Pahlawan/4Betong/4Betong4.jpg"
+                            data-main-img-5="Pahlawan/4Betong/4Betong5.jpg"
                             onclick="changeSkin(0)">
                          <img src="Pahlawan/4Betong/4Betong1.jpg" alt="Thumbnail BETONG" class="thumbnail-img">
                          <span class="thumbnail-label">BETONG</span>
                     </div>
 
-                    <div class="thumbnail-item" data-skin-index="1" data-skin-name="ERA LAMA BADANG"
-                            data-main-img-1="Pahlawan/4Betong/4DawaiBesiBetong4.jpg"
+                    <div class="thumbnail-item" data-skin-index="1" data-skin-name="DAWAI BESI BETONG"
+                            data-main-img-1="Pahlawan/4Betong/4DawaiBesiBetong2.jpg"
                             data-main-img-2="Pahlawan/4Betong/4DawaiBesiBetong1.jpg"
-                            data-main-img-3="Pahlawan/4Betong/4DawaiBesiBetong5.jpg"
+                            data-main-img-3="Pahlawan/4Betong/4DawaiBesiBetong3.jpg"
+                            data-main-img-4="Pahlawan/4Betong/4DawaiBesiBetong4.jpg"
+                            data-main-img-5="Pahlawan/4Betong/4DawaiBesiBetong5.jpg"
                             onclick="changeSkin(1)">
                          <img src="Pahlawan/4Betong/4DawaiBesiBetong1.jpg" alt="Thumbnail DAWAI BESI BETONG" class="thumbnail-img">
                          <span class="thumbnail-label">DAWAI BESI BETONG</span>
@@ -239,6 +245,8 @@
         const mainImg1 = document.getElementById('main-skin-img-1');
         const mainImg2 = document.getElementById('main-skin-img-2');
         const mainImg3 = document.getElementById('main-skin-img-3');
+        const mainImg4 = document.getElementById('main-skin-img-4');
+        const mainImg5 = document.getElementById('main-skin-img-5');
         const skinNameDisplay = document.getElementById('skin-name-display');
         const arrowLeft = document.getElementById('arrow-left');
         const arrowRight = document.getElementById('arrow-right');
@@ -255,6 +263,8 @@
             if (mainImg1) mainImg1.src = selectedSkin.getAttribute('data-main-img-1');
             if (mainImg2) mainImg2.src = selectedSkin.getAttribute('data-main-img-2');
             if (mainImg3) mainImg3.src = selectedSkin.getAttribute('data-main-img-3');
+            if (mainImg4) mainImg4.src = selectedSkin.getAttribute('data-main-img-4');
+            if (mainImg5) mainImg5.src = selectedSkin.getAttribute('data-main-img-5');
             
             // 2. Update Nama Skin
             if (skinNameDisplay) skinNameDisplay.textContent = selectedSkin.getAttribute('data-skin-name');
