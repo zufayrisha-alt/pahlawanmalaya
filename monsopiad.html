@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONSOPIAD: THE HEAD HUNTER</title>
+    <link rel="stylesheet" href="styles.css"> 
+
+    <style>
+        body {
+            background-image: url('Pahlawan/13Monsopiad/13MonsopiadBackground.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero-header-container">
+        
+        <div class="hero-name-row">
+            <div class="hero-number">013</div>
+            <h1 class="hero-title-pixel">MONSOPIAD</h1>
+        </div>
+
+        <div class="hero-type-row">
+            <img src="Hiasan/logo_pembidak.jpg" alt="Logo Pendekar" class="hero-logo-img">
+            <h2 class="hero-type-title">PEMBIDAK</h2>
+        </div>
+        
+        <p class="hero-rank-subtitle">THE HEAD HUNTER</p>
+    </header>
+
+    <blockquote class="hero-quote-box">
+        "Tulang dan tengkorak bukan sekadar sejarah, tapi senjata masa depan!"
+    </blockquote>
+
+    <main>
+        <img src="Pahlawan/13Monsopiad/13Monsopiad2.jpg" alt="MONSOPIAD" class="detail-hero-image">
+
+        <div class="detail-content">
+            
+            <h4>SKIN</h4>
+            
+            <div class="skin-gallery-container">
+                <h3 id="skin-name-display" class="skin-name-display">MONSOPIAD</h3>
+                <div class="main-skin-images">
+                    <img id="main-skin-img-1" src="Pahlawan/13Monsopiad/13Monsopiad1.jpg" alt="Skin BADANG 1" class="main-skin-img">
+                    <img id="main-skin-img-2" src="Pahlawan/13Monsopiad/13Monsopiad2.jpg" alt="Skin BADANG 2" class="main-skin-img">
+                    <img id="main-skin-img-3" src="Pahlawan/13Monsopiad/13Monsopiad3.jpg" alt="Skin BADANG 3" class="main-skin-img">
+                </div>
+                    
+                <div class="image-row row-two">
+                    <img id="main-skin-img-4" src="Pahlawan/13Monsopiad/13Monsopiad4.jpg" alt="Skin BADANG 4" class="main-skin-img">
+                    <img id="main-skin-img-5" src="Pahlawan/13Monsopiad/13Monsopiad5.jpg" alt="Skin BADANG 5" class="main-skin-img">
+                </div>
+        
+            </div>
+
+            <div class="skin-selection-container">
+                <button id="arrow-left" class="nav-arrow" disabled>&lt;</button>
+                <div class="skin-thumbnails-wrapper">
+                    <div class="thumbnail-item active" data-skin-index="0" data-skin-name="MONSOPIAD"
+                            data-main-img-1="Pahlawan/13Monsopiad/13Monsopiad1.jpg"
+                            data-main-img-2="Pahlawan/13Monsopiad/13Monsopiad2.jpg"
+                            data-main-img-3="Pahlawan/13Monsopiad/13Monsopiad3.jpg"
+                            data-main-img-4="Pahlawan/13Monsopiad/13Monsopiad4.jpg"
+                            data-main-img-5="Pahlawan/13Monsopiad/13Monsopiad5.jpg"
+                            onclick="changeSkin(0)">
+                         <img src="Pahlawan/13Monsopiad/13Monsopiad2.jpg" alt="Thumbnail MONSOPIAD" class="thumbnail-img">
+                         <span class="thumbnail-label">MONSOPIAD</span>
+                    </div>
+
+                    <div class="thumbnail-item" data-skin-index="1" data-skin-name="HUTAN BORNEO MONSOPIAD"
+                            data-main-img-1="Pahlawan/13Monsopiad/13HutanBorneoMonsopiad1.jpg"
+                            data-main-img-2="Pahlawan/13Monsopiad/13HutanBorneoMonsopiad2.jpg"
+                            data-main-img-3="Pahlawan/13Monsopiad/13HutanBorneoMonsopiad3.jpg"
+                            data-main-img-4="Pahlawan/13Monsopiad/13HutanBorneoMonsopiad4.jpg"
+                            data-main-img-5="Pahlawan/13Monsopiad/13HutanBorneoMonsopiad5.jpg"
+                            onclick="changeSkin(1)">
+                         <img src="Pahlawan/13Monsopiad/13HutanBorneoMonsopiad2.jpg" alt="Thumbnail ERA LAMA BADANG" class="thumbnail-img">
+                         <span class="thumbnail-label">HUTAN BORNEO MONSOPIAD</span>
+                    </div>
+                </div>
+                <button id="arrow-right" class="nav-arrow" >&gt;</button>
+            </div>
+            
+            
+            <h4>STATISTIK & STATUS NYAWA DAN TENAGA</h4>
+            
+            <ul class="biodata-list">
+                <li class="stat-item">
+                    <span class="stat-label">Serangan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-red" style="width: 80%;"></div>
+                    </div>
+                    <span class="stat-score">8</span>
+                </li>
+                
+                <li class="stat-item">
+                    <span class="stat-label">Penguasaan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-orange" style="width: 70%;"></div>
+                    </div>
+                    <span class="stat-score">7</span>
+                </li>
+
+                <li class="stat-item">
+                    <span class="stat-label">Kesukaran</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-blue" style="width: 60%;"></div>
+                    </div>
+                    <span class="stat-score">6</span>
+                </li>
+                
+                <li class="stat-item">
+                    <span class="stat-label">Kekebalan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-green" style="width: 50%;"></div>
+                    </div>
+                    <span class="stat-score">5</span>
+                </li>
+                
+                <li style="margin-top: 15px;">
+                    HP = <span style="color: white; font-weight: bold;">2500</span> <span style="color: #90ee90; font-weight: bold;">+160</span>
+                </li>
+                <li>
+                    Mana = <span style="color: white; font-weight: bold;">450</span> <span style="color: #ADD8E6; font-weight: bold;">+50</span>
+                </li>
+            </ul>
+
+
+            <h4>BIODATA</h4>
+            <ul class="biodata-list">
+                <li>Nama Pahlawan : MONSOPIAD</li>
+                <li>Nama Sebenar : Malin Dewa</li>
+                <li>Gelaran : THE HEAD HUNTER</li>
+                <li>Umur : 17 Tahun</li>
+                <li>Number Pahlawan : 013</li>
+                <li>Jenis Pahlawan : <img src="Hiasan/logo_pembidak.jpg" alt="Logo Pendekar Kecil" class="list-logo"> PEMBIDAK</li>
+                <li>Makhluk : Manusia</li>
+                <li>Bangsa : Kadazan-Dusun</li>
+                <li>Negeri Asal : Keningau, Sabah</li>
+                <li>Pekerjaan : Pelajar Sekolah Menengah</li>
+                <li>Tinggi : 170 cm</li>
+                <li>Berat : 56 Kg</li>
+            </ul>
+            
+            <h4>SKILL</h4>
+            <ul class="skill-list">
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/13Monsopiad/13Monsopiadskill0.jpg" alt="Pasif Skill Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">PASIF: ROH TENGKORAK</span>
+                        <ul class="skill-description-list"><li>Unk</li><li>Apabila Monsopiad mati, dia akan terus mengawal tengkoraknya selama 5 saat.</li><li>Boleh bergerak dan menggunakan Skill 1 serta Skill 2, tetapi serangannya tidak memberikan damage atau efek.</li><li>Tengkorak akan kekal terapung di sisi Monsopiad sepanjang permainan, menandakan kewujudan kuasanya.</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/13Monsopiad/13Monsopiadskill1.jpg" alt="Skill 1 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 1: TENGKORAK LASER</span>
+                        <ul class="skill-description-list"><li>(Fizikal, AOE, Burst Damage)</li><li>Level: 1-4</li><li>Tengkorak Monsopiad menembakkan sinar laser dalam garisan lurus sejauh 8 unit ke hadapan.</li><li>Musuh dalam laluan laser menerima damage</li><li>Level 1: 250 (+80% Total Physical Attack) damage</li><li>Level 2: 300 (+85% Total Physical Attack) damage</li><li>Level 3: 350 (+90% Total Physical Attack) damage</li><li>Level 4: 400 (+100% Total Physical Attack) damage</li><li>Cooldown: 6 saat</li><li>Mana: 50/60/70/80</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/13Monsopiad/13Monsopiadskill2.jpg" alt="Skill 2 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 2: PERANGKAP TENGKORAK</span>
+                        <ul class="skill-description-list"><li>(Fizikal, CC, Burst Damage)</li><li>Level: 1-4</li><li>Monsopiad boleh menanam hingga 5 tengkorak di medan perang.</li><li>Tengkorak akan aktif jika musuh masuk ke dalam radius 3 unit, lalu mengejar mereka dan meletup.</li><li>Efek:Letupan menyebabkan 200/250/300/350 Physical Damage serta slow 40% selama 1.5 saat.</li><li>Cooldown: 8 saat</li><li>Mana: 80/90/100/110</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/13Monsopiad/13Monsopiadskill3.jpg" alt="Skill 3 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 3: BOOSTER TENGKORAK</span>
+                        <ul class="skill-description-list"><li>(Buff, DPS)</li><li>Level: 1-4</li><li>Monsopiad meningkatkan kuasa tengkoraknya selama 6 saat, menyebabkan Skill 1 dan Skill 2 memberi tambahan damage.</li><li>Efek:Skill 1 dan 2 mendapat tambahan +30% damage setiap level.</li><li>Cooldown: 10/8/6/4 saat</li><li>Mana: 100/95/90/85</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/13Monsopiad/13Monsopiadskill4.jpg" alt="Ultimate Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">ULTI: GATHER MY VICTIMS</span>
+                        <ul class="skill-description-list"><li>(Fizikal, AOE, Burst Damage)</li><li>Level: 1-3</li><li>Monsopiad menggandakan tengkorak di sekelilingnya, mencipta 5 tengkorak yang menyerang mengikut mana2 skill.</li><li>Masa: 2/4/6 saat</li><li>Cooldown: 30 saat</li><li>Mana: 150/170/190</li></ul> 
+                    </div>
+                </li>
+            </ul>
+
+
+            <h4>PERSONALITI</h4>
+            <ul class="personaliti-list">
+                <li>Berani dan tegas dalam menghadapi bahaya.</li>
+<li>Memegang amanah dengan penuh tanggungjawab.</li>
+<li>Agak sinis dan mempunyai humor gelap.</li>
+<li>Tidak mudah percaya pada orang lain tetapi setia pada sekutunya.</li>
+            </ul>
+
+            <h4>HIKAYAT</h4>
+            <div class="hikayat-text">
+                <p>Dahulu kala, di tanah Borneo, negeri Sabah yang permai, berselang-seli suara gelombang hutan tebal dan bunyi teriakan suku-suku yang sering bersengketa. Pada masa itu, pemburuan kepala bukanlah sekadar adat, tetapi lambang keberanian dan keagungan. Setiap tengkorak yang dikumpul adalah bukti kemenangan dan kegagahan seorang pahlawan.</p>
+
+<p>Di sebuah kampung bernama Kuai, di daerah Penampang, lahirlah seorang anak lelaki yang istimewa. Monsopiad namanya. Tubuh kecilnya ditandai dengan tanda aneh, yang dipercayai oleh para dukun sebagai petanda bakal lahirnya seorang pahlawan agung. Penduduk kampung merasakan bahawa Monsopiad bakal menjadi pelindung mereka, benteng yang memisahkan mereka dari ancaman musuh suku-suku lain.</p>
+
+<p>Tatkala Monsopiad membesar, bakatnya semakin menyerlah. Dia bukan sahaja cekap dalam seni perang, tetapi juga seorang pemburu yang tiada tandingan. Setiap serangannya membawa pulang kemenangan. Kepala-kepala pahlawan musuh dikumpulkan dengan penuh megah dan disimpan di Rumah Tengkorak sebagai lambang keunggulan suku Kuai.</p>
+
+<p>Monsopiad kemudian digelar "headhunter" oleh semua suku di Sabah. Kehebatan dan keberaniannya menjadi buah mulut yang merentasi lembah dan gunung. Namun, kejayaan ini mula meracun jiwa Monsopiad. Rasa tamak mula mencengkam, dan dia kini tidak lagi memburu musuh sahaja, bahkan manusia yang tidak bersalah turut menjadi mangsanya.</p>
+
+<p>Tatkala keganasan Monsopiad semakin menggila, suku-suku lain yang pernah bermusuhan bergabung tenaga. Mereka bersatu untuk menjatuhkan sang pahlawan yang kini berubah menjadi ancaman. Pertempuran terakhir menyaksikan Monsopiad akhirnya tumbang di tangan musuh-musuhnya. Dengan kematiannya, tradisi pemburuan kepala mula perlahan-lahan ditinggalkan. Orang ramai takut untuk menghidupkan kembali semangat yang tamak seperti Monsopiad.</p>
+
+<p>Hingga ke hari ini, di Penampang, berdiri teguh sebuah tempat dikenali sebagai "House of Skulls". Di sana tersimpan ratusan tengkorak hasil buruan Monsopiad, menjadi peringatan kepada sejarah yang penuh pengajaran.</p>
+
+<p>Pada zaman moden, seorang remaja lelaki bernama Vic, anak jati Sabah, datang melawat Rumah Tengkorak. Tangannya terhenti pada sebuah tengkorak yang terasa lain dari yang lain. Tanpa sengaja, dia membawa pulang tengkorak itu, meskipun dia tidak ingat pernah menyimpannya.</p>
+
+<p>Malam-malamnya diganggu mimpi aneh. Dia bermimpi seorang lelaki bertubuh gagah dan bermata tajam menyapa. Hari demi hari, mimpi itu berulang, sehingga akhirnya Vic tidak tahan. Dalam mimpinya yang terakhir, lelaki itu memperkenalkan dirinya.</p>
+
+<p>"Aku Monsopiad," katanya dengan suara berwibawa. "Tengkorak yang kau bawa itu adalah milikku. Kau orang pertama yang menyentuhnya selepas sekian lama. Kini, aku serahkan kuasaku padamu. Jadilah pahlawan hebat seperti aku dahulu. Namun, ingatlah, jangan sekali-kali kau terjerumus ke dalam ketamakan, seperti mana aku telah tersesat dahulu. Tengkorak itu ada kuasa, gunakanlah ia untuk kebaikan."</p>
+
+<p>Vic terbangun dengan peluh membasahi tubuhnya. Dia tahu hidupnya kini telah berubah. Tengkorak Monsopiad yang penuh kuasa itu kini menjadi amanahnya, dan dia berikrar untuk menggunakan kuasa itu dengan bijak, demi kebaikan semua.</p>
+
+<p>Malam itu, bulan mengambang penuh, memercikkan sinarnya ke kamar Vic yang sunyi. Tidurnya resah, seperti ada sesuatu yang menanti di seberang alam. Sekali lagi, dia terbawa ke dalam mimpi yang terasa lebih nyata dari sebelumnya.</p>
+
+<p>Di hadapannya, muncul seorang pemuda dengan rambut panjang berombak, tidak terurus tetapi kelihatan gagah dan penuh karisma. Pakaiannya ringkas, namun di lehernya tergantung loket yang berkilauan dalam cahaya bulan. Pemuda itu menguntum senyuman nakal, tetapi matanya menyimpan kesungguhan yang mendalam.</p>
+
+<p>“Hei, Vic!” serunya dengan suara santai tetapi penuh keyakinan. “Akhirnya kita bertemu. Aku Cek Kebayan, pengembara dari alam lain. Jangan tertipu dengan gaya aku yang kacau ni. Aku mungkin nampak macam tak ada haluan, tapi aku tahu lebih banyak daripada apa yang kau bayangkan.”</p>
+
+<p>Vic memandangnya dengan penuh kehairanan. “Cek Kebayan? Bukankah sepatutnya kau... err, seorang tua bijaksana atau semacam itu?”</p>
+
+<p>Cek Kebayan tergelak kecil, rambutnya yang panjang terbuai angin. “Ah, stereotaip! Hidup ni tak semestinya ikut aturan, Vic. Aku memang lain daripada yang lain, tapi aku tahu apa yang aku buat. Dan sekarang, aku perlukan kau.”</p>
+
+<p>Cek Kebayan melangkah menghampiri Vic, tangannya menyeluk poket seluar lusuhnya. “Dengar sini, kau pegang tengkorak Monsopiad, kan? Itu bukan kebetulan. Kau adalah orang yang terpilih untuk menyambung legasi dia. Tapi kuasa tu... kau tak boleh kendalikan sendiri. Kau perlukan bantuan aku.”</p>
+
+<p>Vic mengerutkan dahi. “Kenapa saya? Dan apa yang kau mahukan daripada saya?”</p>
+
+<p>Cek Kebayan tersenyum lebar, menunjukkan giginya yang putih berkilau. “Sebab kau ada hati. Kau tahu apa maksud tanggungjawab. Tengkorak tu tak akan pilih sembarangan orang. Tapi sekarang aku nak kau bergabung dengan aku, jadi sebahagian daripada pasukan aku. Dunia ni ada banyak ancaman, dan kita perlukan semua tenaga yang ada untuk hadapinya.”</p>
+
+<p>Vic keliru. “Pasukan? Siapa lagi?”</p>
+
+<p>Cek Kebayan mengangkat bahu, wajahnya penuh teka-teki. “Kau akan tahu nanti. Semua yang aku pilih ada sebabnya. Tapi satu perkara pasti: aku nak kau guna gelaran Monsopiad. Kau bukan sekadar Vic lagi. Nama tu ada sejarah, dan sekarang sejarah tu ada dalam tangan kau.”</p>
+
+<p>Vic menarik nafas panjang, masih cuba memahami apa yang berlaku. “Tapi aku tak pasti aku boleh lakukannya. Aku takut kuasa ni akan buat aku jadi macam Monsopiad dulu—tamak dan hilang kawalan.”</p>
+
+<p>Cek Kebayan mengangguk perlahan, senyumannya bertukar serius. “Bagus kau takut. Itu tanda kau ada kesedaran. Tapi dengar sini, aku ada untuk bimbing kau. Kau tak akan bersendirian dalam perjalanan ni. Kau akan belajar, satu langkah demi satu langkah. Sekarang, teruskan hidup kau macam biasa, tapi bersedia. Bila waktunya tiba, kita akan bertemu lagi.”</p>
+
+<p>Pemuda itu mula melangkah pergi, tetapi sempat berpaling dengan senyuman penuh keyakinan. “Oh, dan Vic, jangan lupa. Kau adalah Monsopiad yang baru. Nama tu bukan beban, tapi kebanggaan. Gunakanlah kuasa tu dengan bijak.”</p>
+
+<p>Dengan itu, Cek Kebayan lenyap seperti bayang-bayang yang ditiup angin malam. Vic terbangun dengan rasa bersemangat yang tidak pernah dirasainya sebelum ini. Dia tahu hidupnya kini sudah berubah sepenuhnya, dan dia bersedia menghadapi apa sahaja yang akan datang. Nama Monsopiad kini menjadi tanggungjawabnya, dan dia berikrar untuk memegangnya dengan kehormatan.</p>
+            </div>
+        </div>
+    </main>
+    
+    <div class="nav-container">
+        <a href="#" class="nav-button back-glow left-button">
+            <img src="Hiasan/back_button.jpg" alt="Kembali" title="Kembali ke Galeri">
+            <span class="button-label">KEMBALI</span>
+        </a>
+        
+        <a href="index.html" class="nav-button home-glow right-button">
+            <img src="Hiasan/home_button.jpg" alt="Halaman Utama" title="Halaman Utama">
+            <span class="button-label">HALAMAN UTAMA</span>
+        </a>
+    </div>
+    
+    <script src="script.js"></script> 
+
+    <script>
+        // Set skin pertama sebagai skin aktif semasa muat halaman
+        let currentSkinIndex = 0;
+        const skinItems = document.querySelectorAll('.thumbnail-item');
+        const mainImg1 = document.getElementById('main-skin-img-1');
+        const mainImg2 = document.getElementById('main-skin-img-2');
+        const mainImg3 = document.getElementById('main-skin-img-3');
+        const mainImg4 = document.getElementById('main-skin-img-4');
+        const mainImg5 = document.getElementById('main-skin-img-5');
+        const skinNameDisplay = document.getElementById('skin-name-display');
+        const arrowLeft = document.getElementById('arrow-left');
+        const arrowRight = document.getElementById('arrow-right');
+        const totalSkins = skinItems.length;
+
+        // Fungsi utama untuk menukar skin
+        function changeSkin(index) {
+            if (index < 0 || index >= totalSkins) return; 
+
+            currentSkinIndex = index;
+            
+            // 1. Update Imej Utama
+            const selectedSkin = skinItems[currentSkinIndex];
+            if (mainImg1) mainImg1.src = selectedSkin.getAttribute('data-main-img-1');
+            if (mainImg2) mainImg2.src = selectedSkin.getAttribute('data-main-img-2');
+            if (mainImg3) mainImg3.src = selectedSkin.getAttribute('data-main-img-3');
+            if (mainImg4) mainImg4.src = selectedSkin.getAttribute('data-main-img-4');
+            if (mainImg5) mainImg5.src = selectedSkin.getAttribute('data-main-img-5');
+            
+            // 2. Update Nama Skin
+            if (skinNameDisplay) skinNameDisplay.textContent = selectedSkin.getAttribute('data-skin-name');
+
+            // 3. Update Status Aktif (Opacity/Ketelusan) pada Thumbnail
+            skinItems.forEach((item, i) => {
+                if (i === currentSkinIndex) {
+                    item.classList.add('active'); 
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+
+            // 4. Update Status Anak Panah Navigasi
+            updateArrows();
+        }
+
+        // Fungsi untuk mengemas kini keadaan anak panah
+        function updateArrows() {
+            // Anak Panah Kiri: Nyahaktifkan jika di skin pertama
+            if (currentSkinIndex === 0) {
+                if(arrowLeft) {
+                    arrowLeft.classList.add('disabled-arrow'); 
+                    arrowLeft.disabled = true;
+                }
+            } else {
+                if(arrowLeft) {
+                    arrowLeft.classList.remove('disabled-arrow');
+                    arrowLeft.disabled = false;
+                }
+            }
+
+            // Anak Panah Kanan: Nyahaktifkan jika di skin terakhir
+            if (currentSkinIndex === totalSkins - 1) {
+                if(arrowRight) {
+                    arrowRight.classList.add('disabled-arrow'); 
+                    arrowRight.disabled = true;
+                }
+            } else {
+                if(arrowRight) {
+                    arrowRight.classList.remove('disabled-arrow');
+                    arrowRight.disabled = false;
+                }
+            }
+        }
+
+        // Event Listener untuk Anak Panah
+        if (arrowLeft) {
+            arrowLeft.addEventListener('click', () => {
+                changeSkin(currentSkinIndex - 1);
+            });
+        }
+        
+        if (arrowRight) {
+            arrowRight.addEventListener('click', () => {
+                changeSkin(currentSkinIndex + 1);
+            });
+        }
+
+        // Pastikan paparan skin di set semasa muat halaman
+        window.addEventListener('load', () => {
+            changeSkin(0);
+        });
+
+    </script>
+</body>
+</html>

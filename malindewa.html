@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MALIN DEWA: SANG HARIMAU JADIAN</title>
+    <link rel="stylesheet" href="styles.css"> 
+
+    <style>
+        body {
+            background-image: url('Pahlawan/12MalinDewa/12MalinDewaBackground.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero-header-container">
+        
+        <div class="hero-name-row">
+            <div class="hero-number">012</div>
+            <h1 class="hero-title-pixel">MALIN DEWA</h1>
+        </div>
+
+        <div class="hero-type-row">
+            <img src="Hiasan/logo_pendekar.jpg" alt="Logo Pendekar" class="hero-logo-img">
+            <h2 class="hero-type-title">PENDEKAR</h2>
+        </div>
+        
+        <p class="hero-rank-subtitle">SANG HARIMAU JADIAN</p>
+    </header>
+
+    <blockquote class="hero-quote-box">
+        "Dulu aku mangsa sumpahan… kini aku pemburu kejahatan!"
+    </blockquote>
+
+    <main>
+        <img src="Pahlawan/12MalinDewa/12MalinDewa2.jpg" alt="MALIN DEWA" class="detail-hero-image">
+
+        <div class="detail-content">
+            
+            <h4>SKIN</h4>
+            
+            <div class="skin-gallery-container">
+                <h3 id="skin-name-display" class="skin-name-display">MALIN DEWA</h3>
+                <div class="main-skin-images">
+                    <img id="main-skin-img-1" src="Pahlawan/12MalinDewa/12MalinDewa1.jpg" alt="Skin BADANG 1" class="main-skin-img">
+                    <img id="main-skin-img-2" src="Pahlawan/12MalinDewa/12MalinDewa2.jpg" alt="Skin BADANG 2" class="main-skin-img">
+                    <img id="main-skin-img-3" src="Pahlawan/12MalinDewa/12MalinDewa3.jpg" alt="Skin BADANG 3" class="main-skin-img">
+                </div>
+                    
+                <div class="image-row row-two">
+                    <img id="main-skin-img-4" src="Pahlawan/12MalinDewa/12MalinDewa4.jpg" alt="Skin BADANG 4" class="main-skin-img">
+                    <img id="main-skin-img-5" src="Pahlawan/12MalinDewa/12MalinDewa5.jpg" alt="Skin BADANG 5" class="main-skin-img">
+                </div>
+        
+            </div>
+
+            <div class="skin-selection-container">
+                <button id="arrow-left" class="nav-arrow" disabled>&lt;</button>
+                <div class="skin-thumbnails-wrapper">
+                    <div class="thumbnail-item active" data-skin-index="0" data-skin-name="MALIN DEWA"
+                            data-main-img-1="Pahlawan/12MalinDewa/12MalinDewa1.jpg"
+                            data-main-img-2="Pahlawan/12MalinDewa/12MalinDewa2.jpg"
+                            data-main-img-3="Pahlawan/12MalinDewa/12MalinDewa3.jpg"
+                            data-main-img-4="Pahlawan/12MalinDewa/12MalinDewa4.jpg"
+                            data-main-img-5="Pahlawan/12MalinDewa/12MalinDewa5.jpg"
+                            onclick="changeSkin(0)">
+                         <img src="Pahlawan/12MalinDewa/12MalinDewa2.jpg" alt="Thumbnail MALIN DEWA" class="thumbnail-img">
+                         <span class="thumbnail-label">MALIN DEWA</span>
+                    </div>
+
+                    <div class="thumbnail-item" data-skin-index="1" data-skin-name="ERA LAMA BADANG"
+                            data-main-img-1="Pahlawan/12MalinDewa/12WerewolfMalinDewa1.jpg"
+                            data-main-img-2="Pahlawan/12MalinDewa/12WerewolfMalinDewa2.jpg"
+                            data-main-img-3="Pahlawan/12MalinDewa/12WerewolfMalinDewa3.jpg"
+                            data-main-img-4="Pahlawan/12MalinDewa/12WerewolfMalinDewa4.jpg"
+                            data-main-img-5="Pahlawan/12MalinDewa/12WerewolfMalinDewa5.jpg"
+                            onclick="changeSkin(1)">
+                         <img src="Pahlawan/12MalinDewa/12WerewolfMalinDewa2.jpg" alt="Thumbnail WEREWOLF MALIN DEWA" class="thumbnail-img">
+                         <span class="thumbnail-label">WEREWOLF MALIN DEWA</span>
+                    </div>
+                </div>
+                <button id="arrow-right" class="nav-arrow" >&gt;</button>
+            </div>
+            
+            
+            <h4>STATISTIK & STATUS NYAWA DAN TENAGA</h4>
+            
+            <ul class="biodata-list">
+                <li class="stat-item">
+                    <span class="stat-label">Serangan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-red" style="width: 90%;"></div>
+                    </div>
+                    <span class="stat-score">9</span>
+                </li>
+                
+                <li class="stat-item">
+                    <span class="stat-label">Penguasaan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-orange" style="width: 60%;"></div>
+                    </div>
+                    <span class="stat-score">6</span>
+                </li>
+
+                <li class="stat-item">
+                    <span class="stat-label">Kesukaran</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-blue" style="width: 80%;"></div>
+                    </div>
+                    <span class="stat-score">8</span>
+                </li>
+                
+                <li class="stat-item">
+                    <span class="stat-label">Kekebalan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-green" style="width: 70%;"></div>
+                    </div>
+                    <span class="stat-score">7</span>
+                </li>
+                
+                <li style="margin-top: 15px;">
+                    HP = <span style="color: white; font-weight: bold;">2800</span> <span style="color: #90ee90; font-weight: bold;">+180</span>
+                </li>
+                <li>
+                    Mana = <span style="color: white; font-weight: bold;">---</span> <span style="color: #ADD8E6; font-weight: bold;">+--</span>
+                </li>
+            </ul>
+
+
+            <h4>BIODATA</h4>
+            <ul class="biodata-list">
+                <li>Nama Pahlawan : MALIN DEWA</li>
+                <li>Nama Sebenar : Malin Dewa</li>
+                <li>Gelaran : SANG HARIMAU JADIAN</li>
+                <li>Umur : ??? Tahun</li>
+                <li>Number Pahlawan : 012</li>
+                <li>Jenis Pahlawan : <img src="Hiasan/logo_pendekar.jpg" alt="Logo Pendekar Kecil" class="list-logo"> PENDEKAR</li>
+                <li>Makhluk : Harimau Jadian</li>
+                <li>Bangsa : Melayu</li>
+                <li>Negeri Asal : Hutan Taman Negara</li>
+                <li>Pekerjaan : Penjaga Hutan</li>
+                <li>Tinggi : 196 cm</li>
+                <li>Berat : 73 Kg</li>
+            </ul>
+            
+            <h4>SKILL</h4>
+            <ul class="skill-list">
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/12MalinDewa/12MalinDewaskill0.jpg" alt="Pasif Skill Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">PASIF: HARIMAU JADIAN</span>
+                        <ul class="skill-description-list"><li>(Fizikal, Buff)</li><li>Setiap kali Malin bertukar menjadi harimau melalui mana-mana kemahirannya, serangan fizikalnya bertambah sebanyak 10% – 25% (bergantung kepada level hero) selama 3 saat.</li><li>Tidak menggunakan mana, hanya cooldown sebagai penghad.</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/12MalinDewa/12MalinDewaskill1.jpg" alt="Skill 1 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 1: CENGKAMAN BELANG</span>
+                        <ul class="skill-description-list"><li>(Fizikal, CC, Burst Damage, Dash)</li><li>Level: 1-4</li><li>Malin melompat ke arah musuh yang dipilih dalam jarak 6 unit, mencakar mereka dengan kuku tajam.</li><li>Musuh terkena stun selama 1.2s dan menerima 150/200/250/300 (+80% Total Physical Attack) damage.</li><li>Selepas serangan, Malin kembali ke bentuk manusia.</li><li>Cooldown: 9/8.5/8/7.5 saat.</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/12MalinDewa/12MalinDewaskill2.jpg" alt="Skill 2 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 2: PECUTAN RIMBA</span>
+                        <ul class="skill-description-list"><li>(Fizikal, Buff, Debuff Removal, Dash)</li><li>Level: 1-4</li><li>Malin meningkatkan kelajuan pergerakan sebanyak 30%/35%/40%/45% selama 3 saat.</li><li>Menghapuskan semua kesan CC (stun, slow, immobilize, dan suppress) sebaik sahaja ditukar ke bentuk harimau.</li><li>Selepas masa tamat, kembali ke bentuk manusia.</li><li>Cooldown: 12/11/10/9 saat.</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/12MalinDewa/12MalinDewaskill3.jpg" alt="Skill 3 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 3: NGAUMAN RIMAU</span>
+                        <ul class="skill-description-list"><li>(Fizikal, AOE, CC, Slow Effect, Burst Damage)</li><li>Level: 1-4</li><li>Malin mengaum dengan kuat, mencipta gelombang kejutan dalam radius 5 unit.</li><li>Musuh yang terkena gelombang ini menerima 180/230/280/320 (+60% Total Physical Attack) damage dan terkena slow sebanyak 40% selama 2.5 saat.</li><li>Selepas mengaum, Malin kembali ke bentuk manusia.</li><li>Cooldown: 14/13/12/11 saat.</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/12MalinDewa/12MalinDewaskill4.jpg" alt="Ultimate Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">ULTI: SUMPAHAN HARIMAU JADIAN</span>
+                        <ul class="skill-description-list"><li>(Fizikal, Berserk Mode, Auto-movement, DPS, True Damage, Execute, Tower Immunity)</li><li>Level: 1-3</li><li>Malin berubah buas selama 6/7/8 saat dan secara automatik menyerang musuh terdekat.</li><li>Semasa dalam bentuk ini:Damage serangan meningkat sebanyak 50%.Serangan Malin mengabaikan 20% pertahanan musuh (True Damage).Jika Malin membunuh musuh, masa kemahiran bertambah 3 saat.Imun terhadap serangan turret.</li><li>Malin tidak boleh dikawal oleh pemain (serangan berlaku secara automatik).</li><li>Selepas masa tamat, Malin kembali ke bentuk manusia dengan lifesteal 25% daripada damage yang diberikan dalam bentuk harimau.</li><li>Cooldown: 50/45/40 saat.</li></ul> 
+                    </div>
+                </li>
+            </ul>
+
+
+            <h4>PERSONALITI</h4>
+            <ul class="personaliti-list">
+                <li>Setia pada kawan, tetapi tidak mudah mempercayai sesiapa</li>
+<li>Penuh semangat perjuangan dan kesungguhan</li>
+<li>Suka bertindak tanpa berfikir panjang</li>
+<li>Cenderung bersikap serius dan pendiam</li>
+<li>Menyesali masa lampaunya tetapi berusaha untuk menebus kesalahan</li>
+            </ul>
+
+            <h4>HIKAYAT</h4>
+            <div class="hikayat-text">
+                <p>Maka tersebutlah kisah seorang pemuda bernama Malin Dewa, anak tunggal seorang ibu tua yang hidup dalam serba kekurangan. Malin, seorang pemuda yang elok rupa parasnya, tidak hanya gagah perkasa tetapi juga berbudi pekerti luhur. Kasihnya kepada ibunya tiada taranya, ibarat bulan menyinari malam yang gelap. Tatkala ibunya jatuh sakit dan rezeki mereka makin sempit, Malin pun nekad untuk merantau, mencari ilmu dan penghidupan demi membela nasib keluarganya.</p>
+
+<p>Malin Dewa, dengan hati yang bulat dan azam yang teguh, menempuh jalan yang penuh liku. Dalam perjalanannya, datanglah pelbagai dugaan yang menguji keimanan dan kejujurannya. Ada manusia yang cuba menipu, ada makhluk halus yang cuba menggoda, namun Malin tetap teguh seperti akar tunjang yang mencengkam bumi. Keikhlasannya menjadi perisai, dan doanya menjadi pedoman.</p>
+
+<p>Pada suatu malam yang dingin, di sebuah hutan yang kelam, Malin bertemu dengan seorang pemuda tampan berbaju putih berkilauan. Pemuda itu memperkenalkan dirinya sebagai seorang Putera Bunian, yang telah meninggalkan alam bunian kerana mahu hidup sebagai manusia. Mereka berdua segera bersahabat, bagaikan bulan dan bintang yang seiring di langit malam. Sang putera membantu Malin mencari rezeki, malah menjadi teman setianya dalam menghadapi pelbagai cabaran dunia.</p>
+
+<p>Namun, sang putera menetapkan satu syarat kepada persahabatan mereka: "Jangan pernah kau ceritakan asal-usulku kepada sesiapapun, wahai Malin. Kerana andai kau berbuat demikian, celakalah kita berdua.“ Malin bersumpah akan memegang janji itu. Bertahun-tahun kemudian, rezeki Malin melimpah ruah, dan dia kembali ke pangkuan ibunya bersama sang putera. Hidup mereka menjadi aman dan bahagia. Namun, sifat manusia yang lemah sering kali mudah termakan godaan dunia. Sedikit demi sedikit, sifat tamak menyelinap ke dalam hati Malin. Pada suatu hari, akibat terpengaruh dengan hasutan seorang bunian lain, Malin menceritakan rahsia asal-usul sahabatnya.</p>
+
+<p>Mendengar pengkhianatan itu, sang putera menjadi amat murka. Namun, dia tidak mengucapkan walau sepatah kata, hanya matanya yang redup melambangkan hati yang terluka. Ketika itulah, satu suara bergema di angkasa: "Wahai manusia yang khianat, kau telah melanggar janji! Maka dengan itu, aku menyumpah kau menjadi seekor harimau, agar kau mengerti perasaan sahabatmu yang telah kau sakiti." Dalam sekelip mata, tubuh Malin bertukar menjadi seekor harimau belang, dan dia melarikan diri ke dalam hutan belantara.</p>
+
+<p>Berabad lamanya Malin Dewa hidup dalam bentuk harimau, menjadi penjaga rimba yang tidak dikenali sesiapa. Namun, takdir menemukan dia dengan seorang pemuda bernama Ulek Mayang, seorang bekas bunian yang meninggalkan alamnya demi menjalani kehidupan manusia. Ulek Mayang melihat harimau itu dan berkata: "Aku tahu siapa engkau, Malin Dewa. Kisahmu pernah diceritakan di alam bunian, dan aku tahu penderitaanmu. Kini, biar aku bebaskan kau dari sumpahan ini."</p>
+
+<p>Dengan mantera sakti yang penuh dengan jampi-jampi, Ulek Mayang mengembalikan Malin Dewa kepada bentuk asalnya, tetapi dengan satu kelebihan luar biasa: "Kini kau manusia kembali, tetapi kau juga punya keupayaan bertukar menjadi harimau. Gunakanlah kelebihan ini untuk menebus dosamu yang lalu dan melindungi mereka yang memerlukan."</p>
+
+<p>Malin Dewa bertanya, "Siapakah engkau sebenarnya, wahai Ulek Mayang?" Ulek Mayang menjawab, "Aku bekas bunian, sama seperti sahabatmu dahulu. Namun, aku telah meninggalkan alam itu kerana peraturan mereka yang kejam. Aku tahu kisah putera bunian itu, dan aku ingin menebus apa yang tidak dapat dilakukan dahulu. Kau masih punya kesempatan untuk menjaga nama baiknya."</p>
+
+<p>Malin Dewa akhirnya mengikuti Ulek Mayang ke sebuah tempat rahsia, tempat berkumpulnya golongan sakti yang menjaga keseimbangan dunia. Di sana, Malin Dewa mula memahami makna sebenar kuasa dan pengorbanan, berikrar untuk tidak mengulangi kesilapan masa lalu. Kini, dia bersedia menggunakan kuasa harimaunya untuk kebaikan, sebagai penebusan dosa-dosa lampaunya.</p>
+            </div>
+        </div>
+    </main>
+    
+    <div class="nav-container">
+        <a href="#" class="nav-button back-glow left-button">
+            <img src="Hiasan/back_button.jpg" alt="Kembali" title="Kembali ke Galeri">
+            <span class="button-label">KEMBALI</span>
+        </a>
+        
+        <a href="index.html" class="nav-button home-glow right-button">
+            <img src="Hiasan/home_button.jpg" alt="Halaman Utama" title="Halaman Utama">
+            <span class="button-label">HALAMAN UTAMA</span>
+        </a>
+    </div>
+    
+    <script src="script.js"></script> 
+
+    <script>
+        // Set skin pertama sebagai skin aktif semasa muat halaman
+        let currentSkinIndex = 0;
+        const skinItems = document.querySelectorAll('.thumbnail-item');
+        const mainImg1 = document.getElementById('main-skin-img-1');
+        const mainImg2 = document.getElementById('main-skin-img-2');
+        const mainImg3 = document.getElementById('main-skin-img-3');
+        const mainImg4 = document.getElementById('main-skin-img-4');
+        const mainImg5 = document.getElementById('main-skin-img-5');
+        const skinNameDisplay = document.getElementById('skin-name-display');
+        const arrowLeft = document.getElementById('arrow-left');
+        const arrowRight = document.getElementById('arrow-right');
+        const totalSkins = skinItems.length;
+
+        // Fungsi utama untuk menukar skin
+        function changeSkin(index) {
+            if (index < 0 || index >= totalSkins) return; 
+
+            currentSkinIndex = index;
+            
+            // 1. Update Imej Utama
+            const selectedSkin = skinItems[currentSkinIndex];
+            if (mainImg1) mainImg1.src = selectedSkin.getAttribute('data-main-img-1');
+            if (mainImg2) mainImg2.src = selectedSkin.getAttribute('data-main-img-2');
+            if (mainImg3) mainImg3.src = selectedSkin.getAttribute('data-main-img-3');
+            if (mainImg4) mainImg4.src = selectedSkin.getAttribute('data-main-img-4');
+            if (mainImg5) mainImg5.src = selectedSkin.getAttribute('data-main-img-5');
+            
+            // 2. Update Nama Skin
+            if (skinNameDisplay) skinNameDisplay.textContent = selectedSkin.getAttribute('data-skin-name');
+
+            // 3. Update Status Aktif (Opacity/Ketelusan) pada Thumbnail
+            skinItems.forEach((item, i) => {
+                if (i === currentSkinIndex) {
+                    item.classList.add('active'); 
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+
+            // 4. Update Status Anak Panah Navigasi
+            updateArrows();
+        }
+
+        // Fungsi untuk mengemas kini keadaan anak panah
+        function updateArrows() {
+            // Anak Panah Kiri: Nyahaktifkan jika di skin pertama
+            if (currentSkinIndex === 0) {
+                if(arrowLeft) {
+                    arrowLeft.classList.add('disabled-arrow'); 
+                    arrowLeft.disabled = true;
+                }
+            } else {
+                if(arrowLeft) {
+                    arrowLeft.classList.remove('disabled-arrow');
+                    arrowLeft.disabled = false;
+                }
+            }
+
+            // Anak Panah Kanan: Nyahaktifkan jika di skin terakhir
+            if (currentSkinIndex === totalSkins - 1) {
+                if(arrowRight) {
+                    arrowRight.classList.add('disabled-arrow'); 
+                    arrowRight.disabled = true;
+                }
+            } else {
+                if(arrowRight) {
+                    arrowRight.classList.remove('disabled-arrow');
+                    arrowRight.disabled = false;
+                }
+            }
+        }
+
+        // Event Listener untuk Anak Panah
+        if (arrowLeft) {
+            arrowLeft.addEventListener('click', () => {
+                changeSkin(currentSkinIndex - 1);
+            });
+        }
+        
+        if (arrowRight) {
+            arrowRight.addEventListener('click', () => {
+                changeSkin(currentSkinIndex + 1);
+            });
+        }
+
+        // Pastikan paparan skin di set semasa muat halaman
+        window.addEventListener('load', () => {
+            changeSkin(0);
+        });
+
+    </script>
+</body>
+</html>

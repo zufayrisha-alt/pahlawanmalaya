@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAHSURI: SUMPAHAN DARAH PUTIH LANGKAWI</title>
+    <link rel="stylesheet" href="styles.css"> 
+
+    <style>
+        body {
+            background-image: url('Pahlawan/10Mahsuri/10MahsuriBackground.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero-header-container">
+        
+        <div class="hero-name-row">
+            <div class="hero-number">010</div>
+            <h1 class="hero-title-pixel">MAHSURI</h1>
+        </div>
+
+        <div class="hero-type-row">
+            <img src="Hiasan/logo_pengalur.jpg" alt="Logo Pengalur" class="hero-logo-img">
+            <h2 class="hero-type-title">PENGALUR</h2>
+        </div>
+        
+        <p class="hero-rank-subtitle">SUMPAHAN DARAH PUTIH LANGKAWI</p>
+    </header>
+
+    <blockquote class="hero-quote-box">
+        "Darah ini bukan satu sumpahan… tetapi satu anugerah untuk melindungi."
+    </blockquote>
+
+    <main>
+        <img src="Pahlawan/10Mahsuri/10Mahsuri2.jpg" alt="MAHSURI" class="detail-hero-image">
+
+        <div class="detail-content">
+            
+            <h4>SKIN</h4>
+            
+            <div class="skin-gallery-container">
+                <h3 id="skin-name-display" class="skin-name-display">MAHSURI</h3>
+                <div class="main-skin-images">
+                    <img id="main-skin-img-1" src="Pahlawan/10Mahsuri/10Mahsuri1.jpg" alt="Skin BADANG 1" class="main-skin-img">
+                    <img id="main-skin-img-2" src="Pahlawan/10Mahsuri/10Mahsuri2.jpg" alt="Skin BADANG 2" class="main-skin-img">
+                    <img id="main-skin-img-3" src="Pahlawan/10Mahsuri/10Mahsuri3.jpg" alt="Skin BADANG 3" class="main-skin-img">
+                </div>
+                    
+                <div class="image-row row-two">
+                    <img id="main-skin-img-4" src="Pahlawan/10Mahsuri/10Mahsuri4.jpg" alt="Skin BADANG 4" class="main-skin-img">
+                    <img id="main-skin-img-5" src="Pahlawan/10Mahsuri/10Mahsuri5.jpg" alt="Skin BADANG 5" class="main-skin-img">
+                </div>
+        
+            </div>
+
+            <div class="skin-selection-container">
+                <button id="arrow-left" class="nav-arrow" disabled>&lt;</button>
+                <div class="skin-thumbnails-wrapper">
+                    <div class="thumbnail-item active" data-skin-index="0" data-skin-name="BADANG"
+                            data-main-img-1="Pahlawan/10Mahsuri/10Mahsuri1.jpg"
+                            data-main-img-2="Pahlawan/10Mahsuri/10Mahsuri2.jpg"
+                            data-main-img-3="Pahlawan/10Mahsuri/10Mahsuri3.jpg"
+                            data-main-img-4="Pahlawan/10Mahsuri/10Mahsuri4.jpg"
+                            data-main-img-5="Pahlawan/10Mahsuri/10Mahsuri5.jpg"
+                            onclick="changeSkin(0)">
+                         <img src="Pahlawan/10Mahsuri/10Mahsuri2.jpg" alt="Thumbnail BADANG" class="thumbnail-img">
+                         <span class="thumbnail-label">MAHSURI</span>
+                    </div>
+
+                    <div class="thumbnail-item" data-skin-index="1" data-skin-name="ERA LAMA BADANG"
+                            data-main-img-1="Pahlawan/10Mahsuri/10GuiltyMahsuri1.jpg"
+                            data-main-img-2="Pahlawan/10Mahsuri/10GuiltyMahsuri2.jpg"
+                            data-main-img-3="Pahlawan/10Mahsuri/10GuiltyMahsuri3.jpg"
+                            data-main-img-4="Pahlawan/10Mahsuri/10GuiltyMahsuri4.jpg"
+                            data-main-img-5="Pahlawan/10Mahsuri/10GuiltyMahsuri5.jpg"
+                            onclick="changeSkin(1)">
+                         <img src="Pahlawan/10Mahsuri/10GuiltyMahsuri2.jpg" alt="Thumbnail ERA LAMA BADANG" class="thumbnail-img">
+                         <span class="thumbnail-label">GUILTY MAHSURI</span>
+                    </div>
+                </div>
+                <button id="arrow-right" class="nav-arrow" >&gt;</button>
+            </div>
+            
+            
+            <h4>STATISTIK & STATUS NYAWA DAN TENAGA</h4>
+            
+            <ul class="biodata-list">
+                <li class="stat-item">
+                    <span class="stat-label">Serangan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-red" style="width: 50%;"></div>
+                    </div>
+                    <span class="stat-score">5</span>
+                </li>
+                
+                <li class="stat-item">
+                    <span class="stat-label">Penguasaan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-orange" style="width: 60%;"></div>
+                    </div>
+                    <span class="stat-score">6</span>
+                </li>
+
+                <li class="stat-item">
+                    <span class="stat-label">Kesukaran</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-blue" style="width: 80%;"></div>
+                    </div>
+                    <span class="stat-score">8</span>
+                </li>
+                
+                <li class="stat-item">
+                    <span class="stat-label">Kekebalan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-green" style="width: 70%;"></div>
+                    </div>
+                    <span class="stat-score">7</span>
+                </li>
+                
+                <li style="margin-top: 15px;">
+                    HP = <span style="color: white; font-weight: bold;">2650</span> <span style="color: #90ee90; font-weight: bold;">+215</span>
+                </li>
+                <li>
+                    Mana = <span style="color: white; font-weight: bold;">480</span> <span style="color: #ADD8E6; font-weight: bold;">+60</span>
+                </li>
+            </ul>
+
+
+            <h4>BIODATA</h4>
+            <ul class="biodata-list">
+                <li>Nama Pahlawan : MAHSURI</li>
+                <li>Nama Sebenar : Adam</li>
+                <li>Gelaran : SUMPAHAN DARAH PUTIH LANGKAWI</li>
+                <li>Umur : 16 Tahun</li>
+                <li>Number Pahlawan : 010</li>
+                <li>Jenis Pahlawan : <img src="Hiasan/logo_pengalur.jpg" alt="Logo Pendekar Kecil" class="list-logo"> PENGALUR</li>
+                <li>Makhluk : Manusia</li>
+                <li>Bangsa : Melayu</li>
+                <li>Negeri Asal : Tasik Dayang Bunting, Langkawi,Kedah</li>
+                <li>Pekerjaan : Pelajar Sekolah Menengah</li>
+                <li>Tinggi : 160 cm</li>
+                <li>Berat : 45 Kg</li>
+            </ul>
+            
+            <h4>SKILL</h4>
+            <ul class="skill-list">
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/10Mahsuri/10Mahsuriskill0.jpg" alt="Pasif Skill Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">PASIF: SUMPAH TERAKHIR</span>
+                        <ul class="skill-description-list"><li>(Magic, True Damage, Debuff)</li><li>Apabila Mahsuri mati, darah putihnya akan keluar dan pergi menyerang musuh yang membunuhnya, menyebabkan Magic Damage (200 + 15% Max HP Mahsuri) dan Slow 30% selama 2 saat.</li><li>Jika musuh mempunyai Perisai, ia akan musnah sepenuhnya.</li><li>Musuh yang terkena akan kehilangan 50 mana (jika ada).</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/10Mahsuri/10Mahsuriskill1.jpg" alt="Skill 1 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 1: IKATAN DARAH PUTIH</span>
+                        <ul class="skill-description-list"><li>(Magic, Heal, Buff)</li><li>Level: 1-4</li><li>Mahsuri mengikat dirinya kepada seorang sekutu dalam jarak 6 unit dengan darah putih.</li><li>Jika tiada target, ia akan menyembuhkan diri sendiri.</li><li>Ikatan akan terputus jika jarak lebih dari 7 unit.</li><li>Mahsuri dan sekutu yang terikat mendapat +50% Regen HP selama 3 saat.</li><li>Damage / Heal:</li><li>Level 1: 150 HP per saat</li><li>Level 2: 225 HP per saat</li><li>Level 3: 300 HP per saat</li><li>Level 4: 375 HP per saat</li><li>Cooldown: 12s → 10s → 8s → 6s</li><li>Mana Cost: 100 → 110 → 120 → 130</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/10Mahsuri/10Mahsuriskill2.jpg" alt="Skill 2 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 2: TOMBAK DARAH PUTIH</span>
+                        <ul class="skill-description-list"><li>(Magic, AOE, CC)</li><li>Level: 1-4</li><li>Mahsuri menghasilkan tombak dari darah putih dan menjatuhkannya ke atas musuh dalam radius 5 unit.</li><li>Maksimum 3 tombak boleh muncul.</li><li>Setiap tombak menyebabkan stun selama 0.5s jika mengenai musuh.</li><li>Damage Skill:</li><li>Level 1: 200 Magic Damage per tombak</li><li>Level 2: 250 Magic Damage per tombak</li><li>Level 3: 300 Magic Damage per tombak</li><li>Level 4: 350 Magic Damage per tombak</li><li>Cooldown: 10s → 9s → 8s → 7s</li><li>Mana Cost: 80 → 90 → 100 → 110</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/10Mahsuri/10Mahsuriskill3.jpg" alt="Skill 3 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 3: DARAH PUTIH PELINDUNG</span>
+                        <ul class="skill-description-list"><li>(Magic, Shield, Buff)</li><li>Level: 1-4</li><li>Mahsuri memberi perisai kepada 3 sekutu terdekat dalam radius 4 unit, mengurangkan</li><li>Magic Damage yang diterima.Efek Perisai:</li><li>Level 1: 300 Shield HP (Mengurangkan 15% Magic Damage)</li><li>Level 2: 400 Shield HP (Mengurangkan 20% Magic Damage)</li><li>Level 3: 500 Shield HP (Mengurangkan 25% Magic Damage)</li><li>Level 4: 600 Shield HP (Mengurangkan 30% Magic Damage)</li><li>Perisai bertahan selama 4 saat atau sehingga habis.</li><li>Cooldown: 14s → 12s → 10s → 8s</li><li>Mana Cost: 120 → 130 → 140 → 150</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/10Mahsuri/10Mahsuriskill4.jpg" alt="Ultimate Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">ULTI: SUMPAHAN MAHSURI</span>
+                        <ul class="skill-description-list"><li>(Magic, AOE, Heal, Lifesteal)</li><li>Level: 1-3</li><li>Mahsuri membentuk kawasan darah putih dalam radius 6 unit, menyebabkan Magic Damage setiap saat kepada musuh dalam kawasan.</li><li>Setiap damage yang diterima oleh musuh dalam kawasan ini akan menyembuhkan sekutu dalam kawasan.</li><li>Mahsuri boleh bergerak sambil skill ini aktif.</li><li>Level 1: 150 Magic Damage setiap saat, menyembuhkan 50% daripada jumlah damage yang dikenakan.</li><li>Level 2: 200 Magic Damage setiap saat, menyembuhkan 75% daripada jumlah damage yang dikenakan.</li><li>Level 3: 250 Magic Damage setiap saat, menyembuhkan 100% daripada jumlah damage yang dikenakan.</li><li>Skill berlangsung selama 5 saat.</li><li>Cooldown: 60s → 50s → 40s</li><li>Mana Cost: 200 → 250 → 300</li></ul> 
+                    </div>
+                </li>
+            </ul>
+
+
+            <h4>PERSONALITI</h4>
+            <ul class="personaliti-list">
+                <li>Prihatin dan berjiwa penyelamat</li>
+<li>Tenang tetapi tegas dalam keputusan</li>
+<li>Mengutamakan keselamatan sekutu</li>
+<li>Pantang melihat ketidakadilan</li>
+            </ul>
+
+            <h4>HIKAYAT</h4>
+            <div class="hikayat-text">
+                <p>Maka tersebutlah sebuah pulau bernama Langkawi, tempat yang indah lagi permai, dihiasi pantai putih bersih dan laut yang biru berkilau bak permata berkilauan di bawah cahaya mentari. Di pulau itu, tinggallah seorang remaja bernama Adam, seorang pemuda yang gagah lagi cekal, anak kepada keluarga pembawa pelancong. Hidup mereka penuh kesederhanaan, namun hati mereka kaya dengan budi bahasa. Adam sering membawa bot bersama keluarganya, memperkenalkan keelokan pulau itu kepada pengunjung dari serata tempat.</p>
+
+<p>Namun, pada suatu hari yang penuh duka, Adam telah hilang di laut. Tiada sesiapa tahu ke mana dia menghilang, walhal Adam terkenal dengan kebolehannya berenang di laut dalam, menyelam tanpa alat, dan menjinakkan arus yang deras. Seminggu sudah berlalu, dan keluarga Adam menangisi kehilangannya, bak malam tanpa bintang, kelam dan penuh resah.</p>
+
+<p>Maka cerita ini membawa kita kembali ke zaman silam, ke tanah yang sama, ketika Langkawi dihuni oleh seorang wanita bernama Mahsuri, isteri kepada pahlawan bernama Wan Derus. Mahsuri, yang cantiknya bak bidadari, kini hidup sendiri tatkala suaminya berjuang di medan perang. Hatinya penuh kerinduan, namun lebih dari itu, ia dihuni kehampaan.</p>
+
+<p>"Aduhai, alangkah baiknya jika hamba dikurniakan seorang anak. Tidaklah sunyi hamba menanti kembalinya suami," bisik Mahsuri di tengah malam yang sepi.</p>
+
+<p>Tiba-tiba, muncullah seorang wanita tua, bongkok tiga, dengan tongkat yang menghentak bumi, memecah keheningan malam. "Apakah keinginanmu, wahai Mahsuri?" tanya wanita tua itu, suaranya serak namun menusuk ke telinga.</p>
+
+<p>Tanpa berfikir panjang, Mahsuri berkata, "Hamba ingin seorang anak, agar tidak kesepian."</p>
+
+<p>Wanita tua itu mengukir senyuman misteri, lalu menyentuh perut Mahsuri. "Hajatmu akan tertunai, wahai Mahsuri. Namun ingatlah, setiap kurniaan ada balasannya." Usai berkata begitu, wanita tua itu pun menghilang dalam bayang malam.</p>
+
+<p>Beberapa bulan berlalu, dan Mahsuri mendapati dirinya berbadan dua. Tatkala suaminya kembali, Wan Derus terkejut bercampur gembira, namun kegembiraan itu tidak lama. Fitnah mula melanda, bak angin ribut yang menyapu segenap kampung. Penduduk menuduh Mahsuri curang, mengatakan anak dalam kandungannya bukan milik Wan Derus.</p>
+
+<p>Orang kampung, yang dibutakan oleh prasangka, mengheret Mahsuri ke tengah padang, diikat pada sebatang pokok besar. Mahsuri merayu, memohon keadilan, namun mereka tiada belas. Tombak biasa tidak mampu melukainya, maka mereka menggunakan tombak pusaka milik suaminya sendiri.</p>
+
+<p>Dengan darah putih yang mengalir dari tubuhnya, Mahsuri menjerit, "Sumpahku kepada pulau ini! Langkawi tidak akan aman selama tujuh keturunan." Dan saat itu, Mahsuri menghembuskan nafas terakhir, meninggalkan sumpahan yang menghantui Langkawi selama tujuh keturunan.</p>
+
+<p>Di masa kini, Adam yang hilang akhirnya ditemui di tepi pantai, terbaring lemah namun masih bernyawa. Keluarganya bersyukur, memeluknya erat, membawa pulang anak yang mereka rindui. Namun, Adam berubah sejak kejadian itu. Dia bermimpi bertemu Mahsuri, yang hadir dalam cahaya terang.</p>
+
+<p>"Bangunlah, anakku," ujar Mahsuri, suaranya lembut bak bayu malam. "Kau pewaris yang terpilih. Gunakanlah kuasa ini untuk melindungi tanah airmu. Sumpahan tujuh keturunan telah tamat, namun ia kini menjadi berkat. Gunakanlah ia dengan bijaksana."</p>
+
+<p>Adam tersedar dari mimpinya, tubuhnya terasa segar namun dipenuhi tanda tanya. Dalam diam, dia mendapati dirinya memiliki kekuatan luar biasa. Namun, Adam merahsiakan hal itu, kerana dia yakin bahawa suatu hari nanti, petunjuk Mahsuri dalam mimpinya akan menjadi kenyataan.</p>
+
+<p>Setelah kejadian aneh di mana Adam ditemui seminggu kemudian di tepi pantai tanpa penjelasan yang jelas, dia mula merasakan sesuatu yang ganjil dalam dirinya. Pada mulanya, dia menganggap dirinya hanya keletihan akibat kejadian lemas. Namun, satu malam ketika dia membersihkan luka kecil di tangannya, darah yang mengalir dari lukanya bukanlah merah seperti biasa, tetapi putih. Darah itu bercahaya lembut, seakan-akan hidup, dan dalam sekelip mata, luka itu sembuh sepenuhnya tanpa meninggalkan parut.</p>
+
+<p>Adam mula menyedari bahawa ini bukan perkara biasa. Dia teringat akan mimpi di mana seorang wanita bercahaya, yang dia yakini Mahsuri, menyeru agar dia bangun dan menggunakan "anugerah" itu untuk melindungi negara. Sejak saat itu, dia memutuskan untuk memahami kuasa yang kini mengalir dalam dirinya.</p>
+
+<p>Adam mula melatih dirinya secara rahsia di kawasan hutan berhampiran rumahnya. Dia bereksperimen dengan kuasa darah putih, mendapati bahawa:</p>
+
+<p>Penyembuhan: Dia dapat menyembuhkan luka kecil pada tubuhnya sendiri dan binatang di sekelilingnya. Semakin dia fokus, semakin cepat penyembuhan itu berlaku.</p>
+
+<p>Perisai Aura: Dengan memusatkan tenaga, dia dapat mencipta aura pelindung di sekelilingnya yang mampu menangkis serangan fizikal tertentu.</p>
+
+<p>Tenaga Sukma: Dalam keadaan terdesak, darah putihnya dapat memberikannya kekuatan luar biasa untuk bertahan lebih lama daripada manusia biasa.</p>
+
+<p>Adam juga mempelajari seni mempertahankan diri dan memperkuat tubuhnya secara fizikal untuk memastikan dia mampu bertahan jika terpaksa menggunakan kuasanya. Dia membawa busur dan anak panah untuk berlatih, mengambil inspirasi daripada Mahsuri sebagai simbol keadilan.</p>
+
+<p>Satu petang, ketika Adam sedang berlatih menyembuhkan seekor burung yang cedera, ibunya secara tidak sengaja melihat dari jauh. Hatinya bercampur antara kagum dan risau. Setelah pulang, ibunya bertanya dengan lembut apa yang sebenarnya berlaku kepada Adam sejak dia ditemukan semula. Adam akhirnya menceritakan segala-galanya.</p>
+
+<p>Ibunya mendengar dengan penuh teliti, menahan air mata apabila mendengar nama Mahsuri disebut. “Adam,” katanya lembut, “jika benar ini anugerah dari Mahsuri, gunakanlah ia untuk kebaikan. Jangan biarkan ia menjadi beban, tetapi jadikan ia pedoman.”</p>
+
+<p>Adam bersungguh-sungguh berkata kepada ibunya, “Mak, kalau apa-apa terjadi pada Adam, janganlah sesiapa tahu Adam yang lakukan ini semua. Adam mahu dikenali sebagai 'Mahsuri'. Nama itu melambangkan keadilan, kesucian, dan keberanian. Adam mahu menjaga negara dengan cara yang baik, seperti Mahsuri menjaga maruahnya hingga ke akhir hayat.”</p>
+
+<p>Ibunya tersenyum penuh bangga, namun hatinya tetap berat memikirkan apa yang akan berlaku pada anaknya. Dia berjanji akan merahsiakan perkara itu dan terus mendoakan keselamatan Adam.</p>
+
+<p>Walaupun merahsiakan kuasanya, Adam mulai merasai tanggungjawab besar untuk menjaga Langkawi dan negaranya. Dia menggunakan kebolehannya untuk membantu orang dalam diam. Ketika ada kecemasan di kampung atau bencana kecil seperti ribut, Adam akan muncul secara senyap, memastikan semua orang selamat tanpa ada yang tahu.</p>
+
+<p>Setiap malam, sebelum tidur, dia memandang langit dan berkata dalam hatinya, “Mahsuri, sumpahanmu sudah berakhir. Kini, anugerahmu adalah tanggungjawabku.”</p>
+            </div>
+        </div>
+    </main>
+    
+    <div class="nav-container">
+        <a href="#" class="nav-button back-glow left-button">
+            <img src="Hiasan/back_button.jpg" alt="Kembali" title="Kembali ke Galeri">
+            <span class="button-label">KEMBALI</span>
+        </a>
+        
+        <a href="index.html" class="nav-button home-glow right-button">
+            <img src="Hiasan/home_button.jpg" alt="Halaman Utama" title="Halaman Utama">
+            <span class="button-label">HALAMAN UTAMA</span>
+        </a>
+    </div>
+    
+    <script src="script.js"></script> 
+
+    <script>
+        // Set skin pertama sebagai skin aktif semasa muat halaman
+        let currentSkinIndex = 0;
+        const skinItems = document.querySelectorAll('.thumbnail-item');
+        const mainImg1 = document.getElementById('main-skin-img-1');
+        const mainImg2 = document.getElementById('main-skin-img-2');
+        const mainImg3 = document.getElementById('main-skin-img-3');
+        const mainImg4 = document.getElementById('main-skin-img-4');
+        const mainImg5 = document.getElementById('main-skin-img-5');
+        const skinNameDisplay = document.getElementById('skin-name-display');
+        const arrowLeft = document.getElementById('arrow-left');
+        const arrowRight = document.getElementById('arrow-right');
+        const totalSkins = skinItems.length;
+
+        // Fungsi utama untuk menukar skin
+        function changeSkin(index) {
+            if (index < 0 || index >= totalSkins) return; 
+
+            currentSkinIndex = index;
+            
+            // 1. Update Imej Utama
+            const selectedSkin = skinItems[currentSkinIndex];
+            if (mainImg1) mainImg1.src = selectedSkin.getAttribute('data-main-img-1');
+            if (mainImg2) mainImg2.src = selectedSkin.getAttribute('data-main-img-2');
+            if (mainImg3) mainImg3.src = selectedSkin.getAttribute('data-main-img-3');
+            if (mainImg4) mainImg4.src = selectedSkin.getAttribute('data-main-img-4');
+            if (mainImg5) mainImg5.src = selectedSkin.getAttribute('data-main-img-5');
+            
+            // 2. Update Nama Skin
+            if (skinNameDisplay) skinNameDisplay.textContent = selectedSkin.getAttribute('data-skin-name');
+
+            // 3. Update Status Aktif (Opacity/Ketelusan) pada Thumbnail
+            skinItems.forEach((item, i) => {
+                if (i === currentSkinIndex) {
+                    item.classList.add('active'); 
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+
+            // 4. Update Status Anak Panah Navigasi
+            updateArrows();
+        }
+
+        // Fungsi untuk mengemas kini keadaan anak panah
+        function updateArrows() {
+            // Anak Panah Kiri: Nyahaktifkan jika di skin pertama
+            if (currentSkinIndex === 0) {
+                if(arrowLeft) {
+                    arrowLeft.classList.add('disabled-arrow'); 
+                    arrowLeft.disabled = true;
+                }
+            } else {
+                if(arrowLeft) {
+                    arrowLeft.classList.remove('disabled-arrow');
+                    arrowLeft.disabled = false;
+                }
+            }
+
+            // Anak Panah Kanan: Nyahaktifkan jika di skin terakhir
+            if (currentSkinIndex === totalSkins - 1) {
+                if(arrowRight) {
+                    arrowRight.classList.add('disabled-arrow'); 
+                    arrowRight.disabled = true;
+                }
+            } else {
+                if(arrowRight) {
+                    arrowRight.classList.remove('disabled-arrow');
+                    arrowRight.disabled = false;
+                }
+            }
+        }
+
+        // Event Listener untuk Anak Panah
+        if (arrowLeft) {
+            arrowLeft.addEventListener('click', () => {
+                changeSkin(currentSkinIndex - 1);
+            });
+        }
+        
+        if (arrowRight) {
+            arrowRight.addEventListener('click', () => {
+                changeSkin(currentSkinIndex + 1);
+            });
+        }
+
+        // Pastikan paparan skin di set semasa muat halaman
+        window.addEventListener('load', () => {
+            changeSkin(0);
+        });
+
+    </script>
+</body>
+</html>

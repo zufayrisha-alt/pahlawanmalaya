@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDERAPUTERA: LASKAR DALAM ZIRAH</title>
+    <link rel="stylesheet" href="styles.css"> 
+
+    <style>
+        body {
+            background-image: url('Pahlawan/9Inderaputera/9InderaputeraBackground.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero-header-container">
+        
+        <div class="hero-name-row">
+            <div class="hero-number">009</div>
+            <h1 class="hero-title-pixel">INDERAPUTERA</h1>
+        </div>
+
+        <div class="hero-type-row">
+            <img src="Hiasan/logo_bentara.jpg" alt="Logo Bentara" class="hero-logo-img">
+            <h2 class="hero-type-title">BENTARA</h2>
+        </div>
+        
+        <p class="hero-rank-subtitle">LASKAR DALAM ZIRAH</p>
+    </header>
+
+    <blockquote class="hero-quote-box">
+        "Bersama perisai ini, tiada kezaliman yang dapat menembusi keadilan!"
+    </blockquote>
+
+    <main>
+        <img src="Pahlawan/9Inderaputera/9Inderaputera2.jpg" alt="INDERAPUTERA" class="detail-hero-image">
+
+        <div class="detail-content">
+            
+            <h4>SKIN</h4>
+            
+            <div class="skin-gallery-container">
+                <h3 id="skin-name-display" class="skin-name-display">INDERAPUTERA</h3>
+                <div class="main-skin-images">
+                    <img id="main-skin-img-1" src="Pahlawan/9Inderaputera/9Inderaputera1.jpg" alt="Skin INDERAPUTERA 1" class="main-skin-img">
+                    <img id="main-skin-img-2" src="Pahlawan/9Inderaputera/9Inderaputera2.jpg" alt="Skin INDERAPUTERA 2" class="main-skin-img">
+                    <img id="main-skin-img-3" src="Pahlawan/9Inderaputera/9Inderaputera3.jpg" alt="Skin INDERAPUTERA 3" class="main-skin-img">
+                </div>
+                    
+                <div class="image-row row-two">
+                    <img id="main-skin-img-4" src="Pahlawan/9Inderaputera/9Inderaputera4.jpg" alt="Skin INDERAPUTERA 4" class="main-skin-img">
+                    <img id="main-skin-img-5" src="Pahlawan/9Inderaputera/9Inderaputera5.jpg" alt="Skin INDERAPUTERA 5" class="main-skin-img">
+                </div>
+        
+            </div>
+
+            <div class="skin-selection-container">
+                <button id="arrow-left" class="nav-arrow" disabled>&lt;</button>
+                <div class="skin-thumbnails-wrapper">
+                    <div class="thumbnail-item active" data-skin-index="0" data-skin-name="INDERAPUTERA"
+                            data-main-img-1="Pahlawan/9Inderaputera/9Inderaputera1.jpg"
+                            data-main-img-2="Pahlawan/9Inderaputera/9Inderaputera2.jpg"
+                            data-main-img-3="Pahlawan/9Inderaputera/9Inderaputera3.jpg"
+                            data-main-img-4="Pahlawan/9Inderaputera/9Inderaputera4.jpg"
+                            data-main-img-5="Pahlawan/9Inderaputera/9Inderaputera5.jpg"
+                            onclick="changeSkin(0)">
+                         <img src="Pahlawan/9Inderaputera/9Inderaputera2.jpg" alt="Thumbnail INDERAPUTERA" class="thumbnail-img">
+                         <span class="thumbnail-label">INDERAPUTERA</span>
+                    </div>
+
+                    <div class="thumbnail-item" data-skin-index="1" data-skin-name="TUKANG KAYU INDERAPUTERA"
+                            data-main-img-1="Pahlawan/9Inderaputera/9TukangKayuInderaputera1.jpg"
+                            data-main-img-2="Pahlawan/9Inderaputera/9TukangKayuInderaputera2.jpg"
+                            data-main-img-3="Pahlawan/9Inderaputera/9TukangKayuInderaputera3.jpg"
+                            data-main-img-4="Pahlawan/9Inderaputera/9TukangKayuInderaputera4.jpg"
+                            data-main-img-5="Pahlawan/9Inderaputera/9TukangKayuInderaputera5.jpg"
+                            onclick="changeSkin(1)">
+                         <img src="Pahlawan/9Inderaputera/9TukangKayuInderaputera2.jpg" alt="Thumbnail TUKANG KAYU INDERAPUTERA" class="thumbnail-img">
+                         <span class="thumbnail-label">TUKANG KAYU INDERAPUTERA</span>
+                    </div>
+                </div>
+                <button id="arrow-right" class="nav-arrow" >&gt;</button>
+            </div>
+            
+            
+            <h4>STATISTIK & STATUS NYAWA DAN TENAGA</h4>
+            
+            <ul class="biodata-list">
+                <li class="stat-item">
+                    <span class="stat-label">Serangan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-red" style="width: 60%;"></div>
+                    </div>
+                    <span class="stat-score">6</span>
+                </li>
+                
+                <li class="stat-item">
+                    <span class="stat-label">Penguasaan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-orange" style="width: 80%;"></div>
+                    </div>
+                    <span class="stat-score">8</span>
+                </li>
+
+                <li class="stat-item">
+                    <span class="stat-label">Kesukaran</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-blue" style="width: 70%;"></div>
+                    </div>
+                    <span class="stat-score">7</span>
+                </li>
+                
+                <li class="stat-item">
+                    <span class="stat-label">Kekebalan</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar stat-bar-green" style="width: 90%;"></div>
+                    </div>
+                    <span class="stat-score">9</span>
+                </li>
+                
+                <li style="margin-top: 15px;">
+                    HP = <span style="color: white; font-weight: bold;">2800</span> <span style="color: #90ee90; font-weight: bold;">+250</span>
+                </li>
+                <li>
+                    Mana = <span style="color: white; font-weight: bold;">450</span> <span style="color: #ADD8E6; font-weight: bold;">+40</span>
+                </li>
+            </ul>
+
+
+            <h4>BIODATA</h4>
+            <ul class="biodata-list">
+                <li>Nama Pahlawan : INDERAPUTERA</li>
+                <li>Nama Sebenar : Putera</li>
+                <li>Gelaran : LASKAR DALAM ZIRAH</li>
+                <li>Umur : 27 Tahun</li>
+                <li>Number Pahlawan : 009</li>
+                <li>Jenis Pahlawan : <img src="Hiasan/logo_bentara.jpg" alt="Logo Bentara Kecil" class="list-logo"> BENTARA</li>
+                <li>Makhluk : Manusia</li>
+                <li>Bangsa : Melayu</li>
+                <li>Negeri Asal : Kuala Lumpur</li>
+                <li>Pekerjaan : Askar</li>
+                <li>Tinggi : 197 cm</li>
+                <li>Berat : 76 Kg</li>
+            </ul>
+            
+            <h4>SKILL</h4>
+            <ul class="skill-list">
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/9Inderaputera/9Inderaputeraskill0.jpg" alt="Pasif Skill Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">PASIF: ZIRAH</span>
+                        <ul class="skill-description-list"><li>(Buff, Damage Reduction)</li><li>Apabila Inderaputera menerima serangan, perisai khasnya secara automatik akan aktif, mengurangkan 10%/12%/14% damage yang diterima selama 3 saat.</li><li>Jika terkena serangan bertubi-tubi dalam tempoh ini, pengurangan damage meningkat sebanyak 2%, sehingga maksimum 20%.</li><li>Cooldown: 10 saat selepas perisai tamat.</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/9Inderaputera/9Inderaputeraskill1.jpg" alt="Skill 1 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 1: LONTARAN PERISAI</span>
+                        <ul class="skill-description-list"><li>(Fizikal, DPS, AOE, Execute)</li><li>Level: 1-4</li><li>Inderaputera melontarkan perisai di lengannya ke hadapan sejauh 7 unit, menyerang semua musuh di laluannya dan kembali ke tangannya.</li><li>Setiap musuh yang terkena serangan akan menerima 180/220/260/300 (+80% Total Physical Attack) damage.</li><li>Jika perisai mengenai musuh dalam perjalanan pergi dan balik, damage serangan kedua berkurang 30%.</li><li>Cooldown: 7s</li><li>Mana Cost: 50</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/9Inderaputera/9Inderaputeraskill2.jpg" alt="Skill 2 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 2: BENTENG PERTAHANAN</span>
+                        <ul class="skill-description-list"><li>(Fizikal, Buff, Reflect, Damage Reduction)</li><li>Level: 1-4</li><li>Inderaputera mengangkat perisai di lengannya, mencipta tembok pelindung dalam 120 darjah di hadapannya selama 4 saat.</li><li>Semua serangan (basic attack, skill projectile, magic projectile) yang datang dari depan akan dikembalikan ke arah asalnya dengan 40%/50%/60%/70% dari damage asal.</li><li>Damage yang masih diterima akan dikurangkan sebanyak 10%.</li><li>Cooldown: 10s</li><li>Mana Cost: 60</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/9Inderaputera/9Inderaputeraskill3.jpg" alt="Skill 3 Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">SKILL 3: GELOMBANG PERISAI</span>
+                        <ul class="skill-description-list"><li>(Fizikal, CC, Knockback, AOE)</li><li>Level: 1-4</li><li>Inderaputera menekan perisainya, mencipta gelombang kejut berbentuk kipas sejauh 6 unit ke hadapan.</li><li>Semua musuh (termasuk minion dan raksasa) dalam radius ini akan ditolak ke belakang sejauh 2 unit dan menerima 200/240/280/320 (+70% Total Physical Attack) damage.</li><li>Musuh yang terkena hentakan di hujung radius akan mengalami 0.5s stun.</li><li>Cooldown: 9s</li><li>Mana Cost: 70</li></ul> 
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon-container">
+                        <img src="Pahlawan/9Inderaputera/9Inderaputeraskill4.jpg" alt="Ultimate Icon" class="skill-icon">
+                    </div>
+                    <div class="skill-details">
+                        <span class="skill-name">ULTI: LASKAR ARENA</span>
+                        <ul class="skill-description-list"><li>(Fizikal, AOE, Buff, Slow, Shield)</li><li>Level: 1-3</li><li>Inderaputera mencipta medan tempur berbentuk bulatan dengan radius 8 unit, bertahan selama 6 saat.</li><li>Semua musuh dalam kawasan ini akan mengalami 20% slow effect dan menerima 80/120/160 (+20% Total Physical Attack) damage setiap saat.</li><li>Sekutu yang berada dalam kawasan ini akan mendapat shield yang menyerap 200/300/400 damage, serta mendapat 10% pengurangan damage sepanjang berada di dalamnya.</li><li>Cooldown: 40s</li><li>Mana Cost: 100</li></ul> 
+                    </div>
+                </li>
+            </ul>
+
+
+            <h4>PERSONALITI</h4>
+            <ul class="personaliti-list">
+                <li>Berani dan berjiwa kepimpinan</li>
+<li>Tegas tetapi penuh dengan rasa tanggungjawab</li>
+<li>Setia kepada negara dan rakan seperjuangan</li>
+<li>Bijak membaca pergerakan musuh dan bertindak balas dengan strategi</li>
+            </ul>
+
+            <h4>HIKAYAT</h4>
+            <div class="hikayat-text">
+                <p>Pada zaman dahulu kala, di negeri Melayu yang makmur, terdapat seorang pahlawan yang sangat dihormati oleh rakyat jelata. Namanya Inderaputera, seorang pahlawan yang gagah berani, tiada tandingan dalam segala peperangan. Terlahir dalam keadaan yang ajaib, Inderaputera dilahirkan di bawah naungan pohon buluh betung yang tinggi dan kuat. Buluh yang melingkari tubuhnya sewaktu lahir menjadi simbol kekuatan dan ketahanan pahlawan ini. Dari hari pertama kelahirannya, dia sudah membawa tanda-tanda kehebatan yang luar biasa, dipercayai bahawa dia telah dikurniakan kuasa yang amat besar oleh alam semesta.</p>
+
+<p>Inderaputera dikenal dengan pakaian perang yang terbuat daripada kain tenunan halus yang dipenuhi dengan motif-motif kebesaran kerajaan Melayu. Di bahunya tersandang keris pusaka yang diwarisi turun-temurun. Ia bukan sekadar senjata, tetapi lambang keberanian dan keadilan yang menjadi pedoman hidupnya. Pahlawan ini tidak pernah gentar menghadapi musuh, dan dalam setiap pertempuran, dia akan menggunakan ketangkasan serta kepintarannya untuk mengalahkan lawan. Memakai pakaian perang berwarna keemasan dan bertali emas, Inderaputera bergerak lincah dan pantas, bagai bayang-bayang yang sukar ditangkap oleh musuh.</p>
+
+<p>Sewaktu perang besar meletus antara kerajaan-kerajaan Melayu dengan penjajah luar, Inderaputera tampil sebagai benteng utama mempertahankan tanah air. Kehebatannya di medan perang, serta cara dia memimpin rakyat dalam melawan musuh, menyebabkan namanya dikenali hingga ke seluruh pelosok tanah Melayu. Sejarah kemuliaan Inderaputera ini terus berkembang, dicatatkan dalam buku-buku purba dan dituturkan dari generasi ke generasi. Kisahnya menjadi legenda yang tidak pernah lapuk ditelan zaman.</p>
+
+<p>Namun, walau pun dia sangat terbilang, Inderaputera tidak pernah tamak dengan kuasa, malah sentiasa mengutamakan keadilan, perpaduan, dan keselamatan rakyat. Seluruh hidupnya adalah untuk mempertahankan keadilan di bumi Melayu. Setelah bertahun-tahun berjuang, Inderaputera akhirnya menyatu dengan tanah, namun namanya tetap dikenang sepanjang zaman.</p>
+
+<p>Masa kini, di Kuala Lumpur yang penuh dengan kemajuan teknologi, kisah Inderaputera dihidupkan semula oleh sekumpulan pengkaji dan jurutera yang bekerja di sebuah bangunan penyelidikan rahsia. Mereka terinspirasi oleh kehebatan dan keberanian Inderaputera, dan menjadikannya sebagai simbol dalam mereka membangunkan baju perisai canggih yang sangat revolusioner. Mereka berhasrat untuk mencipta sebuah perisai yang mampu memberi kuasa luar biasa kepada pemakainya, menggabungkan teknologi moden dengan semangat keberanian Inderaputera.</p>
+
+<p>Di pusat penyelidikan itu, Putera, seorang pemuda kacak berusia 21 tahun, dipilih untuk menjadi penerima perisai tersebut. Putera adalah seorang askar muda yang baru selesai menjalani latihan ketenteraan dengan cemerlang. Badannya tegap dan wajahnya tampan, membuatkan setiap orang yang melihatnya terpesona. Dengan sifat yang berdisiplin dan berdedikasi, Putera adalah calon yang sempurna untuk memakai perisai tersebut.</p>
+
+<p>Ketika perisai itu dikenakan kepadanya, Putera merasa kekuatan yang tidak dapat diterangkan, seolah-olah ia sedang menurunkan semangat Inderaputera kepadanya. Perisai tersebut bukan sekadar alat perlindungan, tetapi memiliki ciri-ciri magis yang memberi kemampuan luar biasa kepada pemakainya. Dengan motif Melayu klasik pada perisai tersebut, Putera kini dikenali sebagai Inderaputera baru, melambangkan penerusan warisan keberanian dan kekuatan yang pernah dimiliki oleh pahlawan zaman dahulu.</p>
+
+<p>Putera kini berlatih dengan lebih gigih, bersedia untuk menghadapi ancaman-ancaman moden yang datang. Dia memakai perisai canggih ini bukan hanya untuk kepentingan diri, tetapi untuk berbakti kepada negaranya, Malaysia, dengan berjuang menentang kejahatan dan memastikan keamanan terus terpelihara. Sebagai Inderaputera yang baharu, dia menyandang tanggungjawab yang besar, dan negara Malaysia kini menanti apakah Putera akan menyamai kehebatan pahlawan legendaris yang pernah hidup di zaman silam.</p>
+            </div>
+        </div>
+    </main>
+    
+    <div class="nav-container">
+        <a href="#" class="nav-button back-glow left-button">
+            <img src="Hiasan/back_button.jpg" alt="Kembali" title="Kembali ke Galeri">
+            <span class="button-label">KEMBALI</span>
+        </a>
+        
+        <a href="index.html" class="nav-button home-glow right-button">
+            <img src="Hiasan/home_button.jpg" alt="Halaman Utama" title="Halaman Utama">
+            <span class="button-label">HALAMAN UTAMA</span>
+        </a>
+    </div>
+    
+    <script src="script.js"></script> 
+
+    <script>
+        // Set skin pertama sebagai skin aktif semasa muat halaman
+        let currentSkinIndex = 0;
+        const skinItems = document.querySelectorAll('.thumbnail-item');
+        const mainImg1 = document.getElementById('main-skin-img-1');
+        const mainImg2 = document.getElementById('main-skin-img-2');
+        const mainImg3 = document.getElementById('main-skin-img-3');
+        const mainImg4 = document.getElementById('main-skin-img-4');
+        const mainImg5 = document.getElementById('main-skin-img-5');
+        const skinNameDisplay = document.getElementById('skin-name-display');
+        const arrowLeft = document.getElementById('arrow-left');
+        const arrowRight = document.getElementById('arrow-right');
+        const totalSkins = skinItems.length;
+
+        // Fungsi utama untuk menukar skin
+        function changeSkin(index) {
+            if (index < 0 || index >= totalSkins) return; 
+
+            currentSkinIndex = index;
+            
+            // 1. Update Imej Utama
+            const selectedSkin = skinItems[currentSkinIndex];
+            if (mainImg1) mainImg1.src = selectedSkin.getAttribute('data-main-img-1');
+            if (mainImg2) mainImg2.src = selectedSkin.getAttribute('data-main-img-2');
+            if (mainImg3) mainImg3.src = selectedSkin.getAttribute('data-main-img-3');
+            if (mainImg4) mainImg4.src = selectedSkin.getAttribute('data-main-img-4');
+            if (mainImg5) mainImg5.src = selectedSkin.getAttribute('data-main-img-5');
+            
+            // 2. Update Nama Skin
+            if (skinNameDisplay) skinNameDisplay.textContent = selectedSkin.getAttribute('data-skin-name');
+
+            // 3. Update Status Aktif (Opacity/Ketelusan) pada Thumbnail
+            skinItems.forEach((item, i) => {
+                if (i === currentSkinIndex) {
+                    item.classList.add('active'); 
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+
+            // 4. Update Status Anak Panah Navigasi
+            updateArrows();
+        }
+
+        // Fungsi untuk mengemas kini keadaan anak panah
+        function updateArrows() {
+            // Anak Panah Kiri: Nyahaktifkan jika di skin pertama
+            if (currentSkinIndex === 0) {
+                if(arrowLeft) {
+                    arrowLeft.classList.add('disabled-arrow'); 
+                    arrowLeft.disabled = true;
+                }
+            } else {
+                if(arrowLeft) {
+                    arrowLeft.classList.remove('disabled-arrow');
+                    arrowLeft.disabled = false;
+                }
+            }
+
+            // Anak Panah Kanan: Nyahaktifkan jika di skin terakhir
+            if (currentSkinIndex === totalSkins - 1) {
+                if(arrowRight) {
+                    arrowRight.classList.add('disabled-arrow'); 
+                    arrowRight.disabled = true;
+                }
+            } else {
+                if(arrowRight) {
+                    arrowRight.classList.remove('disabled-arrow');
+                    arrowRight.disabled = false;
+                }
+            }
+        }
+
+        // Event Listener untuk Anak Panah
+        if (arrowLeft) {
+            arrowLeft.addEventListener('click', () => {
+                changeSkin(currentSkinIndex - 1);
+            });
+        }
+        
+        if (arrowRight) {
+            arrowRight.addEventListener('click', () => {
+                changeSkin(currentSkinIndex + 1);
+            });
+        }
+
+        // Pastikan paparan skin di set semasa muat halaman
+        window.addEventListener('load', () => {
+            changeSkin(0);
+        });
+
+    </script>
+</body>
+</html>
